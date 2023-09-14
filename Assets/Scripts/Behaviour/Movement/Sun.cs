@@ -8,10 +8,5 @@ namespace Behaviour.Movement
         {
             return Vector3.forward;
         }
-
-        protected override void HandleMovement()
-        {
-            base.HandleMovement();
-        }
     }
 }

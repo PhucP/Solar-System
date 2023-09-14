@@ -1,4 +1,5 @@
 using Behaviour.Movement;
+using Data;
 using UnityEngine;
 
 namespace Behaviour
@@ -8,9 +9,9 @@ namespace Behaviour
         [SerializeField] protected CelestialObjectData celestialObjectData;
         [SerializeField] protected bool isRotateAroundItsSelf;
     
-        private Vector3 _force;
-        private Rigidbody _rigidbody => GetComponent<Rigidbody>();
-        private CelestialManager _celestialManager;
+        protected Vector3 force;
+        protected Rigidbody Rigidbody => GetComponent<Rigidbody>();
+        protected CelestialManager celestialManager;
 
         private void Awake() 
         {
@@ -24,13 +25,13 @@ namespace Behaviour
 
         private void Update()
         {
-            _force = CalculateForce();
+            HandleMovement();
         }
 
 
         private void FixedUpdate()
         {
-            HandleMovement();
+            force = CalculateForce();
         }
 
         protected virtual void InitDataForObject()
@@ -43,7 +44,17 @@ namespace Behaviour
         protected virtual void HandleMovement()
         {
             //method can overwrite by child
-            _rigidbody.velocity = _force * 5f;
+            if (isRotateAroundItsSelf) RotateAroundItsSelf();
+        }
+
+        protected virtual void RotateAroundItsSelf()
+        {
+            Vector3 pos = this.transform.position;
+            Vector3 axis = celestialObjectData.infomation.axis;
+            float angle = celestialObjectData.physic.rotationSpeed;
+            if (angle == null) angle = 30;
+            if (axis == null) axis = Vector3.up;
+            transform.RotateAround(pos, axis, angle * Time.deltaTime);
         }
     }
 }

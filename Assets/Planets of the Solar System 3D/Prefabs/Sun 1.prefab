@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 112323385915393215}
   - component: {fileID: 112323385915393214}
   - component: {fileID: 112323385915393213}
+  - component: {fileID: 4733980654852761569}
   m_Layer: 0
   m_Name: Sun 1
   m_TagString: Untagged
@@ -97,3 +98,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4733980654852761569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112323385915393155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6fc5aeb1c3ebb4aa43ec46bd5b0e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  celestialObjectData: {fileID: 11400000, guid: 51ded04ea2cb3cc4e820756fa5757221,
+    type: 2}
+  isRotateAroundItsSelf: 1

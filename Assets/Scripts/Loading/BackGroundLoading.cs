@@ -10,7 +10,7 @@ namespace Loading
     {
         public List<Image> listImage;
         private float _screenHight;
-        public float _screenWeight;
+        [FormerlySerializedAs("_screenWeight")] public float screenWeight;
 
         private void Start()
         {

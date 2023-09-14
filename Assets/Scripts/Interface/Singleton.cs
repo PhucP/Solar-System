@@ -4,19 +4,19 @@ public class Singleton<T> : MonoBehaviour
     where T : Component
 {
     public bool dontDestroy;
-    private static T instance;
+    private static T _instance;
     
     public static T Instance
     {
         get
         {
-            if (instance != null) return instance;
-            instance = (T) FindObjectOfType(typeof(T));
-            if (instance == null)
+            if (_instance != null) return _instance;
+            _instance = (T) FindObjectOfType(typeof(T));
+            if (_instance == null)
             {
             }
 
-            return instance;
+            return _instance;
         }
     }
 
