@@ -4,9 +4,9 @@ namespace Behaviour.Movement
 {
     public class Sun : CelestialObject
     {
-        protected override Vector3 CalculateForce()
+        protected override void InitDataForObject()
         {
-            return Vector3.forward;
+            //throw new System.NotImplementedException();
         }
     }
 }

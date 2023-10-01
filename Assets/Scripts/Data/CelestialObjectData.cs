@@ -12,24 +12,26 @@ namespace Data
         [System.Serializable]
         public class Physic
         {
-            public double mass;
+            public float mass;
             public float speed;
             public float rotationSpeed;
+            public bool isRotateAroundItsSelf;
         }
 
         [System.Serializable]
         public class Size
         {
             public string shape;
-            public double radius;
+            public float radius;
         }
 
         [System.Serializable]
         public class Infomation
         {
             public string name;
-            public double age;
+            public float age;
             public Vector3 axis;
+            public float distanceToSun;
         }
     }
 }

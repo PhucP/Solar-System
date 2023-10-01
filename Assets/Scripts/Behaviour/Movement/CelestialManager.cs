@@ -14,7 +14,7 @@ namespace Behaviour.Movement
             GetCelestialForList();
         }
 
-        private void GetCelestialForList()
+        private void GetCelestialForList()  
         {
             foreach(Transform celestialTransform in celestialParent)
             {

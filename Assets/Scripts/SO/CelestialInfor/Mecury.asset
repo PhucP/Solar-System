@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
-  m_Name: Sun
+  m_Name: Mecury
   m_EditorClassIdentifier: 
   infomation:
-    name: Sun
-    age: 5.5
-    axis: {x: 0, y: 1, z: 0}
+    name: 
+    age: 0
+    axis: {x: 0, y: 0, z: 0}
+    distanceToSun: 63.81
   physic:
-    mass: 1
-    speed: 1
-    rotationSpeed: 30
+    mass: 0.055
+    speed: 0
+    rotationSpeed: 0
+    isRotateAroundItsSelf: 0
   size:
-    shape: shpere
-    radius: 1
+    shape: 
+    radius: 2.44
