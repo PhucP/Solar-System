@@ -2,6 +2,7 @@ using System;
 using Behaviour.Movement;
 using Data;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
 
@@ -10,6 +11,7 @@ namespace Behaviour
     public abstract class CelestialObject : MonoBehaviour
     {
         [SerializeField] protected CelestialObjectData celestialObjectData;
+        [SerializeField] private Vector3 startPosition;
         [SerializeField] protected Vector3 initialVelocity;
         [SerializeField] private int limitPosition;
         [SerializeField] private bool isStart;
@@ -17,20 +19,20 @@ namespace Behaviour
         private static CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
 
-        [Header("LINE RENDERER")] [SerializeField]
-        private bool isDrawLine;
-        private Vector3 _currentLineVelocity;
-        private Vector3 _currentLinePosition;
-        private int _indexLine;
-        private LineRenderer LineRenderer => GetComponent<LineRenderer>();
-
-
         protected virtual void Start()
         {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            transform.localPosition = startPosition;
             currentVelocity = initialVelocity;
-            LineRenderer.positionCount = limitPosition;
-            _indexLine = 0;
-            _currentLinePosition = Rigidbody.position;
+        }
+
+        private void OnValidate()
+        {
+            Reset();
         }
 
         private void UpdateVelocity(float timeStep)
@@ -66,51 +68,10 @@ namespace Behaviour
             }
 
             if (celestialObjectData.physic.isRotateAroundItsSelf) RotateAroundItsSelf();
-            if (isDrawLine)
-            {
-                DrawLineRenderer();
-            }
         }
 
         protected abstract void InitDataForObject();
-
-        #region LineRenderer
-
-        private void DrawLineRenderer()
-        {
-            LineRenderer.SetPosition(_indexLine++, _currentLinePosition);
-            _currentLinePosition += _currentLineVelocity;
-            if (_indexLine >= limitPosition) _indexLine = 0;
-
-            CalculateLineVelocity(CelestialManager.timeStep);
-        }
-
-        private void CalculateLineVelocity(float timeStep)
-        {
-            foreach (CelestialObject planet in CelestialManager.listCelestialObject)
-            {
-                if (planet.Equals(this)) continue;
-
-                var vectorDistance = planet.Rigidbody.position - _currentLinePosition;
-                float sqrDst = vectorDistance.sqrMagnitude;
-                Vector3 forceDir = vectorDistance.normalized;
-
-                float planetMass = planet.celestialObjectData.physic.mass;
-                float mass = celestialObjectData.physic.mass;
-                Vector3 force = forceDir * (Constant.G * mass * planetMass) / sqrDst;
-                Vector3 acceleration = force / mass;
-                
-                Vector3 perpendicularVector = Vector3.Cross(acceleration, new Vector3(0, 0, 1));
-                perpendicularVector.z = 0;
-
-                _currentLineVelocity += (acceleration + perpendicularVector);
-                _currentLinePosition = _currentLinePosition.normalized * 10;
-            }
-        }
-
-        #endregion
-
-
+        
         protected virtual void RotateAroundItsSelf()
         {
             Vector3 pos = this.transform.position;
