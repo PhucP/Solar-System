@@ -6,12 +6,14 @@ namespace Behaviour.Movement
     public class CelestialManager : Singleton<CelestialManager>
     {
         public List<CelestialObject> listCelestialObject;
+        public float timeStep;
 
         [SerializeField] private Transform celestialParent;
         protected override void Awake()
         {
             base.Awake();
             GetCelestialForList();
+            timeStep = Time.fixedDeltaTime;
         }
 
         private void GetCelestialForList()  
@@ -19,7 +21,7 @@ namespace Behaviour.Movement
             foreach(Transform celestialTransform in celestialParent)
             {
                 CelestialObject celestialScript = celestialTransform.GetComponent<CelestialObject>();
-                if(celestialScript != null)
+                if(celestialScript != null && celestialScript.gameObject.activeSelf)
                 {
                     listCelestialObject.Add(celestialScript);
                 }

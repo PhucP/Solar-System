@@ -18,7 +18,7 @@ MonoBehaviour:
     axis: {x: 0, y: 0, z: 0}
     distanceToSun: 63.81
   physic:
-    mass: 0.055
+    mass: 1
     speed: 0
     rotationSpeed: 0
     isRotateAroundItsSelf: 0
