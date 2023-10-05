@@ -7,7 +7,7 @@ namespace Behaviour.Movement
     {
         public List<CelestialObject> listCelestialObject;
         public float timeStep;
-
+        public GameObject clonePlanet;
         [SerializeField] private Transform celestialParent;
         protected override void Awake()
         {

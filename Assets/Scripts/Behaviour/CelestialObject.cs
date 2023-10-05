@@ -1,11 +1,8 @@
-using System;
+using System.Collections.Generic;
 using Behaviour.Movement;
 using Data;
+using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.Serialization;
-
 namespace Behaviour
 {
     public abstract class CelestialObject : MonoBehaviour
@@ -13,11 +10,18 @@ namespace Behaviour
         [SerializeField] protected CelestialObjectData celestialObjectData;
         [SerializeField] private Vector3 startPosition;
         [SerializeField] protected Vector3 initialVelocity;
-        [SerializeField] private int limitPosition;
         [SerializeField] private bool isStart;
         private Rigidbody Rigidbody => GetComponent<Rigidbody>();
-        private static CelestialManager CelestialManager => CelestialManager.Instance;
+        private CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
+
+        [Header("VISUALIZE PATH")]
+        [SerializeField] private int limitPosition;
+        [SerializeField] private bool isVisualizePath;
+        private Vector3 _currentLinePosition;
+        private Vector3 _currentLineVelocity;
+        private LineRenderer _lineRenderer => GetComponent<LineRenderer>();
+        private GameObject cloneOfThisPlanet;
 
         protected virtual void Start()
         {
@@ -33,10 +37,28 @@ namespace Behaviour
         private void OnValidate()
         {
             Reset();
+            if(isVisualizePath) VisualizePath();
         }
 
-        private void UpdateVelocity(float timeStep)
+        protected virtual void FixedUpdate()
         {
+            if (isStart)
+            {
+                currentVelocity += CalculateVelocity(CelestialManager.timeStep);
+                UpdatePosition(CelestialManager.timeStep);
+            }
+
+            if (celestialObjectData.physic.isRotateAroundItsSelf) RotateAroundItsSelf();
+        }
+        
+        private void UpdatePosition(float timeStep)
+        {
+            Rigidbody.position += currentVelocity * timeStep;
+        }
+        
+        private Vector3 CalculateVelocity(float timeStep)
+        {
+            Vector3 tempVel = Vector3.zero;
             foreach (CelestialObject planet in CelestialManager.listCelestialObject)
             {
                 if (planet.Equals(this)) continue;
@@ -50,26 +72,12 @@ namespace Behaviour
                 Vector3 force = forceDir * (Constant.G * mass * planetMass) / sqrDst;
                 Vector3 acceleration = force / mass;
 
-                currentVelocity += acceleration * timeStep;
-            }
-        }
-
-        private void UpdatePosition(float timeStep)
-        {
-            Rigidbody.position += currentVelocity * timeStep;
-        }
-
-        protected virtual void FixedUpdate()
-        {
-            if (isStart)
-            {
-                UpdateVelocity(CelestialManager.timeStep);
-                UpdatePosition(CelestialManager.timeStep);
+                tempVel += acceleration * timeStep;
             }
 
-            if (celestialObjectData.physic.isRotateAroundItsSelf) RotateAroundItsSelf();
+            return tempVel;
         }
-
+        
         protected abstract void InitDataForObject();
         
         protected virtual void RotateAroundItsSelf()
@@ -96,5 +104,56 @@ namespace Behaviour
 
             return resForce;
         }
+        
+        #region VisualizePath
+
+        private void VisualizePath()
+        {
+            if (cloneOfThisPlanet == null)
+            {
+                cloneOfThisPlanet = Instantiate(CelestialManager.clonePlanet, transform.position, quaternion.identity);
+            }
+            else cloneOfThisPlanet.transform.position = transform.position;
+            
+            var cloneRb = cloneOfThisPlanet.GetComponent<Rigidbody>();
+            var cloneVelocity = initialVelocity;
+            
+            List<Vector3> pathPonits = new List<Vector3>();
+            for (int i = 0; i < limitPosition; i++)
+            {
+                cloneVelocity += CalculateCurrentLineVelocity(cloneRb);
+                cloneRb.position += cloneVelocity;
+                Physics.Simulate(Time.fixedDeltaTime);
+                pathPonits.Add(cloneRb.position);
+            }
+
+            _lineRenderer.enabled = true;
+            _lineRenderer.positionCount = pathPonits.Count;
+            _lineRenderer.SetPositions(pathPonits.ToArray());
+        }
+
+        private Vector3 CalculateCurrentLineVelocity(Rigidbody cloneRb)
+        {
+            Vector3 tempForce = Vector3.zero;
+            foreach (CelestialObject planet in CelestialManager.listCelestialObject)
+            {
+                if (planet.Equals(this)) continue;
+
+                var vectorDistance = planet.Rigidbody.position - cloneRb.position;
+                float sqrDst = vectorDistance.sqrMagnitude;
+                Vector3 forceDir = vectorDistance.normalized;
+
+                float planetMass = planet.celestialObjectData.physic.mass;
+                float mass = celestialObjectData.physic.mass;
+                Vector3 force = forceDir * (Constant.G * mass * planetMass) / sqrDst;
+                Vector3 acceleration = force / mass;
+
+                tempForce += acceleration;
+            }
+            
+            return tempForce;
+        }
+
+        #endregion
     }
 }
