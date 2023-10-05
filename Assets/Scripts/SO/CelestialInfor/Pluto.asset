@@ -16,10 +16,12 @@ MonoBehaviour:
     name: 
     age: 0
     axis: {x: 0, y: 0, z: 0}
+    distanceToSun: 0
   physic:
-    mass: 0
+    mass: 0.022222223
     speed: 0
     rotationSpeed: 0
+    isRotateAroundItsSelf: 0
   size:
     shape: 
     radius: 0
