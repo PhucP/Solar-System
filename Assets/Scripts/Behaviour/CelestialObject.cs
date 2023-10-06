@@ -7,11 +7,11 @@ namespace Behaviour
 {
     public abstract class CelestialObject : MonoBehaviour
     {
-        [SerializeField] protected CelestialObjectData celestialObjectData;
+        public CelestialObjectData celestialObjectData;
         [SerializeField] private Vector3 startPosition;
-        [SerializeField] protected Vector3 initialVelocity;
+        public Vector3 initialVelocity;
         [SerializeField] private bool isStart;
-        private Rigidbody Rigidbody => GetComponent<Rigidbody>();
+        public Rigidbody rigidbody => GetComponent<Rigidbody>();
         private CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
 
@@ -53,7 +53,7 @@ namespace Behaviour
         
         private void UpdatePosition(float timeStep)
         {
-            Rigidbody.position += currentVelocity * timeStep;
+            rigidbody.position += currentVelocity * timeStep;
         }
         
         private Vector3 CalculateVelocity(float timeStep)
@@ -63,7 +63,7 @@ namespace Behaviour
             {
                 if (planet.Equals(this)) continue;
 
-                var vectorDistance = planet.Rigidbody.position - Rigidbody.position;
+                var vectorDistance = planet.rigidbody.position - rigidbody.position;
                 float sqrDst = vectorDistance.sqrMagnitude;
                 Vector3 forceDir = vectorDistance.normalized;
 
@@ -86,23 +86,6 @@ namespace Behaviour
             Vector3 axis = celestialObjectData.infomation.axis;
             float angle = celestialObjectData.physic.rotationSpeed;
             transform.RotateAround(pos, axis, angle * Time.deltaTime);
-        }
-
-        protected Vector3 CalculateInitialForce()
-        {
-            Vector3 resForce = Vector3.zero;
-            foreach (var planet in CelestialManager.listCelestialObject)
-            {
-                if (planet.Equals(this)) continue;
-                var m2 = planet.celestialObjectData.physic.mass;
-                float r = Vector3.Distance(this.transform.position, planet.transform.position);
-
-                this.transform.LookAt(planet.transform);
-
-                resForce += this.transform.right * Mathf.Sqrt((Constant.G * m2) / r);
-            }
-
-            return resForce;
         }
         
         #region VisualizePath
@@ -139,7 +122,7 @@ namespace Behaviour
             {
                 if (planet.Equals(this)) continue;
 
-                var vectorDistance = planet.Rigidbody.position - cloneRb.position;
+                var vectorDistance = planet.rigidbody.position - cloneRb.position;
                 float sqrDst = vectorDistance.sqrMagnitude;
                 Vector3 forceDir = vectorDistance.normalized;
 

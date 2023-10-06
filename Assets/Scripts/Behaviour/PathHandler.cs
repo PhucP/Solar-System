@@ -1,39 +1,47 @@
-// using System.Collections;
-// using System.Collections.Generic;
-// using Behaviour;
-// using Behaviour.Movement;
-// using UnityEngine;
-//
-// public class PathHandler : MonoBehaviour
-// {
-//     [SerializeField] private int limitPosition;
-//     [SerializeField] private bool isVisualizePath;
-//     private Vector3 _currentLinePosition;
-//     private Vector3 _currentLineVelocity;
-//     private LineRenderer _lineRenderer;
-//     private GameObject cloneOfThisPlanet;
-//     private Rigidbody Rigidbody => GetComponent<Rigidbody>();
-//     private CelestialManager CelestialManager => CelestialManager.Instance;
-//     
-//     private Vector3 CalculateCurrentLineVelocity()
-//     {
-//         Vector3 tempForce = Vector3.zero;
-//         foreach (CelestialObject planet in CelestialManager.listCelestialObject)
-//         {
-//             if (planet.Equals(this)) continue;
-//
-//             var vectorDistance = planet.transform.position - _currentLinePosition;
-//             float sqrDst = vectorDistance.sqrMagnitude;
-//             Vector3 forceDir = vectorDistance.normalized;
-//
-//             float planetMass = planet.celestialObjectData.physic.mass;
-//             float mass = celestialObjectData.physic.mass;
-//             Vector3 force = forceDir * (Constant.G * mass * planetMass) / sqrDst;
-//             Vector3 acceleration = force / mass;
-//
-//             tempForce += acceleration;
-//         }
-//             
-//         return tempForce;
-//     }
-// }
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using Behaviour;
+using Behaviour.Movement;
+using Unity.Mathematics;
+using UnityEngine;
+
+public class PathHandler : MonoBehaviour
+{
+    [SerializeField] private int limitPosition;
+    [SerializeField] private bool isVisualizePath;
+    private Vector3 _currentLinePosition;
+    private Vector3 _currentLineVelocity;
+    private CelestialManager _celestialManager => CelestialManager.Instance;
+    private LineRenderer _lineRenderer => GetComponent<LineRenderer>();
+    private GameObject cloneOfThisPlanet;
+    private CelestialObject _celestialObject => GetComponent<CelestialObject>();
+    
+
+    private void VisualizePath()
+    {
+        if (cloneOfThisPlanet == null)
+        {
+            cloneOfThisPlanet = Instantiate(_celestialManager.clonePlanet, _celestialObject.transform.position, quaternion.identity);
+        }
+        
+        cloneOfThisPlanet.transform.position = _celestialObject.transform.position;
+            
+        var cloneRb = cloneOfThisPlanet.GetComponent<Rigidbody>();
+        var cloneVelocity = _celestialObject.initialVelocity;
+        ForceManager forceManager = new ForceManager(_celestialManager.listCelestialObject, _celestialObject.celestialObjectData);
+            
+        List<Vector3> pathPonits = new List<Vector3>();
+        for (int i = 0; i < limitPosition; i++)
+        {
+            cloneVelocity += forceManager.CalculateGravityForce(cloneRb.position);
+            cloneRb.position += cloneVelocity;
+            Physics.Simulate(Time.fixedDeltaTime);
+            pathPonits.Add(cloneRb.position);
+        }
+
+        _lineRenderer.enabled = true;
+        _lineRenderer.positionCount = pathPonits.Count;
+        _lineRenderer.SetPositions(pathPonits.ToArray());
+    }
+}

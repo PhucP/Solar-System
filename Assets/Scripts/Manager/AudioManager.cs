@@ -10,5 +10,10 @@ namespace Manager
         {
             
         }
+
+        public void StopSound(AudioClip audioClip)
+        {
+            
+        }
     }
 }
