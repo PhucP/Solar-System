@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,11 +10,17 @@ namespace Behaviour.Movement
         public float timeStep;
         public GameObject clonePlanet;
         [SerializeField] private Transform celestialParent;
+        public CelestialObject currentCelestialObject;
         protected override void Awake()
         {
             base.Awake();
             GetCelestialForList();
             timeStep = Time.fixedDeltaTime;
+        }
+
+        private void Start()
+        {
+            currentCelestialObject = null;
         }
 
         private void GetCelestialForList()  
