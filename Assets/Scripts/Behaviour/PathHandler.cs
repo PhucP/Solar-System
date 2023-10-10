@@ -9,7 +9,7 @@ using UnityEngine;
 public class PathHandler : MonoBehaviour
 {
     [SerializeField] private int limitPosition;
-    [SerializeField] private bool isVisualizePath;
+    [SerializeField] private float space;
     private Vector3 _currentLinePosition;
     private Vector3 _currentLineVelocity;
     private CelestialManager _celestialManager => CelestialManager.Instance;
@@ -18,7 +18,7 @@ public class PathHandler : MonoBehaviour
     private CelestialObject _celestialObject => GetComponent<CelestialObject>();
     
 
-    private void VisualizePath()
+    public void VisualizePath()
     {
         if (cloneOfThisPlanet == null)
         {
