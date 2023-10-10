@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
-using Unity.VisualScripting;
 
 namespace Loading
 {
@@ -14,10 +13,12 @@ namespace Loading
         [SerializeField] private GameObject startText;
         [SerializeField] private GameObject loadingProcess;
         [SerializeField] private Button solarButton;
+        [SerializeField] private Fade fade;
         private float _target;
 
-        private void OnEnable()
+        private void Start()
         {
+            fade.FadeOut( () => fade.gameObject.SetActive(false));
             loadingProcess.SetActive(false);
             startText.gameObject.SetActive(true);
             solarButton.gameObject.SetActive(true);
@@ -53,11 +54,11 @@ namespace Loading
             do
             {
                 await Task.Delay(200);
-                _target = scene.progress;
+                _target = scene.progress + 0.1f;
             } while (scene.progress < 0.9f);
 
             await Task.Delay(1000);
-
+            
             scene.allowSceneActivation = true;
         }
     }

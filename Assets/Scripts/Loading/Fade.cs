@@ -8,15 +8,18 @@ using DG.Tweening;
 public class Fade : MonoBehaviour
 {
     private Image _image => GetComponent<Image>();
-    public void FadeIn(float duration, Action actionCallback = null)
+    [SerializeField] private float duration;
+    public void FadeIn(Action actionCallback = null)
     {
+        gameObject.SetActive(true);
         _image.DOFade(1, duration)
             .SetEase(Ease.Linear)
             .OnComplete(() => actionCallback?.Invoke());
     }
     
-    public void FadeOut(float duration, Action actionCallback = null)
+    public void FadeOut(Action actionCallback = null)
     {
+        gameObject.SetActive(true);
         _image.DOFade(0, duration)
             .SetEase(Ease.Linear)
             .OnComplete(() => actionCallback?.Invoke());

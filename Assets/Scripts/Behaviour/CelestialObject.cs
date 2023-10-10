@@ -37,7 +37,10 @@ namespace Behaviour
 
         private void Init()
         {
-            _forceManager = new ForceManager(CelestialManager.listCelestialObject, celestialObjectData);
+            if (CelestialManager != null)
+            {
+                _forceManager = new ForceManager(CelestialManager.listCelestialObject, celestialObjectData);
+            }
         }
 
         private void Reset()

@@ -9,7 +9,6 @@ public class HomeController : Singleton<HomeController>
 {
     [Header("Fades")]
     [SerializeField] private Fade fade;
-    [SerializeField] private float fadeDuration;
 
     protected override void Awake()
     {
@@ -18,7 +17,7 @@ public class HomeController : Singleton<HomeController>
 
     private void Start()
     {
-        fade.FadeOut(fadeDuration, () => fade.gameObject.SetActive(false));
+        fade.FadeOut( () => fade.gameObject.SetActive(false));
     }
 
     public void LoadScene(string sceneName)
@@ -27,7 +26,7 @@ public class HomeController : Singleton<HomeController>
         {
             fade.gameObject.SetActive(true);
         }
-        fade.FadeIn(fadeDuration, () =>
+        fade.FadeIn(() =>
         {
             SceneManager.LoadScene(sceneName); 
         });
