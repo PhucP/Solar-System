@@ -30,7 +30,7 @@ public class PathHandler : MonoBehaviour
         List<Vector3> pathPonits = new List<Vector3>();
         for (int i = 0; i < limitPosition; i++)
         {
-            cloneVelocity += forceManager.CalculateGravityForce(cloneRb);
+            cloneVelocity += forceManager.CalculateGravityForce(cloneRb, true);
             cloneRb.position += cloneVelocity;
             Physics.Simulate(Time.fixedDeltaTime);
             pathPonits.Add(cloneRb.position);

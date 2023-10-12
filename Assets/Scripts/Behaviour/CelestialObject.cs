@@ -16,17 +16,6 @@ namespace Behaviour
         private CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
         private ForceManager _forceManager;
-        private PathHandler _pathHandler => GetComponent<PathHandler>();
-
-        // [Header("VISUALIZE PATH")]
-        // [SerializeField] private int limitPosition;
-        [SerializeField] private bool isVisualizePath;
-        // private Vector3 _currentLinePosition;
-        // private Vector3 _currentLineVelocity;
-        // private LineRenderer _lineRenderer => GetComponent<LineRenderer>();
-        // private GameObject cloneOfThisPlanet;
-        //
-
 
         protected virtual void Start()
         {
@@ -59,7 +48,7 @@ namespace Behaviour
             if (isStart)
             {
                 //currentVelocity += CalculateVelocity(CelestialManager.timeStep);
-                currentVelocity += _forceManager.CalculateGravityForce(rigidbody);
+                currentVelocity += _forceManager.CalculateGravityForce(rigidbody, false);
                 UpdatePosition(CelestialManager.timeStep);
             }
 
@@ -80,56 +69,5 @@ namespace Behaviour
             float angle = celestialObjectData.physic.rotationSpeed;
             transform.RotateAround(pos, axis, angle * Time.deltaTime);
         }
-
-        // #region VisualizePath
-
-        // private void VisualizePath()
-        // {
-        //     if (cloneOfThisPlanet == null)
-        //     {
-        //         cloneOfThisPlanet = Instantiate(CelestialManager.clonePlanet, transform.position, quaternion.identity);
-        //     }
-        //     else cloneOfThisPlanet.transform.position = transform.position;
-        //     
-        //     var cloneRb = cloneOfThisPlanet.GetComponent<Rigidbody>();
-        //     var cloneVelocity = initialVelocity;
-        //     
-        //     List<Vector3> pathPonits = new List<Vector3>();
-        //     for (int i = 0; i < limitPosition; i++)
-        //     {
-        //         cloneVelocity += CalculateCurrentLineVelocity(cloneRb);
-        //         cloneRb.position += cloneVelocity;
-        //         Physics.Simulate(Time.fixedDeltaTime);
-        //         pathPonits.Add(cloneRb.position);
-        //     }
-        //
-        //     _lineRenderer.enabled = true;
-        //     _lineRenderer.positionCount = pathPonits.Count;
-        //     _lineRenderer.SetPositions(pathPonits.ToArray());
-        // }
-        //
-        // private Vector3 CalculateCurrentLineVelocity(Rigidbody cloneRb)
-        // {
-        //     Vector3 tempForce = Vector3.zero;
-        //     foreach (CelestialObject planet in CelestialManager.listCelestialObject)
-        //     {
-        //         if (planet.Equals(this)) continue;
-        //
-        //         var vectorDistance = planet.rigidbody.position - cloneRb.position;
-        //         float sqrDst = vectorDistance.sqrMagnitude;
-        //         Vector3 forceDir = vectorDistance.normalized;
-        //
-        //         float planetMass = planet.celestialObjectData.physic.mass;
-        //         float mass = celestialObjectData.physic.mass;
-        //         Vector3 force = forceDir * (Constant.G * mass * planetMass) / sqrDst;
-        //         Vector3 acceleration = force / mass;
-        //
-        //         tempForce += acceleration;
-        //     }
-        //     
-        //     return tempForce;
-        // }
-        //
-        // #endregion
     }
 }

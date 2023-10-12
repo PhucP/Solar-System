@@ -16,8 +16,9 @@ public class ForceManager
         this._planetData = data;
     }
     
-    public Vector3 CalculateGravityForce(Rigidbody planetRb)
+    public Vector3 CalculateGravityForce(Rigidbody planetRb, bool isSimulation)
     {
+        Debug.Log(isSimulation + " : isSimulation");
         Vector3 tempVel = Vector3.zero;
         foreach (CelestialObject otherPlanet in _listCelestials)
         {
@@ -32,7 +33,9 @@ public class ForceManager
             Vector3 force = forceDir * (Constant.G * planetMass * otherPlanetMass) / sqrDst;
             Vector3 acceleration = force / planetMass;
 
-            tempVel += acceleration * CelestialManager.Instance.timeStep;
+            acceleration = isSimulation ? acceleration : acceleration * CelestialManager.Instance.timeStep;
+
+            tempVel += acceleration;
         }
 
         return tempVel;
