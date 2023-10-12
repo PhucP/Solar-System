@@ -83,6 +83,6 @@ public class PathHandler : MonoBehaviour
 
     private void StopVisualizePath()
     {
-        _celestialObject.IsStart = true;
+        
     }
 }

@@ -59,7 +59,7 @@ namespace Behaviour
             if (isStart)
             {
                 //currentVelocity += CalculateVelocity(CelestialManager.timeStep);
-                currentVelocity += _forceManager.CalculateGravityForce(transform.position);
+                currentVelocity += _forceManager.CalculateGravityForce(rigidbody);
                 UpdatePosition(CelestialManager.timeStep);
             }
 
@@ -79,11 +79,6 @@ namespace Behaviour
             Vector3 axis = celestialObjectData.infomation.axis;
             float angle = celestialObjectData.physic.rotationSpeed;
             transform.RotateAround(pos, axis, angle * Time.deltaTime);
-        }
-
-        private void OnMouseDown()
-        {
-            Debug.Log("here: " + celestialObjectData.infomation.name);
         }
 
         // #region VisualizePath
