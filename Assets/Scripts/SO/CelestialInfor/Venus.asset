@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Venus
   m_EditorClassIdentifier: 
   infomation:
-    name: 
+    name: Venus
     age: 0
     axis: {x: 0, y: 0, z: 0}
     distanceToSun: 107.59

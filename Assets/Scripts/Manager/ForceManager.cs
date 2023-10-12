@@ -16,14 +16,14 @@ public class ForceManager
         this._planetData = data;
     }
     
-    public Vector3 CalculateGravityForce(Vector3 planetPosition)
+    public Vector3 CalculateGravityForce(Rigidbody planetRb)
     {
         Vector3 tempVel = Vector3.zero;
         foreach (CelestialObject otherPlanet in _listCelestials)
         {
             if (_planetData.infomation.name.Equals(otherPlanet.celestialObjectData.infomation.name)) continue;
 
-            var vectorDistance = otherPlanet.transform.position - planetPosition;
+            var vectorDistance = otherPlanet.rigidbody.position - planetRb.position;
             float sqrDst = vectorDistance.sqrMagnitude;
             Vector3 forceDir = vectorDistance.normalized;
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Saturn
   m_EditorClassIdentifier: 
   infomation:
-    name: 
+    name: Saturn
     age: 0
     axis: {x: 0, y: 0, z: 0}
     distanceToSun: 1487

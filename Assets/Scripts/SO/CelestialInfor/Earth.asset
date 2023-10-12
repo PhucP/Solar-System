@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Earth
   m_EditorClassIdentifier: 
   infomation:
-    name: 
+    name: Earth
     age: 30
     axis: {x: 0, y: 1, z: 0}
     distanceToSun: 151.48

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Neptune
   m_EditorClassIdentifier: 
   infomation:
-    name: 
+    name: Neptune
     age: 0
     axis: {x: 0, y: 0, z: 0}
     distanceToSun: 4475
