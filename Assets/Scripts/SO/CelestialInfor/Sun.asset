@@ -21,7 +21,7 @@ MonoBehaviour:
     mass: 333000
     speed: 1
     rotationSpeed: 30
-    isRotateAroundItsSelf: 0
+    isRotateAroundItsSelf: 1
   size:
     shape: shpere
     radius: 696.34

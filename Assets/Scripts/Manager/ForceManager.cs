@@ -18,7 +18,6 @@ public class ForceManager
     
     public Vector3 CalculateGravityForce(Rigidbody planetRb, bool isSimulation)
     {
-        Debug.Log(isSimulation + " : isSimulation");
         Vector3 tempVel = Vector3.zero;
         foreach (CelestialObject otherPlanet in _listCelestials)
         {

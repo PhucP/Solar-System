@@ -1,19 +1,18 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening.Core.Easing;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HomeController : Singleton<HomeController>
 {
     [Header("Fades")]
     [SerializeField] private Fade fade;
-
+    
     protected override void Awake()
     {
         base.Awake();
     }
+    
 
     private void Start()
     {
