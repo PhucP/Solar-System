@@ -11,7 +11,7 @@ namespace Behaviour
         public CelestialObjectData celestialObjectData;
         [SerializeField] private Vector3 startPosition;
         public Vector3 initialVelocity;
-        [SerializeField] private bool isStart;
+        public bool isStart;
         public Rigidbody rigidbody => GetComponent<Rigidbody>();
         private CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
@@ -32,7 +32,7 @@ namespace Behaviour
             }
         }
 
-        private void Reset()
+        public void Reset()
         {
             transform.localPosition = startPosition;
             currentVelocity = initialVelocity;

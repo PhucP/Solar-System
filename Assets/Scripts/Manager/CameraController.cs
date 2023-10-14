@@ -9,7 +9,8 @@ public class CameraController : MonoBehaviour
     public enum Mode
     {
         ChangeRotation,
-        ChangePosition
+        ChangePosition,
+        OrbitSimulationMode
     }
     public Mode mode;
     public float rotationSpeed;
@@ -34,15 +35,19 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        if (mode == Mode.ChangeRotation)
-        {
-            ChangeRotation();
-        }
-        else if (mode == Mode.ChangePosition)
-        {
-            ChangePosition();
-        }
 
+        switch (mode)
+        {
+            case Mode.ChangePosition:
+                ChangePosition();
+                break;
+            case Mode.ChangeRotation:
+                ChangeRotation();
+                break;
+            case Mode.OrbitSimulationMode:
+                break;
+        }
+        
         Zoom();
     }
 
@@ -106,5 +111,10 @@ public class CameraController : MonoBehaviour
     private void ChangePosition()
     {
         //do something
+    }
+
+    private void ChangeViewInOrbitMode()
+    {
+        
     }
 }

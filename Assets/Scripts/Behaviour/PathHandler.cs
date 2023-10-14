@@ -52,9 +52,8 @@ public class PathHandler : MonoBehaviour
         tempPos = oldMousePos;
     }
     
-    private void ResetClonePos()
+    public void ResetClonePos()
     {
-        Debug.Log(transform.position);
         _lineRenderer.positionCount = 0;
         _lineRenderer.enabled = false;
         cloneOfThisPlanet.transform.position = transform.position;
