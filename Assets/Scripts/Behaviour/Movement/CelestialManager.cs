@@ -15,7 +15,6 @@ namespace Behaviour.Movement
         {
             base.Awake();
             GetCelestialForList();
-            timeStep = Time.fixedDeltaTime;
         }
 
         private void Start()
