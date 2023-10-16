@@ -67,8 +67,7 @@ public class PathHandler : MonoBehaviour
             ResetClonePos();
             tempPos = newMousePos;
             Vector2 deltaMousePos = (newMousePos - oldMousePos) * offsetForce;
-
-            Debug.Log(deltaMousePos);
+            
             _celestialObject.initialVelocity = deltaMousePos;
 
             VisualizePath();

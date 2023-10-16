@@ -1,10 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Behaviour;
+using Behaviour.Movement;
 using DG.Tweening;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Task = System.Threading.Tasks.Task;
 
 public class OrbitController : MonoBehaviour
 {
@@ -15,14 +21,17 @@ public class OrbitController : MonoBehaviour
     [SerializeField] private RectTransform bottomButton;
     [SerializeField] private List<Sprite> listSpriteGroupButton;
     [SerializeField] private Image buttonShowHide;
-    [SerializeField] private List<float> sizeZoom;
+    [SerializeField] private List<float> timeSpeed;
+    [SerializeField] private TMP_Text changeSpeedText;
 
-    private int currentSizeZoom;
+    private int currentTimeSpeed;
     private bool isShowGroupButton;
     private float originValue;
     private float orignSize;
     private void Start()
     {
+        currentTimeSpeed = 1;
+        ViewSpeed();
         fade.FadeOut( () => fade.gameObject.SetActive(false));
         originValue = changeView.value;
         orignSize = Camera.main.orthographicSize;
@@ -50,7 +59,25 @@ public class OrbitController : MonoBehaviour
 
     public void ChangeSpeedCelestial()
     {
-        
+        currentTimeSpeed = (currentTimeSpeed + 1) % timeSpeed.Count;
+        ViewSpeed();
+    }
+
+    private async void ViewSpeed()
+    {
+        float time = timeSpeed[currentTimeSpeed];
+        changeSpeedText.SetText(time.ToString());
+
+        float currentStep = CelestialManager.Instance.timeStep;
+        if(Math.Abs(time - currentStep) < 0.1) return;
+
+        float step = (time - currentStep) / 10;
+        for (int i = 0; i < 10; i++)
+        {
+            time += step;
+            await Task.Delay(200);
+            CelestialManager.Instance.timeStep = time;
+        }
     }
 
     public void StartSimulation()
@@ -85,8 +112,6 @@ public class OrbitController : MonoBehaviour
                 isShowGroupButton = !isShowGroupButton;
                 buttonShowHide.sprite = listSpriteGroupButton[0];
             });
-        
-
     }
 
     private void DoShowGroupButton()
