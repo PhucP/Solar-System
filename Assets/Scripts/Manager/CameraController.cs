@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        mainCamera = GetComponent<Camera>();
+        mainCamera = GetComponentInChildren<Camera>();
         initialFOV = mainCamera.fieldOfView;
     }
 
@@ -101,7 +101,7 @@ public class CameraController : MonoBehaviour
             velocity.x = Mathf.Lerp(velocity.x, deltaMouse.x, smoothTime);
             velocity.y = Mathf.Lerp(velocity.y, deltaMouse.y, smoothTime);
 
-            transform.Rotate(Vector3.up * velocity.x * rotationSpeed, Space.World);
+            transform.Rotate(Vector3.forward * velocity.x * rotationSpeed, Space.World);
             transform.Rotate(Vector3.left * velocity.y * rotationSpeed, Space.Self);
 
             lastMousePosition = Input.mousePosition;

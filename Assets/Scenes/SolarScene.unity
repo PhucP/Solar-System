@@ -129,6 +129,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1315451672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &54877395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54877396}
+  - component: {fileID: 54877397}
+  m_Layer: 0
+  m_Name: Observer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &54877396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54877395}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 549522360}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &54877397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54877395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1708fc0c0d7e140ab25d35768f109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  rotationSpeed: 0.05
+  smoothTime: 0.5
+  zoomSpeed: 20
+  minFOV: 10
+  maxFOV: 100
 --- !u!4 &187185623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd,
@@ -223,15 +274,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4387678931267766, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4387678931267766, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.03
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 4387678931267766, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4387678931267766, guid: 1818e1a170ef94c3aacee2ba50057521, type: 3}
       propertyPath: m_LocalPosition.z
@@ -312,11 +363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4677324220665258, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.05
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4677324220665258, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 4677324220665258, guid: b4201d402613a4464b35c805dafcca62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -496,7 +547,7 @@ Camera:
   far clip plane: 500
   field of view: 60
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 50
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -519,14 +570,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549522357}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 54877396}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &549522362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +618,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549522357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d1708fc0c0d7e140ab25d35768f109a, type: 3}
   m_Name: 
@@ -760,10 +811,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: 554459ab8052a3a40b832ec48c34bd84,
     type: 2}
-  startPosition: {x: 19.03, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 1.11, z: 0}
+  startPosition: {x: -14, y: 15, z: 0}
+  initialVelocity: {x: -0.2362206, y: -0.2204728, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &968944537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -999,9 +1049,8 @@ MonoBehaviour:
   celestialObjectData: {fileID: 11400000, guid: d1100c3e3aebadd4fbf2127a87b0cc5a,
     type: 2}
   startPosition: {x: 36.16, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 0.81, z: 0}
+  initialVelocity: {x: 0, y: 0.2500004, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &989459023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1254,8 +1303,8 @@ Transform:
   - {fileID: 1940207392}
   - {fileID: 1121105714}
   - {fileID: 187185623}
-  - {fileID: 650823856}
   - {fileID: 1654348582}
+  - {fileID: 650823856}
   - {fileID: 1451739003}
   - {fileID: 996931602}
   - {fileID: 1541231098}
@@ -1345,7 +1394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalScale.x
@@ -1361,11 +1410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1439,11 +1488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4103310470163434, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.83
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4103310470163434, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -40.83
       objectReference: {fileID: 0}
     - target: {fileID: 4103310470163434, guid: baebbc833ecda42dd8a75966c9f62420, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1497,10 +1546,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: 640919d3b28d735459a1f7488f4adc11,
     type: 2}
-  startPosition: {x: 22.98, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 1.02, z: 0}
+  startPosition: {x: 20, y: 15, z: 0}
+  initialVelocity: {x: -0.1666662, y: 0.2499998, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1189294478
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1736,9 +1784,8 @@ MonoBehaviour:
   celestialObjectData: {fileID: 11400000, guid: 7af453c8135708a49a236c991b62111b,
     type: 2}
   startPosition: {x: 6.8, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 1.86, z: 0}
+  initialVelocity: {x: -0.01574807, y: 0.5826771, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1190772560
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1762,7 +1809,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190772556}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2629,11 +2676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 10.7
       objectReference: {fileID: 0}
     - target: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2689,10 +2736,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: 842e35791f11c174886e975d75e1821a,
     type: 2}
-  startPosition: {x: 32.71, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 0.85, z: 0}
+  startPosition: {x: -24.7, y: -18.6, z: 0}
+  initialVelocity: {x: 0.1722222, y: -0.20625, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1450551586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2930,7 +2976,6 @@ MonoBehaviour:
   startPosition: {x: 0, y: 0, z: 0}
   initialVelocity: {x: 0, y: 0, z: 0}
   isStart: 0
-  isVisualizePath: 0
 --- !u!54 &1451739007
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2973,10 +3018,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: 49ebaada7ed8fcd43863d04d93d41c53,
     type: 2}
-  startPosition: {x: 40.83, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 0.76, z: 0}
+  startPosition: {x: 0, y: -40.83, z: 0}
+  initialVelocity: {x: 0.2319444, y: 0, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1608138322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3298,14 +3342,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611852870}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.70268536, y: -0.177585, z: -0.18828394, w: 0.6627564}
   m_LocalPosition: {x: 2.479382, y: 3.463212, z: 8.875749}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -93.35, y: -30, z: 0}
 --- !u!4 &1654348582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86,
@@ -3326,10 +3370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: b9772dc6c7f3bc840807e378ad9a49eb,
     type: 2}
-  startPosition: {x: 15, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 1.26, z: 0}
+  startPosition: {x: -12, y: -7, z: 0}
+  initialVelocity: {x: 0.1889764, y: -0.3464568, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1654348586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3713,11 +3756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4799057029891002, guid: c91342f6e3afc48fd958056404ead345, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.71
+      value: -24.7
       objectReference: {fileID: 0}
     - target: {fileID: 4799057029891002, guid: c91342f6e3afc48fd958056404ead345, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -18.6
       objectReference: {fileID: 0}
     - target: {fileID: 4799057029891002, guid: c91342f6e3afc48fd958056404ead345, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3774,11 +3817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030326048459444, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.98
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4030326048459444, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4030326048459444, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3834,10 +3877,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: 6ef1f3686be9c6c4284107498efb51c3,
     type: 2}
-  startPosition: {x: 28.05, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 0.92, z: 0}
+  startPosition: {x: 15, y: -20, z: 0}
+  initialVelocity: {x: 0.2499994, y: 0.1805557, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &1867362946
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4199,10 +4241,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialObjectData: {fileID: 11400000, guid: d3d0eb2f18a07934595f4a61c67d1e53,
     type: 2}
-  startPosition: {x: 10.7, y: 0, z: 0}
-  initialVelocity: {x: 0, y: 1.49, z: 0}
+  startPosition: {x: 0, y: 10.7, z: 0}
+  initialVelocity: {x: -0.456693, y: 0.03149633, z: 0}
   isStart: 1
-  isVisualizePath: 0
 --- !u!54 &2085190579
 Rigidbody:
   m_ObjectHideFlags: 0
