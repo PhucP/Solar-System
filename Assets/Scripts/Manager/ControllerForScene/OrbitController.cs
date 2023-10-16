@@ -63,21 +63,22 @@ public class OrbitController : MonoBehaviour
         ViewSpeed();
     }
 
-    private async void ViewSpeed()
+    private void ViewSpeed()
     {
         float time = timeSpeed[currentTimeSpeed];
         changeSpeedText.SetText(time.ToString());
+        Time.timeScale = time;
 
-        float currentStep = CelestialManager.Instance.timeStep;
-        if(Math.Abs(time - currentStep) < 0.1) return;
-
-        float step = (time - currentStep) / 10;
-        for (int i = 0; i < 10; i++)
-        {
-            time += step;
-            await Task.Delay(200);
-            CelestialManager.Instance.timeStep = time;
-        }
+        // float currentStep = CelestialManager.Instance.timeStep;
+        // if(Math.Abs(time - currentStep) < 0.1) return;
+        //
+        // float step = (time - currentStep) / 10;
+        // for (int i = 0; i < 10; i++)
+        // {
+        //     time += step;
+        //     await Task.Delay(200);
+        //     CelestialManager.Instance.timeStep = time;
+        // }
     }
 
     public void StartSimulation()
