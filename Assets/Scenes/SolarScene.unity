@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0014902266, g: 0.00139016, b: 0.0013183705, a: 1}
+  m_IndirectSpecularColor: {r: 0.0014930739, g: 0.0013930703, b: 0.001320964, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -177,6 +177,8 @@ MonoBehaviour:
   mode: 0
   rotationSpeed: 0.05
   smoothTime: 0.5
+  stepMove: 25
+  sun: {fileID: 1940207392}
   zoomSpeed: 20
   minFOV: 10
   maxFOV: 100
@@ -626,6 +628,8 @@ MonoBehaviour:
   mode: 0
   rotationSpeed: 0.05
   smoothTime: 0.5
+  stepMove: 0
+  sun: {fileID: 0}
   zoomSpeed: 20
   minFOV: 10
   maxFOV: 100

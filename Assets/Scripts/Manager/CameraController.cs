@@ -15,6 +15,8 @@ public class CameraController : MonoBehaviour
     public Mode mode;
     public float rotationSpeed;
     public float smoothTime;
+    [SerializeField] private float stepMove;
+    [SerializeField] private Transform sun;
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
@@ -53,31 +55,58 @@ public class CameraController : MonoBehaviour
 
     private void Zoom()
     {
-#if UNITY_EDITOR
+#if !UNITY_EDITOR
+    if (Input.touchCount == 2)
+    {
+        Touch firstTouch = Input.GetTouch(0);
+        Touch secondTouch = Input.GetTouch(1);
+
+        var firstTouchPrePos = firstTouch.position - firstTouch.deltaPosition;
+        var secondTouchPrePos = secondTouch.position - secondTouch.deltaPosition;
+
+        var touchesPrePosDifference = (firstTouchPrePos - secondTouchPrePos).magnitude;
+        var touchesCurPosDifference = (firstTouch.position - secondTouch.position).magnitude;
+
+        var zoomModifier = (firstTouch.deltaPosition - secondTouch.deltaPosition).magnitude * zoomSpeed;
+        var direction = (sun.position - mainCamera.gameObject.transform.position).normalized;
+
+        if (touchesPrePosDifference > touchesCurPosDifference)
+        {
+            mainCamera.transform.position += zoomModifier * direction;
+        }
+
+        if (touchesPrePosDifference < touchesCurPosDifference)
+        {
+            mainCamera.transform.position -= zoomModifier * direction;
+        }
+        
+            // Touch touch1 = Input.GetTouch(0);
+            // Touch touch2 = Input.GetTouch(1);
+            //
+            // float initialDistance = Vector2.Distance(touch1.position, touch2.position);
+            // float currentDistance = Vector2.Distance(touch1.position, touch2.position);
+            //
+            // float zoomFactor = initialDistance / currentDistance;
+            //
+            // float newFOV = initialFOV / zoomFactor;
+            // newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
+            // mainCamera.fieldOfView = newFOV;
+            
+            return;
+        }
+#endif
         float scrollDelta = Input.GetAxis("Mouse ScrollWheel");
 
         if (scrollDelta != 0)
         {
-            float newFOV = mainCamera.fieldOfView - scrollDelta * zoomSpeed;
-            newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
-            mainCamera.fieldOfView = newFOV;
+            // float newFOV = mainCamera.fieldOfView - scrollDelta * zoomSpeed;
+            // newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
+            // mainCamera.fieldOfView = newFOV;
+
+            var direction = (sun.position - mainCamera.transform.position).normalized;
+            var newPos =  mainCamera.transform.position + direction * scrollDelta * stepMove;
+            mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, newPos, smoothTime);
         }
-#else
-    if (Input.touchCount == 2)
-        {
-            Touch touch1 = Input.GetTouch(0);
-            Touch touch2 = Input.GetTouch(1);
-
-            float initialDistance = Vector2.Distance(touch1.position, touch2.position);
-            float currentDistance = Vector2.Distance(touch1.position, touch2.position);
-
-            float zoomFactor = initialDistance / currentDistance;
-
-            float newFOV = initialFOV / zoomFactor;
-            newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
-            mainCamera.fieldOfView = newFOV;
-        }
-#endif
     }
 
     private void ChangeRotation()
