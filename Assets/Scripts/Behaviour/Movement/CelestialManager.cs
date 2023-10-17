@@ -32,12 +32,14 @@ namespace Behaviour.Movement
         {
             base.Awake();
             GetCelestialForList();
+            celestialInformation.SetActive(false);
         }
 
         private void ChangeCurrentCelestialObject()
         {
-            Debug.Log("currentCelestialObject: " + currentCelestialObject);
-            
+            //set information for celestial
+            informationText.SetText(currentCelestialObject.celestialObjectData.infomation.name);
+            celestialInformation.SetActive(true);
         }
 
         private void GetCelestialForList()  
@@ -52,9 +54,12 @@ namespace Behaviour.Movement
             }
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            //celestialInformation.transform.position = Camera.main.WorldToScreenPoint(currentCelestialObject.transform.position);
+            if (celestialInformation != null && currentCelestialObject != null)
+            {
+                celestialInformation.transform.position = Camera.main.WorldToScreenPoint(currentCelestialObject.transform.position);
+            }
         }
     }
 }
