@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Behaviour.Movement
@@ -10,16 +11,33 @@ namespace Behaviour.Movement
         public float timeStep;
         public GameObject clonePlanet;
         [SerializeField] private Transform celestialParent;
-        public CelestialObject currentCelestialObject;
+        [SerializeField] private GameObject celestialInformation;
+        [SerializeField] private TMP_Text informationText;
+        private CelestialObject currentCelestialObject;
+        public CelestialObject CurrentCelestialObject
+        {
+            get => currentCelestialObject;
+            set
+            {
+                if (currentCelestialObject != null)
+                {
+                    //do something with old celestial
+                }
+                if(currentCelestialObject == value) return;
+                currentCelestialObject = value;
+                ChangeCurrentCelestialObject();
+            }
+        }
         protected override void Awake()
         {
             base.Awake();
             GetCelestialForList();
         }
 
-        private void Start()
+        private void ChangeCurrentCelestialObject()
         {
-            currentCelestialObject = null;
+            Debug.Log("currentCelestialObject: " + currentCelestialObject);
+            
         }
 
         private void GetCelestialForList()  
@@ -32,6 +50,11 @@ namespace Behaviour.Movement
                     listCelestialObject.Add(celestialScript);
                 }
             }
+        }
+
+        private void Update()
+        {
+            //celestialInformation.transform.position = Camera.main.WorldToScreenPoint(currentCelestialObject.transform.position);
         }
     }
 }

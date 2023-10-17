@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using UnityEngine;
 namespace Behaviour
 {
-    public abstract class CelestialObject : MonoBehaviour
+    public abstract class CelestialObject : MonoBehaviour, IOnClickCelestial
     {
         public CelestialObjectData celestialObjectData;
         [SerializeField] private Vector3 startPosition;
@@ -68,6 +68,19 @@ namespace Behaviour
             Vector3 axis = celestialObjectData.infomation.axis;
             float angle = celestialObjectData.physic.rotationSpeed;
             transform.RotateAround(pos, axis, angle * Time.deltaTime);
+        }
+
+        protected void OnMouseDown()
+        {
+            OnClickCelestial();
+        }
+
+        public void OnClickCelestial()
+        {
+            if (CelestialManager != null)
+            {
+                CelestialManager.CurrentCelestialObject = this;
+            }
         }
     }
 }

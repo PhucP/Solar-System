@@ -42,6 +42,8 @@ public class OrbitController : MonoBehaviour
         }
         fade.FadeIn(() =>
         {
+            //reset time scale
+            Time.timeScale = 1;
             SceneManager.LoadScene(Constant.HOME_SCENE_NAME); 
         });
     }
