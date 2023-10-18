@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Behaviour.Movement;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,22 +19,20 @@ public class CameraController : MonoBehaviour
     public float smoothTime;
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
+    [SerializeField] private float cameraSpeed;
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
 
-    public float zoomSpeed;
-    public float minFOV;
-    public float maxFOV;
-
     private Camera mainCamera;
     private Vector2 initialTouchPos;
-    private float initialFOV;
+    private bool isFollowToPlanet;
+    private CelestialManager celestialManager => CelestialManager.Instance;
 
     private void Start()
     {
         mainCamera = GetComponentInChildren<Camera>();
-        initialFOV = mainCamera.fieldOfView;
+        isFollowToPlanet = false;
     }
 
     private void Update()
@@ -51,6 +51,37 @@ public class CameraController : MonoBehaviour
         }
         
         Zoom();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isFollowToPlanet)
+        {
+            MoveToPlanet();
+        }
+    }
+
+    private void MoveToPlanet()
+    {
+        var currentCelestialObject = celestialManager.CurrentCelestialObject;
+        var direction = (sun.position - currentCelestialObject.transform.position).normalized;
+        var newPosition = currentCelestialObject.transform.position + direction * 10f;
+
+        var directionToMove = (newPosition - mainCamera.transform.position).normalized;
+        
+        mainCamera.transform.LookAt(currentCelestialObject.transform);
+        mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
+    }
+
+    public void OnClickVisited()
+    {
+        mainCamera.transform.DOLookAt(celestialManager.CurrentCelestialObject.transform.position, 0.5f)
+            .SetEase(Ease.Linear)
+            .OnComplete(() =>
+            {
+                Debug.Log("here");
+                isFollowToPlanet = true;
+            });
     }
 
     private void Zoom()
