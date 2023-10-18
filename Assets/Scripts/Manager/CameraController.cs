@@ -6,6 +6,7 @@ using Behaviour.Movement;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
     [SerializeField] private Vector3 originPosition;
+    [SerializeField] private CinemachineVirtualCamera virtualCamera;
+    public GameObject secondCamera;
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
@@ -33,6 +36,7 @@ public class CameraController : MonoBehaviour
     private Vector2 initialTouchPos;
     private float initialFOV;
     private bool isObserverMode;
+    private bool isMoveToPlanet;
     private CelestialManager celestialManager => CelestialManager.Instance;
 
     private void Start()
@@ -40,6 +44,7 @@ public class CameraController : MonoBehaviour
         mainCamera = GetComponentInChildren<Camera>();
         initialFOV = mainCamera.fieldOfView;
         isObserverMode = false;
+        isMoveToPlanet = false;
     }
 
     private void Update()
@@ -121,9 +126,9 @@ public class CameraController : MonoBehaviour
             // newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
             // mainCamera.fieldOfView = newFOV;
 
-            var direction = (sun.position - mainCamera.transform.position).normalized;
-            var newPos =  mainCamera.transform.position + direction * scrollDelta * stepMove;
-            mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, newPos, smoothTime);
+            var direction = (sun.position - secondCamera.transform.position).normalized;
+            var newPos =  secondCamera.transform.position + direction * scrollDelta * stepMove;
+            secondCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, newPos, smoothTime);
         }
     }
 
@@ -177,33 +182,40 @@ public class CameraController : MonoBehaviour
 
     public void OcClickPlanet()
     {
-        var planet = celestialManager.CurrentCelestialObject;
-        mainCamera.transform.DOLookAt(planet.transform.position, 1f);
-        mainCamera.transform.DOMove(CalculateCameraPosition(), 1f)
-            .SetEase(Ease.Linear)
-            .OnComplete(() =>
-            {
-                if (isObserverMode == false)
-                {
-                    isObserverMode = true;
-                    mode = Mode.ChangePosition;
-                    celestialManager.HideInformation();
-                }
-            });
+        isMoveToPlanet = true;
+        //using dotween 
+        // var planet = celestialManager.CurrentCelestialObject;
+        // secondCamera.transform.DOLookAt(planet.transform.position, 1f);
+        // secondCamera.transform.DOMove(CalculateCameraPosition(), 1f)
+        //     .SetEase(Ease.Linear)
+        //     .OnComplete(() =>
+        //     {
+        //         if (isObserverMode == false)
+        //         {
+        //             isObserverMode = true;
+        //             mode = Mode.ChangePosition;
+        //             celestialManager.HideInformation();
+        //         }
+        //     });
+
+        //use for cine machine Camera
+        // var planetTransform = celestialManager.CurrentCelestialObject.transform;
+        // virtualCamera.Follow = planetTransform;
+        // virtualCamera.LookAt = planetTransform;
     }
 
     public void MoveToPlanet()
     {
         var planet = celestialManager.CurrentCelestialObject;
-        mainCamera.transform.position = CalculateCameraPosition();
-        mainCamera.transform.LookAt(planet.transform);
+        secondCamera.transform.position = CalculateCameraPosition();
+        secondCamera.transform.LookAt(planet.transform);
     }
 
     public void MoveToOriginPosition()
     {
         isObserverMode = false;
         mode = Mode.ChangeRotation;
-        mainCamera.transform.position = originPosition;
-        mainCamera.transform.LookAt(sun);
+        secondCamera.transform.position = originPosition;
+        secondCamera.transform.LookAt(sun);
     }
 }

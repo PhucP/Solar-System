@@ -13,6 +13,7 @@ namespace Behaviour.Movement
         [SerializeField] private Transform celestialParent;
         [SerializeField] private GameObject celestialInformation;
         [SerializeField] private TMP_Text informationText;
+        [SerializeField] private Camera secondCamera;
         private CelestialObject currentCelestialObject;
         public CelestialObject CurrentCelestialObject
         {
@@ -61,9 +62,9 @@ namespace Behaviour.Movement
 
         private void FixedUpdate()
         {
-            if (celestialInformation != null && currentCelestialObject != null)
+            if (celestialInformation != null && currentCelestialObject != null && secondCamera != null)
             {
-                celestialInformation.transform.position = Camera.main.WorldToScreenPoint(currentCelestialObject.transform.position);
+                celestialInformation.transform.position = secondCamera.WorldToScreenPoint(currentCelestialObject.transform.position);
             }
         }
     }
