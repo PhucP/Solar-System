@@ -42,6 +42,11 @@ namespace Behaviour.Movement
             celestialInformation.SetActive(true);
         }
 
+        public void HideInformation()
+        {
+            celestialInformation.SetActive(false);
+        }
+
         private void GetCelestialForList()  
         {
             foreach(Transform celestialTransform in celestialParent)

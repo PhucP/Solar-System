@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Behaviour;
+using Behaviour.Movement;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,6 +20,7 @@ public class CameraController : MonoBehaviour
     public float smoothTime;
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
+    [SerializeField] private Vector3 originPosition;
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
@@ -28,11 +32,14 @@ public class CameraController : MonoBehaviour
     private Camera mainCamera;
     private Vector2 initialTouchPos;
     private float initialFOV;
+    private bool isObserverMode;
+    private CelestialManager celestialManager => CelestialManager.Instance;
 
     private void Start()
     {
         mainCamera = GetComponentInChildren<Camera>();
         initialFOV = mainCamera.fieldOfView;
+        isObserverMode = false;
     }
 
     private void Update()
@@ -41,7 +48,6 @@ public class CameraController : MonoBehaviour
         switch (mode)
         {
             case Mode.ChangePosition:
-                ChangePosition();
                 break;
             case Mode.ChangeRotation:
                 ChangeRotation();
@@ -51,6 +57,18 @@ public class CameraController : MonoBehaviour
         }
         
         Zoom();
+    }
+
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            MoveToOriginPosition();
+        }
+        
+        if(!isObserverMode) return;
+        
+        MoveToPlanet();
     }
 
     private void Zoom()
@@ -145,5 +163,47 @@ public class CameraController : MonoBehaviour
     private void ChangeViewInOrbitMode()
     {
         
+    }
+    
+    private Vector3 CalculateCameraPosition()
+    {
+        var planet = celestialManager.CurrentCelestialObject;
+        //transform.SetParent(planet.transform);
+        var direction = (sun.position - planet.transform.position).normalized;
+        var newPosition = direction * 10f + planet.transform.position;
+
+        return newPosition;
+    }
+
+    public void OcClickPlanet()
+    {
+        var planet = celestialManager.CurrentCelestialObject;
+        mainCamera.transform.DOLookAt(planet.transform.position, 1f);
+        mainCamera.transform.DOMove(CalculateCameraPosition(), 1f)
+            .SetEase(Ease.Linear)
+            .OnComplete(() =>
+            {
+                if (isObserverMode == false)
+                {
+                    isObserverMode = true;
+                    mode = Mode.ChangePosition;
+                    celestialManager.HideInformation();
+                }
+            });
+    }
+
+    public void MoveToPlanet()
+    {
+        var planet = celestialManager.CurrentCelestialObject;
+        mainCamera.transform.position = CalculateCameraPosition();
+        mainCamera.transform.LookAt(planet.transform);
+    }
+
+    public void MoveToOriginPosition()
+    {
+        isObserverMode = false;
+        mode = Mode.ChangeRotation;
+        mainCamera.transform.position = originPosition;
+        mainCamera.transform.LookAt(sun);
     }
 }
