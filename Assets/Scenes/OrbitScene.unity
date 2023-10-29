@@ -1249,8 +1249,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1471002430}
-        m_TargetAssemblyTypeName: OrbitController, Assembly-CSharp
+      - m_Target: {fileID: 746981132}
+        m_TargetAssemblyTypeName: GroupButtonController, Assembly-CSharp
         m_MethodName: ShowHideGroupButton
         m_Mode: 1
         m_Arguments:
@@ -1539,6 +1539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746981131}
+  - component: {fileID: 746981132}
   m_Layer: 0
   m_Name: GroupButton
   m_TagString: Untagged
@@ -1568,6 +1569,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 100, y: 375}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &746981132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746981130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39cb79cf6710f3642a89030cc4245b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groupButton: {fileID: 746981130}
+  bottomButton: {fileID: 1013522644}
+  buttonShowHide: {fileID: 663233159}
+  listSpriteGroupButton:
+  - {fileID: 21300000, guid: 15819d126f47617409928a41840f9fe0, type: 3}
+  - {fileID: 21300000, guid: f5a4a8b6499fd764bacaf5bc157ea2aa, type: 3}
 --- !u!1 &786239056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,7 +2058,8 @@ MonoBehaviour:
   timeStep: 1
   clonePlanet: {fileID: 1965347136}
   celestialParent: {fileID: 1031619740}
-  currentCelestialObject: {fileID: 0}
+  celestialInformation: {fileID: 0}
+  informationText: {fileID: 0}
 --- !u!1 &1090394563
 GameObject:
   m_ObjectHideFlags: 0

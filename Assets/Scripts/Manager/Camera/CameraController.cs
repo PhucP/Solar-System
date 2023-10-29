@@ -3,62 +3,53 @@ using System.Collections;
 using System.Collections.Generic;
 using Behaviour.Movement;
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
+
+public enum CameraMode
+{
+    ChangeRotation,
+    FollowPlanet,
+    ExitFollowPlanet
+}
 
 public class CameraController : MonoBehaviour
 {
-    public enum Mode
-    {
-        ChangeRotation,
-        ChangePosition,
-        OrbitSimulationMode
-    }
-    public Mode mode;
     public float rotationSpeed;
     public float smoothTime;
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
     [SerializeField] private float cameraSpeed;
+    [SerializeField] private CameraMode cameraMode;
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
 
     private Camera mainCamera;
     private Vector2 initialTouchPos;
-    private bool isFollowToPlanet;
     private CelestialManager celestialManager => CelestialManager.Instance;
 
     private void Start()
     {
+        cameraMode = CameraMode.ChangeRotation;
         mainCamera = GetComponentInChildren<Camera>();
-        isFollowToPlanet = false;
     }
 
     private void Update()
     {
-
-        switch (mode)
+        switch (cameraMode)
         {
-            case Mode.ChangePosition:
-                ChangePosition();
-                break;
-            case Mode.ChangeRotation:
+            case CameraMode.ChangeRotation:
                 ChangeRotation();
                 break;
-            case Mode.OrbitSimulationMode:
+            case CameraMode.FollowPlanet:
+                MoveToPlanet();
+                break;
+            default:
+                ExitVisited();
                 break;
         }
         
         Zoom();
-    }
-
-    private void FixedUpdate()
-    {
-        if (isFollowToPlanet)
-        {
-            MoveToPlanet();
-        }
     }
 
     private void MoveToPlanet()
@@ -67,10 +58,16 @@ public class CameraController : MonoBehaviour
         var direction = (sun.position - currentCelestialObject.transform.position).normalized;
         var newPosition = currentCelestialObject.transform.position + direction * 10f;
 
-        var directionToMove = (newPosition - mainCamera.transform.position).normalized;
+        var difference = newPosition - mainCamera.transform.position;
+        var distance = difference.magnitude;
+        var directionToMove = difference.normalized;
         
         mainCamera.transform.LookAt(currentCelestialObject.transform);
-        mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
+        if (distance < 0.1f)
+        {
+            mainCamera.transform.position += difference;
+        }
+        else mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
     }
 
     public void OnClickVisited()
@@ -79,9 +76,19 @@ public class CameraController : MonoBehaviour
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
-                Debug.Log("here");
-                isFollowToPlanet = true;
+                cameraMode = CameraMode.FollowPlanet;
             });
+        
+        celestialManager.HideCelestialInformation();
+    }
+
+    public void ExitVisited()
+    {
+        var originalPosition = new Vector3(0 , 0, -100f);
+        mainCamera.transform.DOLookAt(sun.transform.position, 2.5f)
+            .SetEase(Ease.Linear);
+        mainCamera.transform.DOLocalMove(originalPosition, 2.5f)
+            .SetEase(Ease.Linear);
     }
 
     private void Zoom()

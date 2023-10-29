@@ -13,10 +13,6 @@ public class OrbitController : MonoBehaviour
     [SerializeField] private Fade fade;
     [SerializeField] private Slider changeView;
     [SerializeField] private CelestialObject planet;
-    [SerializeField] private GameObject groupButton;
-    [SerializeField] private RectTransform bottomButton;
-    [SerializeField] private List<Sprite> listSpriteGroupButton;
-    [SerializeField] private Image buttonShowHide;
     [SerializeField] private List<float> timeSpeed;
     [SerializeField] private TMP_Text changeSpeedText;
 
@@ -31,7 +27,6 @@ public class OrbitController : MonoBehaviour
         fade.FadeOut( () => fade.gameObject.SetActive(false));
         originValue = changeView.value;
         orignSize = Camera.main.orthographicSize;
-        isShowGroupButton = false;
     }
     
     public void BackToHome()
@@ -66,17 +61,6 @@ public class OrbitController : MonoBehaviour
         float time = timeSpeed[currentTimeSpeed];
         changeSpeedText.SetText(time.ToString());
         Time.timeScale = time;
-
-        // float currentStep = CelestialManager.Instance.timeStep;
-        // if(Math.Abs(time - currentStep) < 0.1) return;
-        //
-        // float step = (time - currentStep) / 10;
-        // for (int i = 0; i < 10; i++)
-        // {
-        //     time += step;
-        //     await Task.Delay(200);
-        //     CelestialManager.Instance.timeStep = time;
-        // }
     }
 
     public void StartSimulation()
@@ -90,38 +74,5 @@ public class OrbitController : MonoBehaviour
         planet.isStart = false;
         planet.GetComponent<PathHandler>().ResetClonePos();
         planet.Reset();
-    }
-
-    public void ShowHideGroupButton()
-    {
-        if (isShowGroupButton)
-        {
-            DoHideGroupButton();
-        }
-        else DoShowGroupButton();
-    }
-
-    private void DoHideGroupButton()
-    {
-        groupButton.GetComponent<RectTransform>()
-            .DOAnchorPos(new Vector3(0, -bottomButton.sizeDelta.y, 0), 0.25f)
-            .SetEase(Ease.Linear)
-            .OnComplete(() =>
-            {
-                isShowGroupButton = !isShowGroupButton;
-                buttonShowHide.sprite = listSpriteGroupButton[0];
-            });
-    }
-
-    private void DoShowGroupButton()
-    {
-        groupButton.GetComponent<RectTransform>()
-            .DOAnchorPos(Vector3.zero, 0.25f)
-            .SetEase(Ease.Linear)
-            .OnComplete(() =>
-            {
-                isShowGroupButton = !isShowGroupButton;
-                buttonShowHide.sprite = listSpriteGroupButton[1]; 
-            });
     }
 }

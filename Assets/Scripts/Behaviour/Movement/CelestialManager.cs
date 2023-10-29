@@ -54,6 +54,11 @@ namespace Behaviour.Movement
             }
         }
 
+        public void HideCelestialInformation()
+        {
+            celestialInformation.SetActive(false);
+        }
+
         private void FixedUpdate()
         {
             if (celestialInformation != null && currentCelestialObject != null)
