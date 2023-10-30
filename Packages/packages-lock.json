@@ -159,13 +159,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.virtuesky.scriptableobject.architecture": {
-      "version": "https://github.com/VirtueSky/SO.Architecture.git#1.0.0",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "63cc44f432c91ca6c0c244008a9b0150510f0bad"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

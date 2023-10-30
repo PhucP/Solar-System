@@ -14,6 +14,11 @@ public class GroupButtonController : MonoBehaviour
     
     private bool isShowGroupButton;
 
+    public bool IsShowGroupButton
+    {
+        get => isShowGroupButton;
+    }
+
     private void Start()
     {
         isShowGroupButton = false;

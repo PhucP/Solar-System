@@ -351,6 +351,8 @@ MonoBehaviour:
   sun: {fileID: 1940207392}
   cameraSpeed: 10
   cameraMode: 0
+  originPosition: {x: 0, y: 0, z: -100}
+  informationOfCurrentPlanet: {fileID: 612996165}
 --- !u!4 &187185623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4024914263291546, guid: 835acc1a9ebe24c0fa3854c99346f9cd,
@@ -1665,7 +1667,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: -14, y: 15, z: 0}
   initialVelocity: {x: -0.2362206, y: -0.2204728, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &968944537
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2062,7 +2064,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 36.16, y: 0, z: 0}
   initialVelocity: {x: 0, y: 0.2500004, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &989459023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2697,7 +2699,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 20, y: 15, z: 0}
   initialVelocity: {x: -0.1666662, y: 0.2499998, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1189294478
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2934,7 +2936,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 6.8, y: 0, z: 0}
   initialVelocity: {x: -0.01574807, y: 0.5826771, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1190772560
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4293,7 +4295,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: -24.7, y: -18.6, z: 0}
   initialVelocity: {x: 0.1722222, y: -0.20625, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1450551586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4710,7 +4712,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 0, y: -40.83, z: 0}
   initialVelocity: {x: 0.2319444, y: 0, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1608138322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4947,7 +4949,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: -12, y: -7, z: 0}
   initialVelocity: {x: 0.1889764, y: -0.3464568, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1654348586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5560,7 +5562,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 15, y: -20, z: 0}
   initialVelocity: {x: 0.2499994, y: 0.1805557, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &1867362946
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6494,7 +6496,7 @@ MonoBehaviour:
     type: 2}
   startPosition: {x: 0, y: 10.7, z: 0}
   initialVelocity: {x: -0.456693, y: 0.03149633, z: 0}
-  isStart: 1
+  isStart: 0
 --- !u!54 &2085190579
 Rigidbody:
   m_ObjectHideFlags: 0

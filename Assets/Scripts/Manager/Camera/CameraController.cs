@@ -16,10 +16,14 @@ public class CameraController : MonoBehaviour
 {
     public float rotationSpeed;
     public float smoothTime;
+    
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
     [SerializeField] private float cameraSpeed;
     [SerializeField] private CameraMode cameraMode;
+    [SerializeField] private Vector3 originPosition;
+    [SerializeField] private GroupButtonController informationOfCurrentPlanet;
+    
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
@@ -44,8 +48,10 @@ public class CameraController : MonoBehaviour
             case CameraMode.FollowPlanet:
                 MoveToPlanet();
                 break;
+            case CameraMode.ExitFollowPlanet:
+                ExitFollowPlanet();
+                break;
             default:
-                ExitVisited();
                 break;
         }
         
@@ -66,6 +72,10 @@ public class CameraController : MonoBehaviour
         if (distance < 0.1f)
         {
             mainCamera.transform.position += difference;
+            if (!informationOfCurrentPlanet.IsShowGroupButton)
+            {
+                ShowInformationForCurrentPlanetFollowing();
+            }
         }
         else mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
     }
@@ -82,13 +92,41 @@ public class CameraController : MonoBehaviour
         celestialManager.HideCelestialInformation();
     }
 
-    public void ExitVisited()
+    private void ShowInformationForCurrentPlanetFollowing()
     {
-        var originalPosition = new Vector3(0 , 0, -100f);
-        mainCamera.transform.DOLookAt(sun.transform.position, 2.5f)
-            .SetEase(Ease.Linear);
-        mainCamera.transform.DOLocalMove(originalPosition, 2.5f)
-            .SetEase(Ease.Linear);
+        //set information in the panel
+        //informationOfCurrentPlanet.ShowHideGroupButton();
+    }
+
+    private void HideInformationCurrentPlanetFollowing()
+    {
+        //hide the information panel
+        //informationOfCurrentPlanet.ShowHideGroupButton();
+    }
+
+    public void ExitFollowPlanet()
+    {
+        //hide information of current planet
+        HideInformationCurrentPlanetFollowing();
+        
+        cameraMode = CameraMode.ExitFollowPlanet;
+        //have a position to move back is original position
+        var difference = originPosition - mainCamera.transform.position;
+        var distance = difference.magnitude;
+        var directionToMove = difference.normalized;
+        
+        //do look at the Sun while move back
+        mainCamera.transform.LookAt(sun);
+        
+        //change state to change rotation when finish the moving
+        if (distance < 0.1f)
+        {
+            cameraMode = CameraMode.ChangeRotation;
+        }
+        else
+        {
+            mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
+        }
     }
 
     private void Zoom()
