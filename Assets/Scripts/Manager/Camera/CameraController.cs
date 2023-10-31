@@ -38,18 +38,27 @@ public class CameraController : MonoBehaviour
         mainCamera = GetComponentInChildren<Camera>();
     }
 
+    private void FixedUpdate()
+    {
+        switch (cameraMode)
+        {
+            case CameraMode.FollowPlanet:
+                MoveToPlanet();
+                break;
+            case CameraMode.ExitFollowPlanet:
+                ExitFollowPlanet();
+                break;
+            default:
+                break;
+        }
+    }
+
     private void Update()
     {
         switch (cameraMode)
         {
             case CameraMode.ChangeRotation:
                 ChangeRotation();
-                break;
-            case CameraMode.FollowPlanet:
-                MoveToPlanet();
-                break;
-            case CameraMode.ExitFollowPlanet:
-                ExitFollowPlanet();
                 break;
             default:
                 break;
@@ -95,19 +104,30 @@ public class CameraController : MonoBehaviour
     private void ShowInformationForCurrentPlanetFollowing()
     {
         //set information in the panel
-        //informationOfCurrentPlanet.ShowHideGroupButton();
+        
+        //show information panel
+        informationOfCurrentPlanet.ShowHideGroupButton();
+    }
+
+    private void SetInformationForCurrentPlanet()
+    {
+        var currentPlanet = celestialManager.CurrentCelestialObject;
+        //do something with this information
     }
 
     private void HideInformationCurrentPlanetFollowing()
     {
         //hide the information panel
-        //informationOfCurrentPlanet.ShowHideGroupButton();
+        informationOfCurrentPlanet.ShowHideGroupButton();
     }
 
     public void ExitFollowPlanet()
     {
         //hide information of current planet
-        HideInformationCurrentPlanetFollowing();
+        if (informationOfCurrentPlanet.IsShowGroupButton)
+        {
+            HideInformationCurrentPlanetFollowing();
+        }
         
         cameraMode = CameraMode.ExitFollowPlanet;
         //have a position to move back is original position

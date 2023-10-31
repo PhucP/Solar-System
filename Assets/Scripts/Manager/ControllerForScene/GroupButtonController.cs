@@ -17,6 +17,7 @@ public class GroupButtonController : MonoBehaviour
     public bool IsShowGroupButton
     {
         get => isShowGroupButton;
+        set => isShowGroupButton = value;
     }
 
     private void Start()
@@ -31,6 +32,8 @@ public class GroupButtonController : MonoBehaviour
             DoHideGroupButton();
         }
         else DoShowGroupButton();
+        
+        isShowGroupButton = !isShowGroupButton;
     }
 
     private void DoHideGroupButton()
@@ -40,7 +43,6 @@ public class GroupButtonController : MonoBehaviour
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
-                isShowGroupButton = !isShowGroupButton;
                 buttonShowHide.sprite = listSpriteGroupButton[0];
             });
     }
@@ -52,7 +54,6 @@ public class GroupButtonController : MonoBehaviour
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
-                isShowGroupButton = !isShowGroupButton;
                 buttonShowHide.sprite = listSpriteGroupButton[1]; 
             });
     }

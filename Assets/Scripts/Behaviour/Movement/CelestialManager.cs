@@ -13,7 +13,11 @@ namespace Behaviour.Movement
         [SerializeField] private Transform celestialParent;
         [SerializeField] private GameObject celestialInformation;
         [SerializeField] private TMP_Text informationText;
+        [SerializeField] private Transform sunTransform;
         private CelestialObject currentCelestialObject;
+        
+        public Transform SunTransform => sunTransform;
+
         public CelestialObject CurrentCelestialObject
         {
             get => currentCelestialObject;
