@@ -6,12 +6,7 @@ namespace Behaviour.Movement
     {
         protected override void InitDataForObject()
         {
-            //throw new System.NotImplementedException();
-        }
-        
-        protected override void FixedUpdate()
-        {
-            if (celestialObjectData.physic.isRotateAroundItsSelf) RotateAroundItsSelf();
+            throw new System.NotImplementedException();
         }
     }
 }

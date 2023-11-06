@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Earth
   m_EditorClassIdentifier: 
-  infomation:
-    name: Earth
-    age: 30
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 151.48
-  physic:
-    mass: 1
-    speed: 1
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: 
-    radius: 6.371
+  nameOfCelestialObject: Earth
+  mass: 1
+  rotationSpeed: 30
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description of the earth

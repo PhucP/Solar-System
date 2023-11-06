@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e161ac87-4508-49f0-a1f4-76fb6f904115" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SolarScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SolarScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/CelestialObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/CelestialObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/CelestialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/CelestialManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Earth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Earth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Jupiter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Jupiter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Mars.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Mars.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Mercury.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Mercury.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Neptune.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Neptune.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Pluto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Pluto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Saturn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Saturn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Sun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Sun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Uranus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Uranus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Venus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviour/Movement/Venus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/CelestialObjectData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/CelestialObjectData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/GroupButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/GroupButtonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ForceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ForceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Earth.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Earth.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Jupiter.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Jupiter.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mars.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mars.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mecury.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mecury.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Moon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Moon.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Neptune.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Neptune.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Pluto.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Pluto.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Saturn.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Saturn.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Sun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Sun.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Uranus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Uranus.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Venus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Venus.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +49,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/GroupButtonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Core/Reflection/TypeUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -105,6 +137,14 @@
       <workItem from="1698565059279" duration="2102000" />
       <workItem from="1698678546294" duration="2842000" />
       <workItem from="1698764559188" duration="63000" />
+      <workItem from="1698764647336" duration="4438000" />
+      <workItem from="1698851491385" duration="4200000" />
+      <workItem from="1698934493790" duration="4222000" />
+      <workItem from="1699103984870" duration="22000" />
+      <workItem from="1699104022025" duration="6115000" />
+      <workItem from="1699172594765" duration="6245000" />
+      <workItem from="1699197225599" duration="1005000" />
+      <workItem from="1699281942937" duration="1191000" />
     </task>
     <servers />
   </component>

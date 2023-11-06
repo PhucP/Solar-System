@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Saturn
   m_EditorClassIdentifier: 
-  infomation:
-    name: Saturn
-    age: 0
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 1487
-  physic:
-    mass: 95.16
-    speed: 0
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: 
-    radius: 58.232
+  nameOfCelestialObject: Saturn
+  mass: 95
+  rotationSpeed: 5
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description

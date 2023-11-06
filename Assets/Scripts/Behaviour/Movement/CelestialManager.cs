@@ -11,8 +11,6 @@ namespace Behaviour.Movement
         public float timeStep;
         public GameObject clonePlanet;
         [SerializeField] private Transform celestialParent;
-        [SerializeField] private GameObject celestialInformation;
-        [SerializeField] private TMP_Text informationText;
         [SerializeField] private Transform sunTransform;
         private CelestialObject currentCelestialObject;
         
@@ -29,21 +27,12 @@ namespace Behaviour.Movement
                 }
                 if(currentCelestialObject == value) return;
                 currentCelestialObject = value;
-                ChangeCurrentCelestialObject();
             }
         }
         protected override void Awake()
         {
             base.Awake();
             GetCelestialForList();
-            celestialInformation.SetActive(false);
-        }
-
-        private void ChangeCurrentCelestialObject()
-        {
-            //set information for celestial
-            informationText.SetText(currentCelestialObject.celestialObjectData.infomation.name);
-            celestialInformation.SetActive(true);
         }
 
         private void GetCelestialForList()  
@@ -55,19 +44,6 @@ namespace Behaviour.Movement
                 {
                     listCelestialObject.Add(celestialScript);
                 }
-            }
-        }
-
-        public void HideCelestialInformation()
-        {
-            celestialInformation.SetActive(false);
-        }
-
-        private void FixedUpdate()
-        {
-            if (celestialInformation != null && currentCelestialObject != null)
-            {
-                celestialInformation.transform.position = Camera.main.WorldToScreenPoint(currentCelestialObject.transform.position);
             }
         }
     }

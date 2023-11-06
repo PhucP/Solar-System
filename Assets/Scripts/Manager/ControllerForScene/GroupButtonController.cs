@@ -11,6 +11,8 @@ public class GroupButtonController : MonoBehaviour
     [SerializeField] private RectTransform bottomButton;
     [SerializeField] private Image buttonShowHide;
     [SerializeField] private List<Sprite> listSpriteGroupButton;
+    [SerializeField] private RectTransform verticalPanel;
+    [SerializeField] private bool isHideVerticalPanel;
     
     private bool isShowGroupButton;
 
@@ -38,8 +40,9 @@ public class GroupButtonController : MonoBehaviour
 
     private void DoHideGroupButton()
     {
+        var offset = isHideVerticalPanel ? verticalPanel.sizeDelta.y + bottomButton.sizeDelta.y : bottomButton.sizeDelta.y;
         groupButton.GetComponent<RectTransform>()
-            .DOAnchorPos(new Vector3(0, -bottomButton.sizeDelta.y, 0), 0.25f)
+            .DOAnchorPos(new Vector3(0, -offset, 0), 0.25f)
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {

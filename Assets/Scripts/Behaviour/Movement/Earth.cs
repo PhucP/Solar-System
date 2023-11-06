@@ -14,7 +14,7 @@ public class Earth : CelestialObject
         base.Start();
         sunTransform = CelestialManager.Instance.SunTransform;
     }
-
+    
     protected override void InitDataForObject()
     {
         throw new System.NotImplementedException();

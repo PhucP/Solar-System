@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Jupiter
   m_EditorClassIdentifier: 
-  infomation:
-    name: Jupiter
-    age: 0
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 755.91
-  physic:
-    mass: 317.8
-    speed: 0
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: 
-    radius: 69.911
+  nameOfCelestialObject: Jupiter
+  mass: 318
+  rotationSpeed: 20
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description

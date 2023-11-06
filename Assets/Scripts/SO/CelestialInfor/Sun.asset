@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Sun
   m_EditorClassIdentifier: 
-  infomation:
-    name: Sun
-    age: 5.5
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 0
-  physic:
-    mass: 333000
-    speed: 1
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: shpere
-    radius: 696.34
+  nameOfCelestialObject: Sun
+  mass: 333000
+  rotationSpeed: 22
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description

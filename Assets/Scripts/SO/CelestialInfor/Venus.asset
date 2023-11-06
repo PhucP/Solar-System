@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Venus
   m_EditorClassIdentifier: 
-  infomation:
-    name: Venus
-    age: 0
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 107.59
-  physic:
-    mass: 0.815
-    speed: 0
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: 
-    radius: 6.052
+  nameOfCelestialObject: Venus
+  mass: 0.8
+  rotationSpeed: 14
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description

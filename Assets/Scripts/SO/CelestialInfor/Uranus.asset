@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
   m_Name: Uranus
   m_EditorClassIdentifier: 
-  infomation:
-    name: Uranus
-    age: 0
-    axis: {x: 0, y: 1, z: 0}
-    distanceToSun: 2954
-  physic:
-    mass: 14.54
-    speed: 0
-    rotationSpeed: 30
-    isRotateAroundItsSelf: 1
-  size:
-    shape: 
-    radius: 25.362
+  nameOfCelestialObject: Uranus
+  mass: 14
+  rotationSpeed: 16
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  informationShowed:
+    massString: Mass String
+    equatorialDiameter: Equatorial Diameter
+    meanDistFromSun: Mean Dist From Sun
+    rotationPeriod: Rotation Period
+    solarOrbitPeriod: Solar Orbit Period
+    surfaceGravity: Surface Gravity
+    surfaceTemperature: Surface Temperature
+    description: Description

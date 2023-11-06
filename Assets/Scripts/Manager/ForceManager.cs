@@ -21,14 +21,14 @@ public class ForceManager
         Vector3 tempVel = Vector3.zero;
         foreach (CelestialObject otherPlanet in _listCelestials)
         {
-            if (_planetData.infomation.name.Equals(otherPlanet.celestialObjectData.infomation.name)) continue;
+            if (_planetData.nameOfCelestialObject.Equals(otherPlanet.celestialObjectData.nameOfCelestialObject)) continue;
 
             var vectorDistance = otherPlanet.rigidbody.position - planetRb.position;
             float sqrDst = vectorDistance.sqrMagnitude;
             Vector3 forceDir = vectorDistance.normalized;
 
-            float planetMass = _planetData.physic.mass;
-            float otherPlanetMass = otherPlanet.celestialObjectData.physic.mass;
+            float planetMass = _planetData.mass;
+            float otherPlanetMass = otherPlanet.celestialObjectData.mass;
             Vector3 force = forceDir * (Constant.G * planetMass * otherPlanetMass) / sqrDst;
             Vector3 acceleration = force / planetMass;
 
@@ -46,7 +46,7 @@ public class ForceManager
         foreach (var otherPlanet in _listCelestials)
         {
             if (planet.Equals(otherPlanet)) continue;
-            var otherPlanetMass = planet.celestialObjectData.physic.mass;
+            var otherPlanetMass = planet.celestialObjectData.mass;
             float r = Vector3.Distance(planet.transform.position, otherPlanet.transform.position);
 
             Transform transform;

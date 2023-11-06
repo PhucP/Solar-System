@@ -2,8 +2,8 @@ using System;
 
 namespace Manager
 {
-    public class Observer : Singleton<Observer>
+    public static class Observer
     {
-        
+        public static Action<bool> showHideAllInformation;
     }
 }

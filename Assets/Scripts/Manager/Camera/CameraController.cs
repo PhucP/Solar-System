@@ -1,9 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Behaviour;
 using Behaviour.Movement;
 using DG.Tweening;
+using Manager;
+using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
+using Sequence = DG.Tweening.Sequence;
 
 public enum CameraMode
 {
@@ -16,14 +21,28 @@ public class CameraController : MonoBehaviour
 {
     public float rotationSpeed;
     public float smoothTime;
-    
+
+    [SerializeField] private Vector3 originRotationOfObserver;
     [SerializeField] private float stepMove;
     [SerializeField] private Transform sun;
     [SerializeField] private float cameraSpeed;
     [SerializeField] private CameraMode cameraMode;
     [SerializeField] private Vector3 originPosition;
     [SerializeField] private GroupButtonController informationOfCurrentPlanet;
-    
+    [SerializeField] private Light additionalLight;
+
+    [Header("Information To Show")] [SerializeField]
+    private TMP_Text nameOfCurrentPlanet;
+
+    [SerializeField] private TMP_Text massString;
+    [SerializeField] private TMP_Text equatorialDiameter;
+    [SerializeField] private TMP_Text meanDistFromSun;
+    [SerializeField] private TMP_Text rotationPeriod;
+    [SerializeField] private TMP_Text solarOrbitPeriod;
+    [SerializeField] private TMP_Text surfaceGravity;
+    [SerializeField] private TMP_Text surfaceTemperature;
+    [SerializeField] private TMP_Text description;
+
     private Vector2 velocity;
     private Vector3 lastMousePosition;
     private bool isRotating = false;
@@ -36,6 +55,7 @@ public class CameraController : MonoBehaviour
     {
         cameraMode = CameraMode.ChangeRotation;
         mainCamera = GetComponentInChildren<Camera>();
+        additionalLight.intensity = 0;
     }
 
     private void FixedUpdate()
@@ -63,7 +83,7 @@ public class CameraController : MonoBehaviour
             default:
                 break;
         }
-        
+
         Zoom();
     }
 
@@ -71,18 +91,29 @@ public class CameraController : MonoBehaviour
     {
         var currentCelestialObject = celestialManager.CurrentCelestialObject;
         var direction = (sun.position - currentCelestialObject.transform.position).normalized;
-        var newPosition = currentCelestialObject.transform.position + direction * 10f;
+        
+        var newPosition = currentCelestialObject.transform.position + direction * 7.5f;
+        
+        //change direction if current object is Sun
+        var nameOfSun =  sun.GetComponent<CelestialObject>().celestialObjectData.nameOfCelestialObject;
+        var nameOfCurrentObject = currentCelestialObject.celestialObjectData.nameOfCelestialObject;
+        if (nameOfSun.Equals(nameOfCurrentObject))
+        {
+            direction = (mainCamera.transform.position - sun.position).normalized;
+            newPosition = currentCelestialObject.transform.position + direction * 12f;
+        }
 
         var difference = newPosition - mainCamera.transform.position;
         var distance = difference.magnitude;
         var directionToMove = difference.normalized;
-        
+
         mainCamera.transform.LookAt(currentCelestialObject.transform);
         if (distance < 0.1f)
         {
             mainCamera.transform.position += difference;
             if (!informationOfCurrentPlanet.IsShowGroupButton)
             {
+                HideShowAllCelestialDoNotFollow(false);
                 ShowInformationForCurrentPlanetFollowing();
             }
         }
@@ -93,26 +124,33 @@ public class CameraController : MonoBehaviour
     {
         mainCamera.transform.DOLookAt(celestialManager.CurrentCelestialObject.transform.position, 0.5f)
             .SetEase(Ease.Linear)
-            .OnComplete(() =>
-            {
-                cameraMode = CameraMode.FollowPlanet;
-            });
-        
-        celestialManager.HideCelestialInformation();
+            .OnComplete(() => { cameraMode = CameraMode.FollowPlanet; });
     }
 
     private void ShowInformationForCurrentPlanetFollowing()
     {
         //set information in the panel
-        
+        SetInformationForCurrentPlanet();
         //show information panel
         informationOfCurrentPlanet.ShowHideGroupButton();
+        additionalLight.DOIntensity(0.5f, 0.5f);
     }
 
     private void SetInformationForCurrentPlanet()
     {
         var currentPlanet = celestialManager.CurrentCelestialObject;
-        //do something with this information
+        var informationToShow = currentPlanet.celestialObjectData.informationShowed;
+        var nameOfCelestial = currentPlanet.celestialObjectData.nameOfCelestialObject;
+
+        nameOfCurrentPlanet.SetText(nameOfCelestial);
+        massString.SetText(informationToShow.massString);
+        equatorialDiameter.SetText(informationToShow.equatorialDiameter);
+        meanDistFromSun.SetText(informationToShow.meanDistFromSun);
+        rotationPeriod.SetText(informationToShow.rotationPeriod);
+        solarOrbitPeriod.SetText(informationToShow.solarOrbitPeriod);
+        surfaceGravity.SetText(informationToShow.surfaceGravity);
+        surfaceTemperature.SetText(informationToShow.surfaceTemperature);
+        description.SetText(informationToShow.description);
     }
 
     private void HideInformationCurrentPlanetFollowing()
@@ -126,22 +164,33 @@ public class CameraController : MonoBehaviour
         //hide information of current planet
         if (informationOfCurrentPlanet.IsShowGroupButton)
         {
+            HideShowAllCelestialDoNotFollow(true);
+            this.transform.DORotate(originRotationOfObserver, 0.5f);
+            cameraMode = CameraMode.ExitFollowPlanet;
             HideInformationCurrentPlanetFollowing();
+            additionalLight.DOIntensity(0f, 0.5f);
         }
-        
-        cameraMode = CameraMode.ExitFollowPlanet;
+
         //have a position to move back is original position
         var difference = originPosition - mainCamera.transform.position;
         var distance = difference.magnitude;
         var directionToMove = difference.normalized;
-        
+
         //do look at the Sun while move back
         mainCamera.transform.LookAt(sun);
-        
+
         //change state to change rotation when finish the moving
         if (distance < 0.1f)
         {
             cameraMode = CameraMode.ChangeRotation;
+            Sequence sequence = DOTween.Sequence();
+            sequence
+                .Append(mainCamera.transform.DOLocalMove(originPosition, 1f))
+                .Append(mainCamera.transform.DOLocalRotate(Vector3.zero, 1f))
+                .OnComplete(() =>
+                {
+                    Observer.showHideAllInformation?.Invoke(true);
+                });
         }
         else
         {
@@ -200,7 +249,7 @@ public class CameraController : MonoBehaviour
             // mainCamera.fieldOfView = newFOV;
 
             var direction = (sun.position - mainCamera.transform.position).normalized;
-            var newPos =  mainCamera.transform.position + direction * scrollDelta * stepMove;
+            var newPos = mainCamera.transform.position + direction * scrollDelta * stepMove;
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, newPos, smoothTime);
         }
     }
@@ -233,13 +282,18 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    private void ChangePosition()
+    private void HideShowAllCelestialDoNotFollow(bool isShow)
     {
-        //do something
-    }
-
-    private void ChangeViewInOrbitMode()
-    {
-        
+        foreach (var celestial in celestialManager.listCelestialObject)
+        {
+            if (celestial != celestialManager.CurrentCelestialObject)
+            {
+                celestial.gameObject.SetActive(isShow);
+            }
+            else
+            {
+                var lineRenderer = celestial.GetComponent<LineRenderer>().enabled = isShow;
+            }
+        }
     }
 }

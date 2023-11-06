@@ -16,19 +16,51 @@ namespace Behaviour
         private CelestialManager CelestialManager => CelestialManager.Instance;
         protected Vector3 currentVelocity;
         private ForceManager _forceManager;
+        
+        [Header("Draw Orbit In Solar Scene")]
+        [SerializeField] private bool isOrbitScene;
+        [SerializeField] private LineRenderer lineRenderer;
+        [SerializeField] private int numOfLinePoints;
 
         protected virtual void Start()
         {
-            Reset();
+            //Reset();
             Init();
-            
         }
 
         private void Init()
         {
+            if (lineRenderer != null)
+            {
+                lineRenderer.positionCount = 0;
+            }
             if (CelestialManager != null)
             {
                 _forceManager = new ForceManager(CelestialManager.listCelestialObject, celestialObjectData);
+            }
+            
+            //draw the orbit if it in Solar Scene
+            if (!isOrbitScene)
+            {
+                DrawCircleOrbit();
+            }
+        }
+
+        protected virtual void DrawCircleOrbit()
+        {
+            if (lineRenderer != null)
+            {
+                lineRenderer.positionCount = numOfLinePoints;
+            }
+            var ceneter = CelestialManager.SunTransform.position;
+            var radius = Vector3.Distance(transform.position, ceneter);
+            for (int i = 0; i < numOfLinePoints; i++)
+            {
+                float angle = (i * 370f / numOfLinePoints) * Mathf.Deg2Rad;
+                float x = ceneter.x + radius * Mathf.Cos(angle);
+                float z = ceneter.z + radius * Mathf.Sin(angle);
+                
+                lineRenderer.SetPosition(i, new Vector3(x, ceneter.y, z));
             }
         }
 
@@ -37,11 +69,11 @@ namespace Behaviour
             transform.localPosition = startPosition;
             currentVelocity = initialVelocity;
         }
-
-        private void OnValidate()
-        {
-            Reset();
-        }
+        
+        // private void OnValidate()
+        // {
+        //     Reset();
+        // }
 
         protected virtual void FixedUpdate()
         {
@@ -52,7 +84,7 @@ namespace Behaviour
                 UpdatePosition(CelestialManager.timeStep);
             }
 
-            if (celestialObjectData.physic.isRotateAroundItsSelf) RotateAroundItsSelf();
+            if (celestialObjectData.isRotateAroundItsSelf) RotateAroundItsSelf();
         }
         
         private void UpdatePosition(float timeStep)
@@ -65,8 +97,8 @@ namespace Behaviour
         protected virtual void RotateAroundItsSelf()
         {
             Vector3 pos = this.transform.position;
-            Vector3 axis = celestialObjectData.infomation.axis;
-            float angle = celestialObjectData.physic.rotationSpeed;
+            Vector3 axis = celestialObjectData.axis;
+            float angle = celestialObjectData.rotationSpeed;
             transform.RotateAround(pos, axis, angle * Time.deltaTime);
         }
 
