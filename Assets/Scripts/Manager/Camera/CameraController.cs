@@ -108,7 +108,7 @@ public class CameraController : MonoBehaviour
         var directionToMove = difference.normalized;
 
         mainCamera.transform.LookAt(currentCelestialObject.transform);
-        if (distance < 0.1f)
+        if (distance < 0.175f)
         {
             mainCamera.transform.position += difference;
             if (!informationOfCurrentPlanet.IsShowGroupButton)
@@ -180,13 +180,12 @@ public class CameraController : MonoBehaviour
         mainCamera.transform.LookAt(sun);
 
         //change state to change rotation when finish the moving
-        if (distance < 0.1f)
+        if (distance < 0.175f)
         {
             cameraMode = CameraMode.ChangeRotation;
-            Sequence sequence = DOTween.Sequence();
-            sequence
-                .Append(mainCamera.transform.DOLocalMove(originPosition, 1f))
-                .Append(mainCamera.transform.DOLocalRotate(Vector3.zero, 1f))
+            mainCamera.transform.DOLocalMove(originPosition, 1f);
+            mainCamera.transform
+                .DOLocalRotate(Vector3.zero, 1f)
                 .OnComplete(() =>
                 {
                     Observer.showHideAllInformation?.Invoke(true);

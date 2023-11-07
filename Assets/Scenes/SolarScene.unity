@@ -740,7 +740,7 @@ MonoBehaviour:
   originRotationOfObserver: {x: 25, y: 0, z: 0}
   stepMove: 25
   sun: {fileID: 1940207392}
-  cameraSpeed: 10
+  cameraSpeed: 20
   cameraMode: 0
   originPosition: {x: 0, y: 0, z: -100}
   informationOfCurrentPlanet: {fileID: 612996165}
