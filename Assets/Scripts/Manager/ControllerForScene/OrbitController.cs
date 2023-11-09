@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class OrbitController : MonoBehaviour
+public class OrbitController : BaseController
 {
     [SerializeField] private Fade fade;
     [SerializeField] private Slider changeView;
@@ -20,27 +20,14 @@ public class OrbitController : MonoBehaviour
     private bool isShowGroupButton;
     private float originValue;
     private float orignSize;
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         currentTimeSpeed = 1;
         ViewSpeed();
-        fade.FadeOut( () => fade.gameObject.SetActive(false));
         originValue = changeView.value;
         orignSize = Camera.main.orthographicSize;
-    }
-    
-    public void BackToHome()
-    {
-        if (!fade.gameObject.activeSelf)
-        {
-            fade.gameObject.SetActive(true);
-        }
-        fade.FadeIn(() =>
-        {
-            //reset time scale
-            Time.timeScale = 1;
-            SceneManager.LoadScene(Constant.HOME_SCENE_NAME); 
-        });
     }
 
     public void ChangeViewCamera()

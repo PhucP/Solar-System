@@ -1587,6 +1587,8 @@ MonoBehaviour:
   listSpriteGroupButton:
   - {fileID: 21300000, guid: 15819d126f47617409928a41840f9fe0, type: 3}
   - {fileID: 21300000, guid: f5a4a8b6499fd764bacaf5bc157ea2aa, type: 3}
+  verticalPanel: {fileID: 0}
+  isHideVerticalPanel: 0
 --- !u!1 &786239056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,8 +2060,6 @@ MonoBehaviour:
   timeStep: 1
   clonePlanet: {fileID: 1965347136}
   celestialParent: {fileID: 1031619740}
-  celestialInformation: {fileID: 0}
-  informationText: {fileID: 0}
   sunTransform: {fileID: 1940207392}
 --- !u!1 &1090394563
 GameObject:

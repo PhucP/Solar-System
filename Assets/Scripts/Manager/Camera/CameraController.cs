@@ -115,6 +115,7 @@ public class CameraController : MonoBehaviour
             {
                 HideShowAllCelestialDoNotFollow(false);
                 ShowInformationForCurrentPlanetFollowing();
+                Observer.showHideButtonVisit?.Invoke(true);
             }
         }
         else mainCamera.transform.position += directionToMove * cameraSpeed * Time.deltaTime;
@@ -161,6 +162,8 @@ public class CameraController : MonoBehaviour
 
     public void ExitFollowPlanet()
     {
+        Observer.showHideButtonVisit?.Invoke(false);
+        
         //hide information of current planet
         if (informationOfCurrentPlanet.IsShowGroupButton)
         {
