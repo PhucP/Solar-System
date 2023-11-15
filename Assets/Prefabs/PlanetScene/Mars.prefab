@@ -4918,6 +4918,7 @@ GameObject:
   - component: {fileID: 7432818156817903084}
   - component: {fileID: 7346238400534694510}
   - component: {fileID: 7433536610744849147}
+  - component: {fileID: 1693485713818548869}
   m_Layer: 0
   m_Name: Mars
   m_TagString: TrackingObject
@@ -4982,6 +4983,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 3
   defaultCameraPosition: -6
+--- !u!135 &1693485713818548869
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434789939895490568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7435194959134781528
 GameObject:
   m_ObjectHideFlags: 0

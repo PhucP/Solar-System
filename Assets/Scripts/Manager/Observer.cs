@@ -6,6 +6,7 @@ namespace Manager
     {
         public static Action<bool> showHideAllInformation;
         public static Action<bool> showHideButtonVisit;
+        public static Action rotatePlanet;
     }
 
     [Serializable]

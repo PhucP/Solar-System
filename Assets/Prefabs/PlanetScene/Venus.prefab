@@ -4918,6 +4918,7 @@ GameObject:
   - component: {fileID: 8004540774868415115}
   - component: {fileID: 7908679688300153897}
   - component: {fileID: 8006164078705984623}
+  - component: {fileID: 5690652506196621722}
   m_Layer: 0
   m_Name: Venus
   m_TagString: TrackingObject
@@ -4982,6 +4983,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 2
   defaultCameraPosition: -6
+--- !u!135 &5690652506196621722
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006909446957464627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8007050452160720213
 GameObject:
   m_ObjectHideFlags: 0

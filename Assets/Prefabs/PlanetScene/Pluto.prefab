@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4993603942067540290}
   - component: {fileID: 5159134762076769716}
   - component: {fileID: 4990634502869075727}
+  - component: {fileID: -8748897450206183659}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: TrackingObject
@@ -158,6 +159,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 10
   defaultCameraPosition: -6
+--- !u!135 &-8748897450206183659
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991266942138829806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4991767732704392912
 GameObject:
   m_ObjectHideFlags: 0

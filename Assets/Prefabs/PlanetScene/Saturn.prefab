@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 8850300491288766426}
   - component: {fileID: 8654510841076139196}
   - component: {fileID: 8845645158556655360}
+  - component: {fileID: -6884246159645882103}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: TrackingObject
@@ -244,6 +245,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 7
   defaultCameraPosition: -6
+--- !u!135 &-6884246159645882103
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847022307849287602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.61
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8847086159839813138
 GameObject:
   m_ObjectHideFlags: 0

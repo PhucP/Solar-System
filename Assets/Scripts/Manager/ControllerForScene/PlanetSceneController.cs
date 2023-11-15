@@ -11,23 +11,41 @@ using UnityEngine;
 
 public class PlanetSceneController : BaseController
 {
+   public static PlanetSceneController Instance; 
+   
    [SerializeField] private StringVariable nameStringVariable;
-   [SerializeField] private Transform celestialParent;
    [SerializeField] private float offset;
    [SerializeField] private List<GameObject> listPlanet;
    [SerializeField] private TMP_Text nameOfPlanet;
+   public GameObject observer;
 
    private int _currentPlanetIndex;
    private GameObject _currentPlanet;
    private Camera _mainCamera;
+   private bool _canMove;
 
    private void Awake()
    {
+      //singleton initialization
+      if (Instance != null)
+      {
+         Destroy(Instance);
+         return;
+      }
+
+      Instance = this;
+      
       //create planet
       var visitPlanet = ReadStringVariable();
       var newPlanet = Instantiate(visitPlanet, Vector3.zero, Quaternion.identity);
       _currentPlanet = newPlanet;
       _mainCamera = Camera.main;
+      _canMove = true;
+   }
+
+   public void OnClickRotate()
+   {
+      Observer.rotatePlanet?.Invoke();
    }
 
    protected override void Start()
@@ -40,9 +58,10 @@ public class PlanetSceneController : BaseController
 
    private void MoveToNewPlanet(bool isRight)
    {
+      _canMove = false;
       var newPosition = isRight
-         ? _currentPlanet.transform.position + new Vector3(offset, 0, 0)
-         : _currentPlanet.transform.position - new Vector3(offset, 0, 0);
+         ? _currentPlanet.transform.position + _mainCamera.transform.right * offset
+         : _currentPlanet.transform.position - _mainCamera.transform.right * offset;
 
       _currentPlanetIndex = isRight
          ? _currentPlanetIndex+1
@@ -55,10 +74,13 @@ public class PlanetSceneController : BaseController
       
       //do move camera to new planet
       var newCameraPosition = newPlanet.transform.position;
-      _mainCamera.transform
-         .DOMove(new Vector3(newCameraPosition.x, newCameraPosition.y, newPlanetName.defaultCameraPosition), 0.5f)
+      _mainCamera.transform.DOLocalMove(new Vector3(0, 0, newPlanetName.defaultCameraPosition), 0.5f);
+      observer.transform
+         .DOMove(newCameraPosition, 0.5f)
          .OnComplete(() =>
          {
+            _canMove = true;
+            
             Destroy(_currentPlanet);
             _currentPlanet = newPlanet;
             nameOfPlanet.SetText(newPlanetName.celestialType.ToString());
@@ -67,6 +89,7 @@ public class PlanetSceneController : BaseController
 
    public void SwitchPlanet(bool isRight)
    {
+      if(!_canMove) return;
       MoveToNewPlanet(isRight);
    }
 

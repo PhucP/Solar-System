@@ -5001,6 +5001,7 @@ GameObject:
   - component: {fileID: 3554639760423914732}
   - component: {fileID: 3711025047179268332}
   - component: {fileID: 3556383038935828062}
+  - component: {fileID: 1046888424609480600}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: TrackingObject
@@ -5065,3 +5066,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 6
   defaultCameraPosition: -6
+--- !u!135 &1046888424609480600
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3557741627536925232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}

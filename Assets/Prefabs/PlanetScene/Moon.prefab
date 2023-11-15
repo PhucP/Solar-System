@@ -5001,6 +5001,8 @@ GameObject:
   - component: {fileID: 6814684105108661958}
   - component: {fileID: 6654834828470396198}
   - component: {fileID: 6810062620797434504}
+  - component: {fileID: 1879643053711268929}
+  - component: {fileID: 6414239631231422281}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -5066,3 +5068,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 5
   defaultCameraPosition: -6
+--- !u!135 &1879643053711268929
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811468794533559522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &6414239631231422281
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6811468794533559522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

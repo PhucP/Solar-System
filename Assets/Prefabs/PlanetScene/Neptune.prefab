@@ -4918,6 +4918,7 @@ GameObject:
   - component: {fileID: 1242676914369987760}
   - component: {fileID: 1434853977642488826}
   - component: {fileID: 1238875433936266356}
+  - component: {fileID: -342668705445218599}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: TrackingObject
@@ -4982,6 +4983,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   celestialType: 9
   defaultCameraPosition: -6
+--- !u!135 &-342668705445218599
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239870555614350684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1240116328179171724
 GameObject:
   m_ObjectHideFlags: 0
