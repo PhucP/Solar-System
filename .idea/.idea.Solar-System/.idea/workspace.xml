@@ -6,23 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e161ac87-4508-49f0-a1f4-76fb6f904115" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Earth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Earth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Jupiter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Jupiter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Mars.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Mars.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Mercury.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Mercury.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Moon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Moon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Neptune.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Neptune.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Pluto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Pluto.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Saturn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Saturn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Sun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Sun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Uranus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Uranus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Venus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlanetScene/Venus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetSceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetSceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Observer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Observer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/PlanetName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/PlanetName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +131,8 @@
       <workItem from="1699892684732" duration="72000" />
       <workItem from="1699892787349" duration="320000" />
       <workItem from="1699974875014" duration="614000" />
-      <workItem from="1700057920693" duration="3835000" />
+      <workItem from="1700057920693" duration="4570000" />
+      <workItem from="1700408773567" duration="21000" />
     </task>
     <servers />
   </component>
