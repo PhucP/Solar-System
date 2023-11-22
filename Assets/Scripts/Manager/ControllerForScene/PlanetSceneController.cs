@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using Manager;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlanetSceneController : BaseController
@@ -16,7 +14,8 @@ public class PlanetSceneController : BaseController
    [SerializeField] private StringVariable nameStringVariable;
    [SerializeField] private float offset;
    [SerializeField] private List<GameObject> listPlanet;
-   [SerializeField] private TMP_Text nameOfPlanet;
+   [SerializeField] private Text nameOfPlanet;
+   [SerializeField] private Toggle rotateToggle;
    public GameObject observer;
 
    private int _currentPlanetIndex;
@@ -41,9 +40,10 @@ public class PlanetSceneController : BaseController
       _currentPlanet = newPlanet;
       _mainCamera = Camera.main;
       _canMove = true;
+      rotateToggle.isOn = false;
    }
 
-   public void OnClickRotate()
+   public void OnClickRotate(bool isRotate)
    {
       Observer.rotatePlanet?.Invoke();
    }
@@ -53,11 +53,12 @@ public class PlanetSceneController : BaseController
       base.Start();
 
       _mainCamera.transform.DOMoveZ(listPlanet[_currentPlanetIndex].GetComponent<PlanetName>().defaultCameraPosition, 0.5f);
-      nameOfPlanet.SetText(listPlanet[_currentPlanetIndex].GetComponent<PlanetName>().celestialType.ToString());
+      nameOfPlanet.text = (listPlanet[_currentPlanetIndex].GetComponent<PlanetName>().celestialType.ToString());
    }
 
    private void MoveToNewPlanet(bool isRight)
    {
+      rotateToggle.isOn = false;
       _canMove = false;
       var newPosition = isRight
          ? _currentPlanet.transform.position + _mainCamera.transform.right * offset
@@ -83,7 +84,7 @@ public class PlanetSceneController : BaseController
             
             Destroy(_currentPlanet);
             _currentPlanet = newPlanet;
-            nameOfPlanet.SetText(newPlanetName.celestialType.ToString());
+            nameOfPlanet.text = (newPlanetName.celestialType.ToString());
          });
    }
 

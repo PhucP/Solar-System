@@ -10,43 +10,42 @@ using UnityEngine.UI;
 
 public class OrbitController : BaseController
 {
-    [SerializeField] private Fade fade;
     [SerializeField] private Slider changeView;
     [SerializeField] private CelestialObject planet;
     [SerializeField] private List<float> timeSpeed;
-    [SerializeField] private TMP_Text changeSpeedText;
+    //[SerializeField] private TMP_Text changeSpeedText;
 
-    private int currentTimeSpeed;
-    private bool isShowGroupButton;
-    private float originValue;
-    private float orignSize;
+    private int _currentTimeSpeed;
+    private bool _isShowGroupButton;
+    private float _originValue;
+    private float _orignSize;
     protected override void Start()
     {
         base.Start();
         
-        currentTimeSpeed = 1;
+        _currentTimeSpeed = 1;
         ViewSpeed();
-        originValue = changeView.value;
-        orignSize = Camera.main.orthographicSize;
+        _originValue = changeView.value;
+        _orignSize = Camera.main.orthographicSize;
     }
 
     public void ChangeViewCamera()
     {
-        float newValue = changeView.value / originValue * orignSize;
+        float newValue = changeView.value / _originValue * _orignSize;
         if(newValue < 1) newValue = 1;
         Camera.main.DOOrthoSize(newValue, 0.2f).SetEase(Ease.Linear);
     }
 
     public void ChangeSpeedCelestial()
     {
-        currentTimeSpeed = (currentTimeSpeed + 1) % timeSpeed.Count;
+        _currentTimeSpeed = (_currentTimeSpeed + 1) % timeSpeed.Count;
         ViewSpeed();
     }
 
     private void ViewSpeed()
     {
-        float time = timeSpeed[currentTimeSpeed];
-        changeSpeedText.SetText(time.ToString());
+        float time = timeSpeed[_currentTimeSpeed];
+        //changeSpeedText.SetText(time.ToString());
         Time.timeScale = time;
     }
 

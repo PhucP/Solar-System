@@ -14,7 +14,7 @@ public class PlanetName : MonoBehaviour
    private float _rotationSpeed = 10f;
    private GameObject _observer;
 
-   private bool _isRotating;
+   public bool _isRotating;
 
    private void Start()
    {

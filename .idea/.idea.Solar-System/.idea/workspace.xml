@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e161ac87-4508-49f0-a1f4-76fb6f904115" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/SCI-FI UI Pack_V1 Pro(Blue)/SourceFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/SCI-FI UI Pack_V2 Pro(Cyan)/SourceFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SkyMapScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SkyMapScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SolarScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SolarScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/OrbitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/OrbitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetSceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetSceneController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -133,6 +141,8 @@
       <workItem from="1699974875014" duration="614000" />
       <workItem from="1700057920693" duration="4570000" />
       <workItem from="1700408773567" duration="21000" />
+      <workItem from="1700497268639" duration="1414000" />
+      <workItem from="1700583855047" duration="1241000" />
     </task>
     <servers />
   </component>
