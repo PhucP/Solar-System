@@ -18,11 +18,16 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 3.3 x 10^23 Kg
+    equatorialDiameter: 4879 Km
+    meanDistFromSun: 60 M Km
+    rotationPeriod: 59 Days
+    solarOrbitPeriod: 88 Days
+    surfaceGravity: 3.7 m/s^2
+    surfaceTemperature: 167*C
+    description: '\nMercury is the innermost and smallest planet of the Solar System.
+      Because it has almost no atmosphere to retain heatm Mercury''s surface experiences
+      the greatest temperature variation of all the planets.\n\nOBSERVATION\nMercury
+      appears as a morning or evening star from Earth, but due to it''s proximity
+      to Sun, it is very hard to see. Still, Mercury can be observed at leat twice
+      a year: spring at dusk and in autumn before dawn.'

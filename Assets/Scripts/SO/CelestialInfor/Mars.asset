@@ -18,11 +18,32 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 6.4 x 10^23 Kg
+    equatorialDiameter: 6792 Km
+    meanDistFromSun: 230 M Km
+    rotationPeriod: 1.03 Day
+    solarOrbitPeriod: 1.88 Year
+    surfaceGravity: 3.7 m/s^2
+    surfaceTemperature: -63*C
+    description: '\nMars is the fourth planet from the Sun and the second smallest
+      planet in the Solar System. The reddish appearance of Mars''s surface is caused
+      by iron oxide(rust).\n\nEARTH-LIKE\nWhile the Mars is abour half as big as
+      the Earth, there ara still many similarities: Mars has a rocky surface and
+      polar ice caps, the day on Mars are only 40 minutes longer, the axial tilt
+      give it similar seasons to ours(although each last about twice as long).\n\nSURFACE\nMars
+      has a dramatic landscape, with towering valcanoes and a great vanyon system.
+      Of all the planets in the Solar System. It has the highest mountain, Olympus
+      Mons, and the largest canyon, Valley Marineris.\n\nWATER\nThere is strong evidence
+      that the Martian atmospherer was once far denser than it is now, and that water
+      once ran freely on its surface. There is also mounting evidence that much of
+      this water remains locked away underground.\n\nMOON\nMars has two small natural
+      satellites, Phobos and Deimos, that orbit very close to the planet. These moons
+      may be  captured asterioid. It has been predicted that in about 50 milions
+      years, Phobos will either crash into Mars''s surface or break up into a ring
+      structure around the planet.\n\nMISSION\nMars is the focus of intense study,
+      with two rovers(exploration rover Opportunity and science laboratory Curiosity)
+      operating on th surface, while three tinternational missions orbits the planet:
+      NASA''s Mars Odyssey and Mars Reconnaissance Orbiter and ESA''s Mars Express.\n\nOBSERVATION\nMars
+      can easily be seen from Earth with the naked eye, as can its reddish coloring.
+      Its apparent magnitued is surpassed by the Sun, the Moon, Venus and Jupiter
+      - but it can briefly match Jupiter''s brightness at certain points in its orbit.'

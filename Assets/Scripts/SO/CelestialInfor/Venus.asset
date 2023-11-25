@@ -18,11 +18,19 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 4.9 x 10^24 Kg
+    equatorialDiameter: 12104 Km
+    meanDistFromSun: 108 M Km
+    rotationPeriod: 243 Days
+    solarOrbitPeriod: 225 Days
+    surfaceGravity: 8.9 m/s^2
+    surfaceTemperature: 462*C
+    description: \nAlthough Venus has very similar size and interior structure as
+      Earth, its vulcanic surface and extrmely hot and dese atmosphere makes is one
+      of the most inhospitable places in the Solar System.\n\nATMOSPHERE\nThick couds
+      of sulfuric acid and dust reflest most of the Sun's light back to space, while
+      carbon dioxide traps the Sun's heat inside the atmosphere, causing a runaway
+      greenhousr effect. The atmospheric pressure on the surface of Venus is 92 times
+      greater than Earth.\n\nOBSERVATION\nVenus is one of the brightest objects in
+      our night sky - second only to the Moon. It appears as either an evening or
+      a morning star.

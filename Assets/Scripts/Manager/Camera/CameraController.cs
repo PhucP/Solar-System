@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 originPosition;
     [SerializeField] private GroupButtonController informationOfCurrentPlanet;
     [SerializeField] private Light additionalLight;
+    [SerializeField] private float zoomSpeed = 3f;
 
     [Header("Information To Show")] [SerializeField]
     private TMP_Text nameOfCurrentPlanet;

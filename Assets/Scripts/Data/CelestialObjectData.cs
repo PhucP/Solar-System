@@ -27,7 +27,7 @@ namespace Data
         public string solarOrbitPeriod;
         public string surfaceGravity;
         public string surfaceTemperature;
-        public string description;
+        [TextArea(20, 5)]public string description;
     }
 }
 

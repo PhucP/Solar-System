@@ -18,11 +18,22 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 1.31 x 10^22 Kg
+    equatorialDiameter: 2374 Km
+    meanDistFromSun: 40.9 AU
+    rotationPeriod: 6.9 Days
+    solarOrbitPeriod: 248 Years
+    surfaceGravity: 0.66 m/s^2
+    surfaceTemperature: -228*C
+    description: 'Pluto is the largest object in the Kuiper belt. It is also the
+      largest and second most massive known dwarf planet in the Solar System.\n\nAXIAL
+      TILT\nLike Uranus, Pluto is lying on its "side", with an axial titl of 120
+      degree, leading to extreme seasonal variations. At its solstices, one-fourth
+      of the planet is in continous daylight, and one-fourth in continuous darkness.\n\nMOONS\nPluto
+      has five known moons: Charon, Nix, Hydra, kerberos, and Styx Pluto and Charon
+      are sometimes described as a binary system because the barycenter of their
+      orbit does not lie within either body.\n\nDISCOVERY\nDiscovered in 1930 by
+      astronomer Clyde Tombaugh, Pluto was originally classified as the 9th planet
+      from the Sun. However, the discovery of similar-size object within the Kupier
+      Beil, promped the International Astronomical Union to re-calssify Pluto in
+      2006 a dwaf planet.'

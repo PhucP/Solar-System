@@ -18,11 +18,15 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 1.02 x 10^26 Kg
+    equatorialDiameter: 49528 Km
+    meanDistFromSun: 30.1 AU
+    rotationPeriod: 16H 06M
+    solarOrbitPeriod: 165 Years
+    surfaceGravity: 11.2 m/s^2
+    surfaceTemperature: -200*C
+    description: 'Neptube, is the eight and officially farthest planet from the Sun.
+      It is the smallest but also the most dense of gas giants. Neptune has a surface
+      gravity that i only surpassed by Jupiter.\n\nDISCOVERY\nNeptube was the first
+      planet to be discoveried purely on the basis of mathematical prediction rather
+      than by direct observation. Since it''s discovery in 1846 '

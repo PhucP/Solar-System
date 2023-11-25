@@ -18,11 +18,18 @@ MonoBehaviour:
   isRotateAroundItsSelf: 1
   axis: {x: 0, y: 1, z: 0}
   informationShowed:
-    massString: Mass String
-    equatorialDiameter: Equatorial Diameter
-    meanDistFromSun: Mean Dist From Sun
-    rotationPeriod: Rotation Period
-    solarOrbitPeriod: Solar Orbit Period
-    surfaceGravity: Surface Gravity
-    surfaceTemperature: Surface Temperature
-    description: Description
+    massString: 8.7 x 10^25 Kg
+    equatorialDiameter: 51118 Km
+    meanDistFromSun: 19.2 AU
+    rotationPeriod: 17H 41M
+    solarOrbitPeriod: 84 Years
+    surfaceGravity: 8.7 m/s^2
+    surfaceTemperature: -210*C
+    description: Uranus is the third largest of the Solar System's gas giants. Its
+      is the coldest planet tin the Solar System.\n\nDISCOVERY\nUranus was the first
+      to be discovered by the use of the modern telescope, with its discovery credited
+      to the English astronomer William Herschel in 1781.\n\nAXIAL TILT\nUranus has
+      an axial tilt of 97.77 degree, meaning is effectively rolls around the Sun
+      "on its side" compared to the other planets in the Solar System.\n\nOBSERVATION\nWhile
+      in Opposition(from the Sun, relative to the Earth), Uranus becomes visible
+      to the naked-eye. It would appear as a faint star under dark sky condition.
