@@ -26,14 +26,29 @@ MonoBehaviour:
     surfaceGravity: 9.8 M/s^2
     surfaceTemperature: 15*C
     description: 'Our homeworld is the densest of the eight planet in the Solar System.
-      It is also the largest of the four terrestrial planets.\nSURFACE\nAbout 71%
-      of the Earth is covered by salt water oceans, and the remaining 30% is taken
-      up by the seven continential landmasses. Earth''s outer surface is also devided
-      into several rigid segment, or tectonic plates, that migrate across the surface
-      over periods of millions of years.\nAXIAL TILT\nToday, the Earth is titlted
-      on its axis by 23.4 degree, producing seasonal variations in climate and weather
-      across the surface of the planet during the course of a year./nMAG.FIELD\nThe
-      Earth''s magnetic field is generated within th molten outer core region of
-      the planet and extends outwards to from the magnetosphere: a barrier surrounding
-      the Earth, deflecting particles of the solar wind and protecting the Earth
-      from Sun''s radiation.'
+      It is also the largest of the four terrestrial planets.
+
+
+      SURFACE
+
+      About
+      71% of the Earth is covered by salt water oceans, and the remaining 30% is
+      taken up by the seven continential landmasses. Earth''s outer surface is also
+      devided into several rigid segment, or tectonic plates, that migrate across
+      the surface over periods of millions of years.
+
+
+      AXIAL TILT
+
+      Today,
+      the Earth is titlted on its axis by 23.4 degree, producing seasonal variations
+      in climate and weather across the surface of the planet during the course of
+      a year.
+
+
+      MAG.FIELD
+
+      The Earth''s magnetic field is generated within
+      th molten outer core region of the planet and extends outwards to from the
+      magnetosphere: a barrier surrounding the Earth, deflecting particles of the
+      solar wind and protecting the Earth from Sun''s radiation.'

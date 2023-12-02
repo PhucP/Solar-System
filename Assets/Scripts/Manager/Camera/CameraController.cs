@@ -8,6 +8,7 @@ using Manager;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using Sequence = DG.Tweening.Sequence;
 
 public enum CameraMode
@@ -43,6 +44,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private TMP_Text surfaceGravity;
     [SerializeField] private TMP_Text surfaceTemperature;
     [SerializeField] private TMP_Text description;
+    [SerializeField] private VerticalLayoutGroup verticalLayoutGroup;
 
     private Vector2 velocity;
     private Vector3 lastMousePosition;
@@ -92,11 +94,11 @@ public class CameraController : MonoBehaviour
     {
         var currentCelestialObject = celestialManager.CurrentCelestialObject;
         var direction = (sun.position - currentCelestialObject.transform.position).normalized;
-        
+
         var newPosition = currentCelestialObject.transform.position + direction * 7.5f;
-        
+
         //change direction if current object is Sun
-        var nameOfSun =  sun.GetComponent<CelestialObject>().celestialObjectData.nameOfCelestialObject;
+        var nameOfSun = sun.GetComponent<CelestialObject>().celestialObjectData.nameOfCelestialObject;
         var nameOfCurrentObject = currentCelestialObject.celestialObjectData.nameOfCelestialObject;
         if (nameOfSun.Equals(nameOfCurrentObject))
         {
@@ -145,14 +147,16 @@ public class CameraController : MonoBehaviour
         var nameOfCelestial = currentPlanet.celestialObjectData.nameOfCelestialObject;
 
         nameOfCurrentPlanet.SetText(nameOfCelestial);
-        massString.SetText(informationToShow.massString);
-        equatorialDiameter.SetText(informationToShow.equatorialDiameter);
-        meanDistFromSun.SetText(informationToShow.meanDistFromSun);
-        rotationPeriod.SetText(informationToShow.rotationPeriod);
-        solarOrbitPeriod.SetText(informationToShow.solarOrbitPeriod);
-        surfaceGravity.SetText(informationToShow.surfaceGravity);
-        surfaceTemperature.SetText(informationToShow.surfaceTemperature);
+        massString.SetText("Mass: " + informationToShow.massString);
+        equatorialDiameter.SetText("Equatorial Diameter: " + informationToShow.equatorialDiameter);
+        meanDistFromSun.SetText("Mean Distance From Sun: " + informationToShow.meanDistFromSun);
+        rotationPeriod.SetText("Rotation Period: " + informationToShow.rotationPeriod);
+        solarOrbitPeriod.SetText("Solar Orbit Period: " + informationToShow.solarOrbitPeriod);
+        surfaceGravity.SetText("Surface Gravity: " + informationToShow.surfaceGravity);
+        surfaceTemperature.SetText("Surface Temperature: " + informationToShow.surfaceTemperature);
         description.SetText(informationToShow.description);
+        
+        LayoutRebuilder.ForceRebuildLayoutImmediate(verticalLayoutGroup.GetComponent<RectTransform>());
     }
 
     private void HideInformationCurrentPlanetFollowing()
@@ -164,7 +168,7 @@ public class CameraController : MonoBehaviour
     public void ExitFollowPlanet()
     {
         Observer.showHideButtonVisit?.Invoke(false);
-        
+
         //hide information of current planet
         if (informationOfCurrentPlanet.IsShowGroupButton)
         {
@@ -190,10 +194,7 @@ public class CameraController : MonoBehaviour
             mainCamera.transform.DOLocalMove(originPosition, 1f);
             mainCamera.transform
                 .DOLocalRotate(Vector3.zero, 1f)
-                .OnComplete(() =>
-                {
-                    Observer.showHideAllInformation?.Invoke(true);
-                });
+                .OnComplete(() => { Observer.showHideAllInformation?.Invoke(true); });
         }
         else
         {
@@ -203,45 +204,46 @@ public class CameraController : MonoBehaviour
 
     private void Zoom()
     {
+        if (MainController.Instance.optionPopup.gameObject.activeSelf) return;
 #if !UNITY_EDITOR
-    if (Input.touchCount == 2)
-    {
-        Touch firstTouch = Input.GetTouch(0);
-        Touch secondTouch = Input.GetTouch(1);
-
-        var firstTouchPrePos = firstTouch.position - firstTouch.deltaPosition;
-        var secondTouchPrePos = secondTouch.position - secondTouch.deltaPosition;
-
-        var touchesPrePosDifference = (firstTouchPrePos - secondTouchPrePos).magnitude;
-        var touchesCurPosDifference = (firstTouch.position - secondTouch.position).magnitude;
-
-        var zoomModifier = (firstTouch.deltaPosition - secondTouch.deltaPosition).magnitude * zoomSpeed;
-        var direction = (sun.position - mainCamera.gameObject.transform.position).normalized;
-
-        if (touchesPrePosDifference > touchesCurPosDifference)
+        if (Input.touchCount == 2)
         {
-            mainCamera.transform.position += zoomModifier * direction;
-        }
+            Touch firstTouch = Input.GetTouch(0);
+            Touch secondTouch = Input.GetTouch(1);
 
-        if (touchesPrePosDifference < touchesCurPosDifference)
-        {
-            mainCamera.transform.position -= zoomModifier * direction;
-        }
-        
-            // Touch touch1 = Input.GetTouch(0);
-            // Touch touch2 = Input.GetTouch(1);
-            //
-            // float initialDistance = Vector2.Distance(touch1.position, touch2.position);
-            // float currentDistance = Vector2.Distance(touch1.position, touch2.position);
-            //
-            // float zoomFactor = initialDistance / currentDistance;
-            //
-            // float newFOV = initialFOV / zoomFactor;
-            // newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
-            // mainCamera.fieldOfView = newFOV;
+            var firstTouchPrePos = firstTouch.position - firstTouch.deltaPosition;
+            var secondTouchPrePos = secondTouch.position - secondTouch.deltaPosition;
+
+            var touchesPrePosDifference = (firstTouchPrePos - secondTouchPrePos).magnitude;
+            var touchesCurPosDifference = (firstTouch.position - secondTouch.position).magnitude;
+
+            var zoomModifier = (firstTouch.deltaPosition - secondTouch.deltaPosition).magnitude * zoomSpeed;
+            var direction = (sun.position - mainCamera.gameObject.transform.position).normalized;
+
+            if (touchesPrePosDifference > touchesCurPosDifference)
+            {
+                mainCamera.transform.position -= zoomModifier * direction;
+            }
+
+            if (touchesPrePosDifference < touchesCurPosDifference)
+            {
+                mainCamera.transform.position += zoomModifier * direction;
+            }
             
-            return;
-        }
+                // Touch touch1 = Input.GetTouch(0);
+                // Touch touch2 = Input.GetTouch(1);
+                //
+                // float initialDistance = Vector2.Distance(touch1.position, touch2.position);
+                // float currentDistance = Vector2.Distance(touch1.position, touch2.position);
+                //
+                // float zoomFactor = initialDistance / currentDistance;
+                //
+                // float newFOV = initialFOV / zoomFactor;
+                // newFOV = Mathf.Clamp(newFOV, minFOV, maxFOV);
+                // mainCamera.fieldOfView = newFOV;
+                
+                return;
+            }
 #endif
         float scrollDelta = Input.GetAxis("Mouse ScrollWheel");
 
@@ -259,6 +261,7 @@ public class CameraController : MonoBehaviour
 
     private void ChangeRotation()
     {
+        if (MainController.Instance.optionPopup.gameObject.activeSelf) return;
         if (Input.GetMouseButtonDown(0))
         {
             lastMousePosition = Input.mousePosition;

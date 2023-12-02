@@ -27,17 +27,32 @@ MonoBehaviour:
     surfaceTemperature: -120*C
     description: 'Jupiter is the largest planet of the Solar System, with a mass
       2.5 greater than all of the rest of the planets combined - but still only one-thousandth
-      that of the Sun.\n\nSTAR-LIKE\nJupiter is the planet most like the Sun in terms
-      of its compostion . Although Jupiter would still need to be about 75 times
-      as massive to fuse hydrogen and be com a star. it would only need to be 13
-      times as massive to burn deuterium and become a brown dwarf.\n\nATMOSPHERE
-      Jupiter spins on its axis faster than any other planets. Because of this rotation,
+      that of the Sun.
+
+
+      STAR-LIKE
+
+      Jupiter is the planet most like the
+      Sun in terms of its compostion . Although Jupiter would still need to be about
+      75 times as massive to fuse hydrogen and be com a star. it would only need
+      to be 13 times as massive to burn deuterium and become a brown dwarf.ATMOSPHERE
+
+      Jupiter
+      spins on its axis faster than any other planets. Because of this rotation,
       Jupiter''s asmosphere is subject to high winds, which cause the atmosphere
       to form distinct bands of colour, like swirling vortices and gigantic anticyclonic
-      storms.\n\nMOON\nJupiter governs the largest number of moons of any planet,
-      with the current official total being 79. The four largest are the Galliean
-      moons: Io, Europa, Ganymede, and Callisto. Ganymede, the largest moon in the
-      Solar System, has a diameter greater than that of the planet Mercury.\n\nOBSERVATION\nJupiter 
+      storms.
+
+
+      MOON
+
+      Jupiter governs the largest number of moons of
+      any planet, with the current official total being 79. The four largest are
+      the Galliean moons: Io, Europa, Ganymede, and Callisto. Ganymede, the largest
+      moon in the Solar System, has a diameter greater than that of the planet Mercury.
+
+
+      OBSERVATION\nJupiter 
       is the fourth brightest object in our skies affter the Sun, Moon, and Venus.
       Becase the orbit of Jupiter is outside the Earth''s the planet always appears
       nearly fully illuminated when viewed through Earth-based telescopes.'

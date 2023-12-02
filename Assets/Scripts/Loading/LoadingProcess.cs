@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using Manager;
 
 namespace Loading
 {
@@ -14,10 +15,16 @@ namespace Loading
         [SerializeField] private GameObject loadingProcess;
         [SerializeField] private Button solarButton;
         [SerializeField] private Fade fade;
+        
         private float _target;
+        private AudioManager _sound;
 
         private void Start()
         {
+            //play loading sound
+            _sound = MainController.Instance.soundManager;
+            _sound.PlaySound(_sound.loadingSound);
+            
             fade.FadeOut( () => fade.gameObject.SetActive(false));
             loadingProcess.SetActive(false);
             startText.gameObject.SetActive(true);
@@ -42,6 +49,7 @@ namespace Loading
 
         public async void LoadingScene(string sceneName)
         {
+            _sound.PlayButtonSound();
             loadingProcess.SetActive(true);
             startText.gameObject.SetActive(false);
             solarButton.gameObject.SetActive(false);

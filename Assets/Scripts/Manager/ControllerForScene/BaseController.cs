@@ -41,6 +41,6 @@ public class BaseController : MonoBehaviour
 
     public virtual void OpenOption()
     {
-        //opening option popup
+        MainController.Instance.ShowHideOptionPopup(true);
     }
 }

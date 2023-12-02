@@ -25,12 +25,22 @@ MonoBehaviour:
     solarOrbitPeriod: 225 Days
     surfaceGravity: 8.9 m/s^2
     surfaceTemperature: 462*C
-    description: \nAlthough Venus has very similar size and interior structure as
+    description: 'Although Venus has very similar size and interior structure as
       Earth, its vulcanic surface and extrmely hot and dese atmosphere makes is one
-      of the most inhospitable places in the Solar System.\n\nATMOSPHERE\nThick couds
-      of sulfuric acid and dust reflest most of the Sun's light back to space, while
-      carbon dioxide traps the Sun's heat inside the atmosphere, causing a runaway
-      greenhousr effect. The atmospheric pressure on the surface of Venus is 92 times
-      greater than Earth.\n\nOBSERVATION\nVenus is one of the brightest objects in
-      our night sky - second only to the Moon. It appears as either an evening or
-      a morning star.
+      of the most inhospitable places in the Solar System.
+
+
+      ATMOSPHERE
+
+      Thick
+      couds of sulfuric acid and dust reflest most of the Sun''s light back to space,
+      while carbon dioxide traps the Sun''s heat inside the atmosphere, causing a
+      runaway greenhousr effect. The atmospheric pressure on the surface of Venus
+      is 92 times greater than Earth.
+
+
+      OBSERVATION
+
+      Venus is one of
+      the brightest objects in our night sky - second only to the Moon. It appears
+      as either an evening or a morning star.'

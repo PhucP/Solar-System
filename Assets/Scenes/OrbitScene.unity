@@ -1778,6 +1778,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenOption
       objectReference: {fileID: 0}
+    - target: {fileID: 8277004088746541079, guid: 05ca7f4f72acb204bbe192629a835c53,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BaseController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8277004088746541081, guid: 05ca7f4f72acb204bbe192629a835c53,
         type: 3}
       propertyPath: m_Name

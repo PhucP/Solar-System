@@ -15,6 +15,7 @@ public class SkyMapCamera : MonoBehaviour
     
     private void ChangeRotation()
     {
+        if(MainController.Instance.optionPopup.gameObject.activeSelf) return;
         if (Input.GetMouseButtonDown(0))
         {
             lastMousePosition = Input.mousePosition;

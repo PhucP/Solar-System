@@ -25,9 +25,14 @@ MonoBehaviour:
     solarOrbitPeriod: 88 Days
     surfaceGravity: 3.7 m/s^2
     surfaceTemperature: 167*C
-    description: '\nMercury is the innermost and smallest planet of the Solar System.
+    description: 'Mercury is the innermost and smallest planet of the Solar System.
       Because it has almost no atmosphere to retain heatm Mercury''s surface experiences
-      the greatest temperature variation of all the planets.\n\nOBSERVATION\nMercury
+      the greatest temperature variation of all the planets.
+
+
+      OBSERVATION
+
+      Mercury
       appears as a morning or evening star from Earth, but due to it''s proximity
       to Sun, it is very hard to see. Still, Mercury can be observed at leat twice
       a year: spring at dusk and in autumn before dawn.'

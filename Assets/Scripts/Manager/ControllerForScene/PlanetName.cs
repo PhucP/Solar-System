@@ -48,6 +48,7 @@ public class PlanetName : MonoBehaviour
 
    void OnMouseDrag()
    {
+      if(MainController.Instance.optionPopup.gameObject.activeSelf) return;
       Vector3 newMousePos = Input.mousePosition;
       Vector3 delta = newMousePos - _lastMousePos;
 

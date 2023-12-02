@@ -26,14 +26,29 @@ MonoBehaviour:
     surfaceGravity: 0.66 m/s^2
     surfaceTemperature: -228*C
     description: 'Pluto is the largest object in the Kuiper belt. It is also the
-      largest and second most massive known dwarf planet in the Solar System.\n\nAXIAL
-      TILT\nLike Uranus, Pluto is lying on its "side", with an axial titl of 120
-      degree, leading to extreme seasonal variations. At its solstices, one-fourth
-      of the planet is in continous daylight, and one-fourth in continuous darkness.\n\nMOONS\nPluto
+      largest and second most massive known dwarf planet in the Solar System.
+
+
+      AXIAL
+      TILT
+
+      Like Uranus, Pluto is lying on its "side", with an axial titl of
+      120 degree, leading to extreme seasonal variations. At its solstices, one-fourth
+      of the planet is in continous daylight, and one-fourth in continuous darkness.
+
+
+      MOONS
+
+      Pluto
       has five known moons: Charon, Nix, Hydra, kerberos, and Styx Pluto and Charon
       are sometimes described as a binary system because the barycenter of their
-      orbit does not lie within either body.\n\nDISCOVERY\nDiscovered in 1930 by
-      astronomer Clyde Tombaugh, Pluto was originally classified as the 9th planet
-      from the Sun. However, the discovery of similar-size object within the Kupier
-      Beil, promped the International Astronomical Union to re-calssify Pluto in
-      2006 a dwaf planet.'
+      orbit does not lie within either body.
+
+
+      DISCOVERY
+
+      Discovered
+      in 1930 by astronomer Clyde Tombaugh, Pluto was originally classified as the
+      9th planet from the Sun. However, the discovery of similar-size object within
+      the Kupier Beil, promped the International Astronomical Union to re-calssify
+      Pluto in 2006 a dwaf planet.'

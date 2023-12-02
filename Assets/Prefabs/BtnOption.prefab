@@ -122,9 +122,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BaseController, Assembly-CSharp
-        m_MethodName: OpenOption
+      - m_Target: {fileID: 4106196259938431824, guid: 0fb405f4bca24674cb74e2f645ea8f49,
+          type: 3}
+        m_TargetAssemblyTypeName: MainController, Assembly-CSharp
+        m_MethodName: ShowHideOptionPopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
