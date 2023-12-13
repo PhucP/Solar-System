@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
+  m_Name: Pluto
+  m_EditorClassIdentifier: 
+  nameOfCelestialObject: Pluto
+  mass: 20
+  rotationSpeed: 8
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  showName:
+    isLongText: 0
+    nameInfo: name
+    info: Pluto
+    longInfo: 
+    term: 
+  showMass:
+    isLongText: 0
+    nameInfo: mass
+    info: 1.31 x 10^22 Kg
+    longInfo: 
+    term: 
+  showEquatorialDiameter:
+    isLongText: 0
+    nameInfo: equatorial_diameter
+    info: 2374 Km
+    longInfo: 
+    term: 
+  showMeanDisFromSun:
+    isLongText: 0
+    nameInfo: distance_from_sun
+    info: 40.9 AU
+    longInfo: 
+    term: 
+  showRotationPeriod:
+    isLongText: 0
+    nameInfo: rotation_period
+    info: 6.9 Days
+    longInfo: 
+    term: 
+  showSolarOrbitPeriod:
+    isLongText: 0
+    nameInfo: solar_orbit_period
+    info: 248 Years
+    longInfo: 
+    term: 
+  showSurfaceGravity:
+    isLongText: 0
+    nameInfo: surface_gravity
+    info: 0.66 m/s^2
+    longInfo: 
+    term: 
+  showSurfaceTemperature:
+    isLongText: 0
+    nameInfo: surface_temperature
+    info: -228*C
+    longInfo: 
+    term: 
+  showDescription:
+    isLongText: 1
+    nameInfo: description
+    info: 
+    longInfo: 'Pluto is the largest object in the Kuiper belt. It is also the largest
+      and second most massive known dwarf planet in the Solar System.
+
+
+      AXIAL
+      TILT
+
+      Like Uranus, Pluto is lying on its "side", with an axial titl of
+      120 degree, leading to extreme seasonal variations. At its solstices, one-fourth
+      of the planet is in continous daylight, and one-fourth in continuous darkness.
+
+
+      MOONS
+
+      Pluto
+      has five known moons: Charon, Nix, Hydra, kerberos, and Styx Pluto and Charon
+      are sometimes described as a binary system because the barycenter of their
+      orbit does not lie within either body.
+
+
+      DISCOVERY
+
+      Discovered
+      in 1930 by astronomer Clyde Tombaugh, Pluto was originally classified as the
+      9th planet from the Sun. However, the discovery of similar-size object within
+      the Kupier Beil, promped the International Astronomical Union to re-calssify
+      Pluto in 2006 a dwaf planet.'
+    term: 

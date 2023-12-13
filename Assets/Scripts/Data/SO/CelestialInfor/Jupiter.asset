@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
+  m_Name: Jupiter
+  m_EditorClassIdentifier: 
+  nameOfCelestialObject: Jupiter
+  mass: 318
+  rotationSpeed: 20
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  showName:
+    isLongText: 0
+    nameInfo: name
+    info: Jupiter
+    longInfo: 
+    term: 
+  showMass:
+    isLongText: 0
+    nameInfo: mass
+    info: 1.9 x 10^27 Kg
+    longInfo: 
+    term: 
+  showEquatorialDiameter:
+    isLongText: 0
+    nameInfo: equatorial_diameter
+    info: 142984 Km
+    longInfo: 
+    term: 
+  showMeanDisFromSun:
+    isLongText: 0
+    nameInfo: distance_from_sun
+    info: 779 M Km
+    longInfo: 
+    term: 
+  showRotationPeriod:
+    isLongText: 0
+    nameInfo: rotation_period
+    info: 9H 55M
+    longInfo: 
+    term: 
+  showSolarOrbitPeriod:
+    isLongText: 0
+    nameInfo: solar_orbit_period
+    info: 11.9 Years
+    longInfo: 
+    term: 
+  showSurfaceGravity:
+    isLongText: 0
+    nameInfo: surface_gravity
+    info: 25 m/s^2
+    longInfo: 
+    term: 
+  showSurfaceTemperature:
+    isLongText: 0
+    nameInfo: surface_temperature
+    info: -120*C
+    longInfo: 
+    term: 
+  showDescription:
+    isLongText: 1
+    nameInfo: description
+    info: 'Jupiter is the largest planet of the Solar System, with a mass 2.5 greater
+      than all of the rest of the planets combined - but still only one-thousandth
+      that of the Sun.  STAR-LIKE Jupiter is the planet most like the Sun in terms
+      of its compostion . Although Jupiter would still need to be about 75 times
+      as massive to fuse hydrogen and be com a star. it would only need to be 13
+      times as massive to burn deuterium and become a brown dwarf.  ATMOSPHERE Jupiter
+      spins on its axis faster than any other planets. Because of this rotation,
+      Jupiter''s asmosphere is subject to high winds, which cause the atmosphere
+      to form distinct bands of colour, like swirling vortices and gigantic anticyclonic
+      storms.  MOON Jupiter governs the largest number of moons of any planet, with
+      the current official total being 79. The four largest are the Galliean moons:
+      Io, Europa, Ganymede, and Callisto. Ganymede, the largest moon in the Solar
+      System, has a diameter greater than that of the planet Mercury.  OBSERVATION\nJupiter 
+      is the fourth brightest object in our skies affter the Sun, Moon, and Venus.
+      Becase the orbit of Jupiter is outside the Earth''s the planet always appears
+      nearly fully illuminated when viewed through Earth-based telescopes.'
+    longInfo: 'Jupiter is the largest planet of the Solar System, with a mass 2.5
+      greater than all of the rest of the planets combined - but still only one-thousandth
+      that of the Sun.
+
+
+      STAR-LIKE
+
+      Jupiter is the planet most like the
+      Sun in terms of its compostion . Although Jupiter would still need to be about
+      75 times as massive to fuse hydrogen and be com a star. it would only need
+      to be 13 times as massive to burn deuterium and become a brown dwarf.
+
+
+      ATMOSPHERE
+
+      Jupiter
+      spins on its axis faster than any other planets. Because of this rotation,
+      Jupiter''s asmosphere is subject to high winds, which cause the atmosphere
+      to form distinct bands of colour, like swirling vortices and gigantic anticyclonic
+      storms.
+
+
+      MOON
+
+      Jupiter governs the largest number of moons of
+      any planet, with the current official total being 79. The four largest are
+      the Galliean moons: Io, Europa, Ganymede, and Callisto. Ganymede, the largest
+      moon in the Solar System, has a diameter greater than that of the planet Mercury.
+
+
+      OBSERVATION
+
+      Jupiter 
+      is the fourth brightest object in our skies affter the Sun, Moon, and Venus.
+      Becase the orbit of Jupiter is outside the Earth''s the planet always appears
+      nearly fully illuminated when viewed through Earth-based telescopes.'
+    term: 

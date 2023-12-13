@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
+  m_Name: Mars
+  m_EditorClassIdentifier: 
+  nameOfCelestialObject: Mars
+  mass: 0.1
+  rotationSpeed: 16
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  showName:
+    isLongText: 0
+    nameInfo: name
+    info: Mars
+    longInfo: 
+    term: 
+  showMass:
+    isLongText: 0
+    nameInfo: mass
+    info: 6.4 x 10^23 Kg
+    longInfo: 
+    term: 
+  showEquatorialDiameter:
+    isLongText: 0
+    nameInfo: equatorial_diameter
+    info: 6792 Km
+    longInfo: 
+    term: 
+  showMeanDisFromSun:
+    isLongText: 0
+    nameInfo: distance_from_sun
+    info: 230 M Km
+    longInfo: 
+    term: 
+  showRotationPeriod:
+    isLongText: 0
+    nameInfo: rotation_period
+    info: 1.03 Day
+    longInfo: 
+    term: 
+  showSolarOrbitPeriod:
+    isLongText: 0
+    nameInfo: solar_orbit_period
+    info: 1.88 Year
+    longInfo: 
+    term: 
+  showSurfaceGravity:
+    isLongText: 0
+    nameInfo: surface_gravity
+    info: 3.7 m/s^2
+    longInfo: 
+    term: 
+  showSurfaceTemperature:
+    isLongText: 0
+    nameInfo: surface_temperature
+    info: -63*C
+    longInfo: 
+    term: 
+  showDescription:
+    isLongText: 1
+    nameInfo: description
+    info: 
+    longInfo: 'Mars is the fourth planet from the Sun and the second smallest planet
+      in the Solar System. The reddish appearance of Mars''s surface is caused by
+      iron oxide(rust).
+
+
+      EARTH-LIKE
+
+      While the Mars is abour half as
+      big as the Earth, there ara still many similarities: Mars has a rocky surface
+      and polar ice caps, the day on Mars are only 40 minutes longer, the axial tilt
+      give it similar seasons to ours(although each last about twice as long).
+
+
+      SURFACE
+
+      Mars
+      has a dramatic landscape, with towering valcanoes and a great vanyon system.
+      Of all the planets in the Solar System. It has the highest mountain, Olympus
+      Mons, and the largest canyon, Valley Marineris.
+
+
+      WATER
+
+      There
+      is strong evidence that the Martian atmospherer was once far denser than it
+      is now, and that water once ran freely on its surface. There is also mounting
+      evidence that much of this water remains locked away underground.
+
+
+      MOON
+
+      Mars
+      has two small natural satellites, Phobos and Deimos, that orbit very close
+      to the planet. These moons may be  captured asterioid. It has been predicted
+      that in about 50 milions years, Phobos will either crash into Mars''s surface
+      or break up into a ring structure around the planet.
+
+
+      MISSION
+
+      Mars
+      is the focus of intense study, with two rovers(exploration rover Opportunity
+      and science laboratory Curiosity) operating on th surface, while three tinternational
+      missions orbits the planet: NASA''s Mars Odyssey and Mars Reconnaissance Orbiter
+      and ESA''s Mars Express.
+
+
+      OBSERVATION
+
+      Mars can easily be seen
+      from Earth with the naked eye, as can its reddish coloring. Its apparent magnitued
+      is surpassed by the Sun, the Moon, Venus and Jupiter - but it can briefly match
+      Jupiter''s brightness at certain points in its orbit.'
+    term: 

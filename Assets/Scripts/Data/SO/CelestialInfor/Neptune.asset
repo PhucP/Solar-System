@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
+  m_Name: Neptune
+  m_EditorClassIdentifier: 
+  nameOfCelestialObject: Neptune
+  mass: 17
+  rotationSpeed: 10
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  showName:
+    isLongText: 0
+    nameInfo: name
+    info: Neptune
+    longInfo: 
+    term: 
+  showMass:
+    isLongText: 0
+    nameInfo: mass
+    info: 1.02 x 10^26 Kg
+    longInfo: 
+    term: 
+  showEquatorialDiameter:
+    isLongText: 0
+    nameInfo: equatorial_diameter
+    info: 49528 Km
+    longInfo: 
+    term: 
+  showMeanDisFromSun:
+    isLongText: 0
+    nameInfo: distance_from_sun
+    info: 30.1 AU
+    longInfo: 
+    term: 
+  showRotationPeriod:
+    isLongText: 0
+    nameInfo: rotation_period
+    info: 16H 06M
+    longInfo: 
+    term: 
+  showSolarOrbitPeriod:
+    isLongText: 0
+    nameInfo: solar_orbit_period
+    info: 165 Years
+    longInfo: 
+    term: 
+  showSurfaceGravity:
+    isLongText: 0
+    nameInfo: surface_gravity
+    info: 11.2 m/s^2
+    longInfo: 
+    term: 
+  showSurfaceTemperature:
+    isLongText: 0
+    nameInfo: surface_temperature
+    info: -200*C
+    longInfo: 
+    term: 
+  showDescription:
+    isLongText: 1
+    nameInfo: description
+    info: 
+    longInfo: 'Neptube, is the eight and officially farthest planet from the Sun.
+      It is the smallest but also the most dense of gas giants. Neptune has a surface
+      gravity that i only surpassed by Jupiter.
+
+
+      DISCOVERY
+
+      Neptube
+      was the first planet to be discoveried purely on the basis of mathematical
+      prediction rather than by direct observation. Since it''s discovery in 1846 '
+    term: 

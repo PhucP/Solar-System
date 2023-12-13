@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e11ee8f79486f04ebfacf63e928cc86, type: 3}
+  m_Name: Venus
+  m_EditorClassIdentifier: 
+  nameOfCelestialObject: Venus
+  mass: 0.8
+  rotationSpeed: 14
+  isRotateAroundItsSelf: 1
+  axis: {x: 0, y: 1, z: 0}
+  showName:
+    isLongText: 0
+    nameInfo: name
+    info: Venus
+    longInfo: 
+    term: 
+  showMass:
+    isLongText: 0
+    nameInfo: mass
+    info: 4.9 x 10^24 Kg
+    longInfo: 
+    term: 
+  showEquatorialDiameter:
+    isLongText: 0
+    nameInfo: equatorial_diameter
+    info: 12104 Km
+    longInfo: 
+    term: 
+  showMeanDisFromSun:
+    isLongText: 0
+    nameInfo: distance_from_sun
+    info: 108 M Km
+    longInfo: 
+    term: 
+  showRotationPeriod:
+    isLongText: 0
+    nameInfo: rotation_period
+    info: 243 Days
+    longInfo: 
+    term: 
+  showSolarOrbitPeriod:
+    isLongText: 0
+    nameInfo: solar_orbit_period
+    info: 225 Days
+    longInfo: 
+    term: 
+  showSurfaceGravity:
+    isLongText: 0
+    nameInfo: surface_gravity
+    info: 8.9 m/s^2
+    longInfo: 
+    term: 
+  showSurfaceTemperature:
+    isLongText: 0
+    nameInfo: surface_temperature
+    info: 462*C
+    longInfo: 
+    term: 
+  showDescription:
+    isLongText: 1
+    nameInfo: description
+    info: 
+    longInfo: 'Although Venus has very similar size and interior structure as Earth,
+      its vulcanic surface and extrmely hot and dese atmosphere makes is one of the
+      most inhospitable places in the Solar System.
+
+
+      ATMOSPHERE
+
+      Thick
+      couds of sulfuric acid and dust reflest most of the Sun''s light back to space,
+      while carbon dioxide traps the Sun''s heat inside the atmosphere, causing a
+      runaway greenhousr effect. The atmospheric pressure on the surface of Venus
+      is 92 times greater than Earth.
+
+
+      OBSERVATION
+
+      Venus is one of
+      the brightest objects in our night sky - second only to the Moon. It appears
+      as either an evening or a morning star.'
+    term: 

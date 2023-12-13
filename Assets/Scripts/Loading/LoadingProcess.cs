@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using I2.Loc;
 using Manager;
+using TMPro;
 
 namespace Loading
 {

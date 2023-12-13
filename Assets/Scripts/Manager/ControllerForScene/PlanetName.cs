@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using I2.Loc;
 using Manager;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ public class PlanetName : MonoBehaviour
    private Vector2 _velocity;
    private float _rotationSpeed = 10f;
    private GameObject _observer;
+   private string _term;
+
+   public string Term => _term;
 
    public bool _isRotating;
 
@@ -21,6 +25,19 @@ public class PlanetName : MonoBehaviour
       _observer = PlanetSceneController.Instance.observer;
       _isRotating = false;
       Observer.rotatePlanet += OnRotatePlanet;
+   }
+
+   private void OnEnable()
+   {
+      _term = $"txt_{gameObject.name}_x";
+#if UNITY_EDITOR
+      if (!LocalizationManager.Sources[0].ContainsTerm(_term))
+      {
+         LocalizationManager.Sources[0].AddTerm(_term, eTermType.Text);
+         var termData = LocalizationManager.Sources[0].GetTermData(_term);
+         termData.SetTranslation(0, gameObject.name);
+      }
+#endif
    }
 
    private void FixedUpdate()

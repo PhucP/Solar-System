@@ -21,18 +21,137 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      Flags: 00000000000000
+      - Solar System
+      - "H\u1EC7 M\u1EB7t Tr\u1EDDi"
+      - "\u592A\u967D\u7CFB"
+      - "\uD0DC\uC591\uACC4"
+      - "Syst\xE8me Solaire"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_back
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - "Quay L\u1EA1i"
+      - "\u623B\u308B"
+      - "\uB4A4\uCABD\uC5D0"
+      - Dos
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_change_map
+      TermType: 0
+      Description: 
+      Languages:
+      - Change Map
+      - "\u0110\u1ED5i B\u1EA3n \u0110\u1ED3"
+      - "\u30DE\u30C3\u30D7\u3092\u5909\u66F4\u3059\u308B"
+      - "\uC9C0\uB3C4 \uBCC0\uACBD"
+      - Changer De Carte
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_option
+      TermType: 0
+      Description: 
+      Languages:
+      - Option
+      - "T\xF9y Ch\u1EC9nh"
+      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
+      - "\uC635\uC158"
+      - Option
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_orbit_simulator
+      TermType: 0
+      Description: 
+      Languages:
+      - Orbit Simulation
+      - "M\xF4 Ph\u1ECFng Qu\u1EF9 \u0110\u1EA1o"
+      - "\u8ECC\u9053\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3"
+      - "\uADA4\uB3C4 \uC2DC\uBBAC\uB808\uC774\uC158"
+      - Simulation D'orbite
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_planet
+      TermType: 0
+      Description: 
+      Languages:
+      - Planets
+      - "H\xE0nh Tinh"
+      - "\u60D1\u661F"
+      - "\uD589\uC131"
+      - "Plan\xE8tes"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_reset
+      TermType: 0
+      Description: 
+      Languages:
+      - Reset
+      - "C\xE0i L\u1EA1i"
+      - "\u30EA\u30BB\u30C3\u30C8"
+      - "\uCD08\uAE30\uD654"
+      - "R\xE9initialiser"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_sky_map
+      TermType: 0
+      Description: 
+      Languages:
+      - Star Map
+      - "B\u1EA3n \u0110\u1ED3 Sao"
+      - "\u661F\u56F3"
+      - "\uBCC4 \uC9C0\uB3C4"
+      - "Carte Des \xC9toiles"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_solar_system
+      TermType: 0
+      Description: 
+      Languages:
+      - Solar System
+      - "H\u1EC7 M\u1EB7t Tr\u1EDDi"
+      - "\u592A\u967D\u7CFB"
+      - "\uD0DC\uC591\uACC4"
+      - "Syst\xE8me Solaire"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_start
+      TermType: 0
+      Description: 
+      Languages:
+      - Start
+      - "B\u1EAFt \u0110\u1EA7u"
+      - "\u59CB\u3081\u308B"
+      - "\uC2DC\uC791"
+      - Commencer
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_field_of_view
+      TermType: 0
+      Description: 
+      Languages:
+      - Field Of View
+      - "Tr\u01B0\u1EDDng Nh\xECn"
+      - "\u8996\u91CE"
+      - "\uC2DC\uC57C"
+      - Champ De Vision
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_lable_rotate
+      TermType: 0
+      Description: 
+      Languages:
+      - Rotate
+      - Quay
+      - "\u56DE\u8EE2\u3055\u305B\u308B"
+      - "\uD68C\uC804\uD558\uB2E4"
+      - Tourner
+      Flags: 0000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
-    mTerm_AppName: 
+    mTerm_AppName: App_Name
     mLanguages:
     - Name: English (United States)
       Code: en-US
@@ -40,17 +159,11 @@ MonoBehaviour:
     - Name: Vietnamese
       Code: vi
       Flags: 0
-    - Name: Chinese
-      Code: zh
-      Flags: 0
     - Name: japa
       Code: ja
       Flags: 0
     - Name: kore
       Code: ko
-      Flags: 0
-    - Name: indi
-      Code: hi
       Flags: 0
     - Name: fre
       Code: fr
@@ -60,14 +173,13 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbwHjkls7Kjtl8wKwOGfbtXmPo5lCCPHGWlh3M9TXo03ykQ3gkrgMusMp-dQ7VaKs8NnhQ/exec
     Google_SpreadsheetKey: 1PUuq_LxMPPcuapPSklLezbk5kZzkJvw666a18jwYNLo
     Google_SpreadsheetName: I2Loc Solar_System Localization
-    Google_LastUpdatedVersion: 1701533259210
+    Google_LastUpdatedVersion: 1701592850830
     Google_Password: double_P
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2
     GoogleUpdateSynchronization: 1
     GoogleUpdateDelay: 0
-    Assets:
-    - {fileID: 12800000, guid: 385dce3fc9f7d434cb640e4d4d497263, type: 3}
+    Assets: []
     Spreadsheet_LocalFileName: 
     Spreadsheet_LocalCSVSeparator: ','
     Spreadsheet_LocalCSVEncoding: utf-8

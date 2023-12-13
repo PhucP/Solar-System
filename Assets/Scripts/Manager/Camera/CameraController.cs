@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Behaviour;
 using Behaviour.Movement;
+using Data;
 using DG.Tweening;
+using I2.Loc;
 using Manager;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -35,15 +37,24 @@ public class CameraController : MonoBehaviour
 
     [Header("Information To Show")] [SerializeField]
     private TMP_Text nameOfCurrentPlanet;
-
+    [SerializeField] private Localize localizeName;
     [SerializeField] private TMP_Text massString;
+    [SerializeField] private Localize localizeMass;
     [SerializeField] private TMP_Text equatorialDiameter;
+    [SerializeField] private Localize localizeEquatorialDiameter;
     [SerializeField] private TMP_Text meanDistFromSun;
+    [SerializeField] private Localize localizeMeanDisFromSun;
     [SerializeField] private TMP_Text rotationPeriod;
+    [SerializeField] private Localize localizeRotationPeriod;
     [SerializeField] private TMP_Text solarOrbitPeriod;
+    [SerializeField] private Localize localizeSolarOrbitPeriod;
     [SerializeField] private TMP_Text surfaceGravity;
+    [SerializeField] private Localize localizeSurfaceGravity;
     [SerializeField] private TMP_Text surfaceTemperature;
+    [SerializeField] private Localize localizeSurfaceTemperature;
     [SerializeField] private TMP_Text description;
+    [SerializeField] private Localize localizeDescription;
+    
     [SerializeField] private VerticalLayoutGroup verticalLayoutGroup;
 
     private Vector2 velocity;
@@ -143,20 +154,38 @@ public class CameraController : MonoBehaviour
     private void SetInformationForCurrentPlanet()
     {
         var currentPlanet = celestialManager.CurrentCelestialObject;
-        var informationToShow = currentPlanet.celestialObjectData.informationShowed;
-        var nameOfCelestial = currentPlanet.celestialObjectData.nameOfCelestialObject;
-
-        nameOfCurrentPlanet.SetText(nameOfCelestial);
-        massString.SetText("Mass: " + informationToShow.massString);
-        equatorialDiameter.SetText("Equatorial Diameter: " + informationToShow.equatorialDiameter);
-        meanDistFromSun.SetText("Mean Distance From Sun: " + informationToShow.meanDistFromSun);
-        rotationPeriod.SetText("Rotation Period: " + informationToShow.rotationPeriod);
-        solarOrbitPeriod.SetText("Solar Orbit Period: " + informationToShow.solarOrbitPeriod);
-        surfaceGravity.SetText("Surface Gravity: " + informationToShow.surfaceGravity);
-        surfaceTemperature.SetText("Surface Temperature: " + informationToShow.surfaceTemperature);
-        description.SetText(informationToShow.description);
+        var planetData = currentPlanet.celestialObjectData;
+        
+        //initial planet information
+        planetData.Inittialize();
+        
+        // nameOfCurrentPlanet.SetText(planetData.showName.info);
+        // massString.SetText("Mass: " + planetData.showMass.info);
+        // equatorialDiameter.SetText("Equatorial Diameter: " + planetData.showEquatorialDiameter.info);
+        // meanDistFromSun.SetText("Mean Distance From Sun: " + planetData.showMeanDisFromSun.info);
+        // rotationPeriod.SetText("Rotation Period: " + planetData.showRotationPeriod.info);
+        // solarOrbitPeriod.SetText("Solar Orbit Period: " + planetData.showSolarOrbitPeriod.info);
+        // surfaceGravity.SetText("Surface Gravity: " + planetData.showSurfaceGravity.info);
+        // surfaceTemperature.SetText("Surface Temperature: " + planetData.showSurfaceTemperature.info);
+        // description.SetText(planetData.showDescription.longInfo);
+        
+        RefreshLocalization(planetData);
         
         LayoutRebuilder.ForceRebuildLayoutImmediate(verticalLayoutGroup.GetComponent<RectTransform>());
+    }
+
+    private void RefreshLocalization(CelestialObjectData data)
+    {
+        localizeName.SetTerm(data.showName.term);
+        localizeMass.SetTerm(data.showMass.term);
+        localizeEquatorialDiameter.SetTerm(data.showEquatorialDiameter.term);
+        localizeMeanDisFromSun.SetTerm(data.showMeanDisFromSun.term);
+        localizeRotationPeriod.SetTerm(data.showRotationPeriod.term);
+        localizeSolarOrbitPeriod.SetTerm(data.showSolarOrbitPeriod.term);
+        localizeSurfaceGravity.SetTerm(data.showSurfaceGravity.term);
+        localizeSurfaceTemperature.SetTerm(data.showSurfaceTemperature.term);
+        localizeDescription.SetTerm(data.showDescription.term);
+        
     }
 
     private void HideInformationCurrentPlanetFollowing()
