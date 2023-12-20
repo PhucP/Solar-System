@@ -5,59 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e161ac87-4508-49f0-a1f4-76fb6f904115" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solar-System/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Fonts/MilkyWay-71P SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Fonts/MilkyWay-71P SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/I2Languages.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Languages/Localizaation.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Languages/Localizaation.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/Common/Fonts/Play-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/Common/Fonts/Play-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/SCI-FI UI Pack_V2 Pro(Cyan)/Prefabs/Prefabs_Option/Switch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SCI-FI UI Pack Pro/SCI-FI UI Pack_V2 Pro(Cyan)/Prefabs/Prefabs_Option/Switch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HomeScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HomeScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OrbitScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlanetsScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SkyMapScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SkyMapScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/CelestialInfor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/CelestialObjectData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/CelestialObjectData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loading/LoadingProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Loading/LoadingProcess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ControllerForScene/PlanetName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Audio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Audio/Audio Source.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Audio/Audio Source.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Earth.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Earth.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Jupiter.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Jupiter.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mars.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mars.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mecury.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Mecury.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Moon.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Moon.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Neptune.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Neptune.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Pluto.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Pluto.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Saturn.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Saturn.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Sun.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Sun.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Uranus.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Uranus.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Venus.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/CelestialInfor/Venus.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Variable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Variable/NamePlanetVariable.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Variable/NamePlanetVariable.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Variable/StringVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Variable/StringVariable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/~$TN_Nguyễn Hồng Phúc_B19DCCN505.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/~$TN_Nguyễn Hồng Phúc_B19DCCN505.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doc/ĐATN_Nguyễn Hồng Phúc_B19DCCN505.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Doc/ĐATN_Nguyễn Hồng Phúc_B19DCCN505.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +146,7 @@
       <workItem from="1701586674933" duration="2339000" />
       <workItem from="1701593465427" duration="6776000" />
       <workItem from="1701612786228" duration="7137000" />
+      <workItem from="1702917822168" duration="223000" />
     </task>
     <servers />
   </component>
