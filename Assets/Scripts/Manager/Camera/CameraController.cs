@@ -185,7 +185,6 @@ public class CameraController : MonoBehaviour
         localizeSurfaceGravity.SetTerm(data.showSurfaceGravity.term);
         localizeSurfaceTemperature.SetTerm(data.showSurfaceTemperature.term);
         localizeDescription.SetTerm(data.showDescription.term);
-        
     }
 
     private void HideInformationCurrentPlanetFollowing()

@@ -15,7 +15,7 @@ MonoBehaviour:
   mSource:
     UserAgreesToHaveItOnTheScene: 0
     UserAgreesToHaveItInsideThePluginsFolder: 0
-    GoogleLiveSyncIsUptoDate: 0
+    GoogleLiveSyncIsUptoDate: 1
     mTerms:
     - Term: App_Name
       TermType: 0
@@ -149,37 +149,829 @@ MonoBehaviour:
       - Tourner
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Neptune_name
+    - Term: txt_Earth_description
       TermType: 0
       Description: 
       Languages:
-      - Neptune
-      - 
-      - 
-      - 
-      - 
+      - 'Our homeworld is the densest of the eight planet in the Solar System. It
+        is also the largest of the four terrestrial planets.
+
+
+        SURFACE
+
+        About
+        71% of the Earth is covered by salt water oceans, and the remaining 30% is
+        taken up by the seven continential landmasses. Earth''s outer surface is
+        also devided into several rigid segment, or tectonic plates, that migrate
+        across the surface over periods of millions of years.
+
+
+        AXIAL TILT
+
+        Today,
+        the Earth is titlted on its axis by 23.4 degree, producing seasonal variations
+        in climate and weather across the surface of the planet during the course
+        of a year.
+
+
+        MAG.FIELD
+
+        The Earth''s magnetic field is generated
+        within th molten outer core region of the planet and extends outwards to
+        from the magnetosphere: a barrier surrounding the Earth, deflecting particles
+        of the solar wind and protecting the Earth from Sun''s radiation.'
+      - "Th\u1EBF gi\u1EDBi qu\xEA h\u01B0\u01A1ng c\u1EE7a ch\xFAng ta l\xE0 h\xE0nh
+        tinh d\xE0y \u0111\u1EB7c nh\u1EA5t trong s\u1ED1 t\xE1m h\xE0nh tinh trong
+        H\u1EC7 M\u1EB7t tr\u1EDDi. N\xF3 c\u0169ng l\xE0 h\xE0nh tinh l\u1EDBn nh\u1EA5t
+        trong b\u1ED1n h\xE0nh tinh \u0111\u1EA5t \u0111\xE1.\n\nB\u1EC0 M\u1EB6T\nKho\u1EA3ng
+        71% di\u1EC7n t\xEDch Tr\xE1i \u0111\u1EA5t \u0111\u01B0\u1EE3c bao ph\u1EE7
+        b\u1EDFi c\xE1c \u0111\u1EA1i d\u01B0\u01A1ng n\u01B0\u1EDBc m\u1EB7n v\xE0
+        30% c\xF2n l\u1EA1i \u0111\u01B0\u1EE3c chi\u1EBFm gi\u1EEF b\u1EDFi b\u1EA3y
+        v\xF9ng \u0111\u1EA5t l\u1EE5c \u0111\u1ECBa. B\u1EC1 m\u1EB7t b\xEAn ngo\xE0i
+        c\u1EE7a Tr\xE1i \u0111\u1EA5t c\u0169ng \u0111\u01B0\u1EE3c chia th\xE0nh
+        nhi\u1EC1u \u0111o\u1EA1n c\u1EE9ng, hay c\xE1c m\u1EA3ng ki\u1EBFn \u200B\u200Bt\u1EA1o,
+        di chuy\u1EC3n tr\xEAn b\u1EC1 m\u1EB7t trong th\u1EDDi gian h\xE0ng tri\u1EC7u
+        n\u0103m.\n\nTR\u1EE4C NGHI\xCANG\nNg\xE0y nay, Tr\xE1i \u0111\u1EA5t nghi\xEAng
+        tr\xEAn tr\u1EE5c c\u1EE7a n\xF3 m\u1ED9t g\xF3c 23,4 \u0111\u1ED9, t\u1EA1o
+        ra nh\u1EEFng bi\u1EBFn \u0111\u1ED5i theo m\xF9a v\u1EC1 kh\xED h\u1EADu
+        v\xE0 th\u1EDDi ti\u1EBFt tr\xEAn b\u1EC1 m\u1EB7t h\xE0nh tinh trong su\u1ED1t
+        m\u1ED9t n\u0103m.\n\nMAG.FIELD\nT\u1EEB tr\u01B0\u1EDDng Tr\xE1i \u0111\u1EA5t
+        \u0111\u01B0\u1EE3c t\u1EA1o ra trong v\xF9ng l\xF5i ngo\xE0i n\xF3ng ch\u1EA3y
+        c\u1EE7a h\xE0nh tinh v\xE0 k\xE9o d\xE0i ra ngo\xE0i t\u1EEB quy\u1EC3n:
+        m\u1ED9t r\xE0o c\u1EA3n bao quanh Tr\xE1i \u0111\u1EA5t, l\xE0m ch\u1EC7ch
+        h\u01B0\u1EDBng c\xE1c h\u1EA1t c\u1EE7a gi\xF3 m\u1EB7t tr\u1EDDi v\xE0
+        b\u1EA3o v\u1EC7 Tr\xE1i \u0111\u1EA5t kh\u1ECFi b\u1EE9c x\u1EA1 c\u1EE7a
+        M\u1EB7t tr\u1EDDi."
+      - "\u79C1\u305F\u3061\u306E\u6545\u90F7\u306F\u3001\u592A\u967D\u7CFB\u306E
+        8 \u3064\u306E\u60D1\u661F\u306E\u4E2D\u3067\u6700\u3082\u5BC6\u5EA6\u304C\u9AD8\u3044\u3067\u3059\u3002
+        4 \u3064\u306E\u5730\u7403\u578B\u60D1\u661F\u306E\u4E2D\u3067\u6700\u5927\u306E\u60D1\u661F\u3067\u3082\u3042\u308A\u307E\u3059\u3002\n\n\u8868\u9762\n\u5730\u7403\u306E\u7D04
+        71% \u306F\u5869\u6C34\u306E\u6D77\u3067\u8986\u308F\u308C\u3066\u304A\u308A\u3001\u6B8B\u308A\u306E
+        30% \u306F 7 \u3064\u306E\u5927\u9678\u306E\u9678\u5730\u306B\u3088\u3063\u3066\u5360\u3081\u3089\u308C\u3066\u3044\u307E\u3059\u3002\u5730\u7403\u306E\u5916\u8868\u9762\u3082\u3044\u304F\u3064\u304B\u306E\u786C\u3044\u90E8\u5206\u3001\u307E\u305F\u306F\u69CB\u9020\u30D7\u30EC\u30FC\u30C8\u306B\u5206\u5272\u3055\u308C\u3066\u304A\u308A\u3001\u305D\u308C\u3089\u306F\u6570\u767E\u4E07\u5E74\u304B\u3051\u3066\u8868\u9762\u3092\u79FB\u52D5\u3057\u307E\u3059\u3002\n\n\u8EF8\u65B9\u5411\u306E\u50BE\u304D\n\u73FE\u5728\u3001\u5730\u7403\u306F\u5730\u8EF8\u3092\u4E2D\u5FC3\u306B
+        23.4 \u5EA6\u50BE\u3044\u3066\u304A\u308A\u30011 \u5E74\u3092\u901A\u3057\u3066\u5730\u7403\u306E\u8868\u9762\u5168\u4F53\u3067\u6C17\u5019\u3068\u5929\u5019\u306B\u5B63\u7BC0\u5909\u52D5\u3092\u3082\u305F\u3089\u3057\u307E\u3059\u3002\n\n\u30DE\u30B0\u30D5\u30A3\u30FC\u30EB\u30C9\n\u5730\u7403\u306E\u78C1\u5834\u306F\u3001\u60D1\u661F\u306E\u6EB6\u878D\u3057\u305F\u5916\u6838\u9818\u57DF\u5185\u3067\u751F\u6210\u3055\u308C\u3001\u78C1\u6C17\u570F\u304B\u3089\u5916\u5074\u306B\u5E83\u304C\u308A\u307E\u3059\u3002\u3053\u308C\u306F\u3001\u5730\u7403\u3092\u53D6\u308A\u56F2\u3080\u969C\u58C1\u3067\u3042\u308A\u3001\u592A\u967D\u98A8\u306E\u7C92\u5B50\u3092\u305D\u3089\u3057\u3001\u592A\u967D\u306E\u653E\u5C04\u7DDA\u304B\u3089\u5730\u7403\u3092\u4FDD\u8B77\u3057\u307E\u3059\u3002"
+      - "\uC6B0\uB9AC\uC758 \uACE0\uD5A5\uC740 \uD0DC\uC591\uACC4\uC758 8\uAC1C \uD589\uC131
+        \uC911 \uBC00\uB3C4\uAC00 \uAC00\uC7A5 \uB192\uC740 \uD589\uC131\uC785\uB2C8\uB2E4.
+        \uB610\uD55C 4\uAC1C\uC758 \uC9C0\uAD6C\uD615 \uD589\uC131 \uC911 \uAC00\uC7A5
+        \uD070 \uD589\uC131\uC774\uAE30\uB3C4 \uD569\uB2C8\uB2E4.\n\n\uD45C\uBA74\n\uC9C0\uAD6C\uC758
+        \uC57D 71%\uB294 \uBC14\uB2F7\uBB3C\uB85C \uB36E\uC5EC \uC788\uACE0, \uB098\uBA38\uC9C0
+        30%\uB294 7\uAC1C \uB300\uB959\uC73C\uB85C \uC774\uB8E8\uC5B4\uC838 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC9C0\uAD6C\uC758 \uC678\uBD80 \uD45C\uBA74\uC740 \uB610\uD55C \uC218\uBC31\uB9CC
+        \uB144\uC5D0 \uAC78\uCCD0 \uD45C\uBA74\uC744 \uAC00\uB85C\uC9C8\uB7EC \uC774\uB3D9\uD558\uB294
+        \uC5EC\uB7EC \uAC1C\uC758 \uB2E8\uB2E8\uD55C \uBD80\uBD84, \uC989 \uC9C0\uAC01\uD310\uC73C\uB85C
+        \uB098\uB204\uC5B4\uC838 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uCD95 \uAE30\uC6B8\uAE30\n\uC624\uB298\uB0A0
+        \uC9C0\uAD6C\uB294 \uC790\uC804\uCD95\uC744 \uC911\uC2EC\uC73C\uB85C 23.4\uB3C4
+        \uAE30\uC6B8\uC5B4\uC838 \uC788\uC5B4 1\uB144 \uB3D9\uC548 \uC9C0\uAD6C \uD45C\uBA74
+        \uC804\uCCB4\uC5D0 \uAC78\uCCD0 \uAE30\uD6C4\uC640 \uB0A0\uC528\uC5D0 \uACC4\uC808\uC801
+        \uBCC0\uD654\uAC00 \uBC1C\uC0DD\uD569\uB2C8\uB2E4.\n\n\uB9E4\uADF8\uD544\uB4DC\n\uC9C0\uAD6C
+        \uC790\uAE30\uC7A5\uC740 \uD589\uC131\uC758 \uB179\uC740 \uC678\uD575 \uC601\uC5ED
+        \uB0B4\uC5D0\uC11C \uC0DD\uC131\uB418\uC5B4 \uC9C0\uAD6C\uB97C \uB458\uB7EC\uC2F8\uACE0
+        \uC788\uB294 \uC7A5\uBCBD\uC778 \uC790\uAE30\uAD8C\uC5D0\uC11C \uBC14\uAE65\uCABD\uC73C\uB85C
+        \uD655\uC7A5\uB418\uC5B4 \uD0DC\uC591\uD48D\uC758 \uC785\uC790\uB97C \uD3B8\uD5A5\uC2DC\uD0A4\uACE0
+        \uD0DC\uC591 \uBCF5\uC0AC\uB85C\uBD80\uD130 \uC9C0\uAD6C\uB97C \uBCF4\uD638\uD569\uB2C8\uB2E4."
+      - "Notre plan\xE8te natale est la plus dense des huit plan\xE8tes du syst\xE8me
+        solaire. C'est aussi la plus grande des quatre plan\xE8tes telluriques.\n\nSURFACE\nEnviron
+        71 % de la Terre est recouverte d\u2019oc\xE9ans d\u2019eau sal\xE9e, et
+        les 30 % restants sont occup\xE9s par les sept masses continentales. La surface
+        ext\xE9rieure de la Terre est \xE9galement divis\xE9e en plusieurs segments
+        rigides, ou plaques tectoniques, qui migrent \xE0 travers la surface sur
+        des p\xE9riodes de plusieurs millions d'ann\xE9es.\n\nINCLINAISON AXIALE\nAujourd\u2019hui,
+        la Terre est inclin\xE9e sur son axe de 23,4 degr\xE9s, ce qui produit des
+        variations saisonni\xE8res du climat et des conditions m\xE9t\xE9orologiques
+        \xE0 la surface de la plan\xE8te au cours d\u2019une ann\xE9e.\n\nCHAMP MAG.\nLe
+        champ magn\xE9tique terrestre est g\xE9n\xE9r\xE9 dans la r\xE9gion du noyau
+        externe en fusion de la plan\xE8te et s'\xE9tend vers l'ext\xE9rieur depuis
+        la magn\xE9tosph\xE8re\_: une barri\xE8re entourant la Terre, d\xE9viant
+        les particules du vent solaire et prot\xE9geant la Terre du rayonnement solaire."
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Neptune_mass
+    - Term: txt_Earth_distance_from_sun
       TermType: 0
       Description: 
       Languages:
-      - 1.02 x 10^26 Kg
-      - 
-      - 
-      - 
-      - 
+      - 150 M Km
+      - 150 M Km
+      - "150\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
+      - 150Mkm
+      - 150 Mkm
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Neptune_equatorial_diameter
+    - Term: txt_Earth_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 49528 Km
-      - 
-      - 
-      - 
-      - 
+      - 12756 Km
+      - 12756 Km
+      - 12756Km
+      - 12756Km
+      - 12756 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 6 x 10^24 Kg
+      - 6 x 10^24 Kg
+      - "6\xD710^24kg"
+      - 6 x 10^24kg
+      - 6 x 10 ^ 24 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Earth
+      - "Tr\xE1i \u0110\u1EA5t"
+      - "\u5730\u7403"
+      - "\uC9C0\uAD6C"
+      - Terre
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 23H 56M
+      - 23H 56M
+      - "23\u6642\u959356\u5206"
+      - "23\uC2DC 56\uBD84"
+      - 23H 56Min
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 1 Year
+      - "1 N\u0103m"
+      - "1\u5E74"
+      - "\uC77C\uB144"
+      - 1 An
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 9.8 M/s^2
+      - 9,8 M/s^2
+      - 9.8m/s^2
+      - 9.8m/s^2
+      - 9,8 M/s^2
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Earth_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - 15*C
+      - 15*C
+      - 15*C
+      - 15*C
+      - 15*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Jupiter is the largest planet of the Solar System, with a mass 2.5 greater
+        than all of the rest of the planets combined - but still only one-thousandth
+        that of the Sun.
+
+
+        STAR-LIKE
+
+        Jupiter is the planet most
+        like the Sun in terms of its compostion . Although Jupiter would still need
+        to be about 75 times as massive to fuse hydrogen and be com a star. it would
+        only need to be 13 times as massive to burn deuterium and become a brown
+        dwarf.
+
+
+        ATMOSPHERE
+
+        Jupiter spins on its axis faster than
+        any other planets. Because of this rotation, Jupiter''s asmosphere is subject
+        to high winds, which cause the atmosphere to form distinct bands of colour,
+        like swirling vortices and gigantic anticyclonic storms.
+
+
+        MOON
+
+        Jupiter
+        governs the largest number of moons of any planet, with the current official
+        total being 79. The four largest are the Galliean moons: Io, Europa, Ganymede,
+        and Callisto. Ganymede, the largest moon in the Solar System, has a diameter
+        greater than that of the planet Mercury.
+
+
+        OBSERVATION
+
+        Jupiter 
+        is the fourth brightest object in our skies affter the Sun, Moon, and Venus.
+        Becase the orbit of Jupiter is outside the Earth''s the planet always appears
+        nearly fully illuminated when viewed through Earth-based telescopes.'
+      - "Sao M\u1ED9c l\xE0 h\xE0nh tinh l\u1EDBn nh\u1EA5t trong H\u1EC7 M\u1EB7t
+        tr\u1EDDi, v\u1EDBi kh\u1ED1i l\u01B0\u1EE3ng l\u1EDBn h\u01A1n 2,5 l\u1EA7n
+        so v\u1EDBi t\u1EA5t c\u1EA3 c\xE1c h\xE0nh tinh c\xF2n l\u1EA1i c\u1ED9ng
+        l\u1EA1i - nh\u01B0ng v\u1EABn ch\u1EC9 b\u1EB1ng m\u1ED9t ph\u1EA7n ngh\xECn
+        kh\u1ED1i l\u01B0\u1EE3ng c\u1EE7a M\u1EB7t tr\u1EDDi.\n\nNH\u01AF SAO\nSao
+        M\u1ED9c l\xE0 h\xE0nh tinh gi\u1ED1ng M\u1EB7t tr\u1EDDi nh\u1EA5t v\u1EC1
+        th\xE0nh ph\u1EA7n c\u1EA5u t\u1EA1o c\u1EE7a n\xF3. M\u1EB7c d\xF9 Sao M\u1ED9c
+        v\u1EABn c\u1EA7n ph\u1EA3i n\u1EB7ng g\u1EA5p kho\u1EA3ng 75 l\u1EA7n \u0111\u1EC3
+        t\u1ED5ng h\u1EE3p hydro v\xE0 tr\u1EDF th\xE0nh m\u1ED9t ng\xF4i sao. n\xF3
+        ch\u1EC9 c\u1EA7n l\u1EDBn g\u1EA5p 13 l\u1EA7n \u0111\u1EC3 \u0111\u1ED1t
+        ch\xE1y deuterium v\xE0 tr\u1EDF th\xE0nh m\u1ED9t sao l\xF9n n\xE2u.\n\nB\u1EA6U
+        KH\xD4NG KH\xCD\nSao M\u1ED9c quay quanh tr\u1EE5c c\u1EE7a n\xF3 nhanh h\u01A1n
+        b\u1EA5t k\u1EF3 h\xE0nh tinh n\xE0o kh\xE1c. Do s\u1EF1 quay n\xE0y, b\u1EA7u
+        kh\xED quy\u1EC3n c\u1EE7a Sao M\u1ED9c ch\u1ECBu \u1EA3nh h\u01B0\u1EDFng
+        c\u1EE7a gi\xF3 l\u1EDBn, khi\u1EBFn b\u1EA7u kh\xED quy\u1EC3n h\xECnh th\xE0nh
+        c\xE1c d\u1EA3i m\xE0u ri\xEAng bi\u1EC7t, gi\u1ED1ng nh\u01B0 c\xE1c xo\xE1y
+        xo\xE1y v\xE0 c\xE1c c\u01A1n b\xE3o ngh\u1ECBch xo\xE1y kh\u1ED5ng l\u1ED3.\n\nM\u1EB6T
+        TR\u0102NG\nSao M\u1ED9c qu\u1EA3n l\xFD s\u1ED1 l\u01B0\u1EE3ng m\u1EB7t
+        tr\u0103ng l\u1EDBn nh\u1EA5t so v\u1EDBi b\u1EA5t k\u1EF3 h\xE0nh tinh n\xE0o,
+        v\u1EDBi t\u1ED5ng s\u1ED1 ch\xEDnh th\u1EE9c hi\u1EC7n t\u1EA1i l\xE0 79.
+        B\u1ED1n m\u1EB7t tr\u0103ng l\u1EDBn nh\u1EA5t l\xE0 c\xE1c m\u1EB7t tr\u0103ng
+        Galliean: Io, Europa, Ganymede v\xE0 Callisto. Ganymede, m\u1EB7t tr\u0103ng
+        l\u1EDBn nh\u1EA5t trong H\u1EC7 M\u1EB7t tr\u1EDDi, c\xF3 \u0111\u01B0\u1EDDng
+        k\xEDnh l\u1EDBn h\u01A1n \u0111\u01B0\u1EDDng k\xEDnh c\u1EE7a h\xE0nh tinh
+        Sao Th\u1EE7y.\n\nQUAN S\xC1T\nSao M\u1ED9c l\xE0 v\u1EADt th\u1EC3 s\xE1ng
+        th\u1EE9 t\u01B0 tr\xEAn b\u1EA7u tr\u1EDDi c\u1EE7a ch\xFAng ta sau M\u1EB7t
+        tr\u1EDDi, M\u1EB7t tr\u0103ng v\xE0 Sao Kim. V\xEC qu\u1EF9 \u0111\u1EA1o
+        c\u1EE7a Sao M\u1ED9c n\u1EB1m b\xEAn ngo\xE0i Tr\xE1i \u0111\u1EA5t n\xEAn
+        h\xE0nh tinh n\xE0y lu\xF4n \u0111\u01B0\u1EE3c chi\u1EBFu s\xE1ng g\u1EA7n
+        nh\u01B0 ho\xE0n to\xE0n khi nh\xECn qua k\xEDnh vi\u1EC5n v\u1ECDng tr\xEAn
+        Tr\xE1i \u0111\u1EA5t."
+      - "\u6728\u661F\u306F\u592A\u967D\u7CFB\u6700\u5927\u306E\u60D1\u661F\u3067\u3001\u8CEA\u91CF\u306F\u4ED6\u306E\u60D1\u661F\u3092\u5408\u308F\u305B\u305F\u8CEA\u91CF\u3088\u308A
+        2.5 \u500D\u5927\u304D\u3044\u3067\u3059\u304C\u3001\u305D\u308C\u3067\u3082\u592A\u967D\u306E
+        1,000 \u5206\u306E 1 \u306B\u3059\u304E\u307E\u305B\u3093\u3002\n\n\u30B9\u30BF\u30FC\u306E\u3088\u3046\u306A\n\u6728\u661F\u306F\u3001\u305D\u306E\u7D44\u6210\u306E\u70B9\u3067\u592A\u967D\u306B\u6700\u3082\u4F3C\u3066\u3044\u308B\u60D1\u661F\u3067\u3059\u3002\u305F\u3060\u3057\u3001\u6C34\u7D20\u3092\u878D\u5408\u3057\u3066\u661F\u306B\u306A\u308B\u306B\u306F\u3001\u6728\u661F\u306F\u307E\u3060\u7D04
+        75 \u500D\u306E\u8CEA\u91CF\u304C\u5FC5\u8981\u3067\u3059\u3002\u91CD\u6C34\u7D20\u304C\u71C3\u3048\u3066\u8910\u8272\u77EE\u661F\u306B\u306A\u308B\u306B\u306F\u3001\u305D\u306E\u8CEA\u91CF\u304C
+        13 \u500D\u3042\u308C\u3070\u5341\u5206\u3067\u3059\u3002\n\n\u96F0\u56F2\u6C17\n\u6728\u661F\u306F\u4ED6\u306E\u3069\u306E\u60D1\u661F\u3088\u308A\u3082\u901F\u304F\u81EA\u8EE2\u3057\u3066\u3044\u307E\u3059\u3002\u3053\u306E\u81EA\u8EE2\u306B\u3088\u308A\u3001\u6728\u661F\u306E\u5927\u6C17\u570F\u306F\u5F37\u98A8\u306E\u5F71\u97FF\u3092\u53D7\u3051\u3001\u5927\u6C17\u4E2D\u306B\u6E26\u5DFB\u304F\u6E26\u3084\u5DE8\u5927\u306A\u9AD8\u6C17\u5727\u6027\u5D50\u306A\u3069\u3001\u306F\u3063\u304D\u308A\u3068\u3057\u305F\u8272\u306E\u5E2F\u304C\u5F62\u6210\u3055\u308C\u307E\u3059\u3002\n\n\u6708\n\u6728\u661F\u306F\u60D1\u661F\u306E\u4E2D\u3067\u6700\u3082\u591A\u304F\u306E\u885B\u661F\u3092\u652F\u914D\u3057\u3066\u304A\u308A\u3001\u73FE\u5728\u306E\u516C\u5F0F\u306E\u885B\u661F\u306E\u6570\u306F
+        79 \u3067\u3059\u3002\u6700\u5927\u306E 4 \u3064\u306F\u30AC\u30EA\u30A2\u306E\u885B\u661F\u3001\u30A4\u30AA\u3001\u30A8\u30A6\u30ED\u30D1\u3001\u30AC\u30CB\u30E1\u30C7\u3001\u30AB\u30EA\u30B9\u30C8\u3067\u3059\u3002\u30AC\u30CB\u30E1\u30C7\u306F\u592A\u967D\u7CFB\u6700\u5927\u306E\u885B\u661F\u3067\u3042\u308A\u3001\u305D\u306E\u76F4\u5F84\u306F\u6C34\u661F\u3088\u308A\u3082\u5927\u304D\u3044\u3002\n\n\u89B3\u5BDF\n\u6728\u661F\u306F\u3001\u592A\u967D\u3001\u6708\u3001\u91D1\u661F\u306B\u6B21\u3044\u3067\u3001\u79C1\u305F\u3061\u306E\u7A7A\u30674\u756A\u76EE\u306B\u660E\u308B\u3044\u5929\u4F53\u3067\u3059\u3002\u6728\u661F\u306E\u8ECC\u9053\u306F\u5730\u7403\u306E\u5916\u5074\u306B\u3042\u308B\u305F\u3081\u3001\u5730\u7403\u4E0A\u306E\u671B\u9060\u93E1\u3067\u898B\u308B\u3068\u3001\u6728\u661F\u306F\u5E38\u306B\u307B\u307C\u5B8C\u5168\u306B\u7167\u3089\u3055\u308C\u3066\u898B\u3048\u307E\u3059\u3002"
+      - "\uBAA9\uC131\uC740 \uD0DC\uC591\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uD070 \uD589\uC131\uC73C\uB85C
+        \uB098\uBA38\uC9C0 \uBAA8\uB4E0 \uD589\uC131\uC744 \uD569\uCE5C \uAC83\uBCF4\uB2E4
+        \uC9C8\uB7C9\uC774 2.5\uBC30 \uB354 \uD06C\uC9C0\uB9CC \uC5EC\uC804\uD788
+        \uD0DC\uC591\uC758 1/1000\uC5D0 \uBD88\uACFC\uD569\uB2C8\uB2E4.\n\n\uBCC4
+        \uAC19\uC740\n\uBAA9\uC131\uC740 \uAD6C\uC131\uC131\uBD84 \uCE21\uBA74\uC5D0\uC11C
+        \uD0DC\uC591\uACFC \uAC00\uC7A5 \uC720\uC0AC\uD55C \uD589\uC131\uC774\uB2E4.
+        \uBAA9\uC131\uC774 \uC218\uC18C\uB97C \uC735\uD569\uD558\uACE0 \uBCC4\uC774
+        \uB418\uAE30 \uC704\uD574\uC11C\uB294 \uC5EC\uC804\uD788 \uBAA9\uC131\uC774
+        \uC57D 75\uBC30\uB098 \uB354 \uCEE4\uC57C \uD569\uB2C8\uB2E4. \uC911\uC218\uC18C\uB97C
+        \uD0DC\uC6CC \uAC08\uC0C9 \uC65C\uC131\uC774 \uB418\uB824\uBA74 \uC9C8\uB7C9\uC774
+        13\uBC30\uB9CC \uD544\uC694\uD569\uB2C8\uB2E4.\n\n\uB300\uAE30\n\uBAA9\uC131\uC740
+        \uB2E4\uB978 \uC5B4\uB5A4 \uD589\uC131\uBCF4\uB2E4 \uBE60\uB974\uAC8C \uCD95\uC744
+        \uC911\uC2EC\uC73C\uB85C \uD68C\uC804\uD569\uB2C8\uB2E4. \uC774\uB7EC\uD55C
+        \uD68C\uC804\uC73C\uB85C \uC778\uD574 \uBAA9\uC131\uC758 \uB300\uAE30\uB294
+        \uAC15\uD48D\uC758 \uC601\uD5A5\uC744 \uBC1B\uC544 \uB300\uAE30\uAC00 \uC18C\uC6A9\uB3CC\uC774\uCE58\uB294
+        \uC18C\uC6A9\uB3CC\uC774\uC640 \uAC70\uB300\uD55C \uACE0\uAE30\uC555\uC131
+        \uD3ED\uD48D\uACFC \uAC19\uC740 \uB69C\uB837\uD55C \uC0C9\uC0C1\uC758 \uB760\uB97C
+        \uD615\uC131\uD558\uAC8C \uB429\uB2C8\uB2E4.\n\n\uB2EC\n\uBAA9\uC131\uC740
+        \uBAA8\uB4E0 \uD589\uC131 \uC911 \uAC00\uC7A5 \uB9CE\uC740 \uC218\uC758 \uB2EC\uC744
+        \uAD00\uC7A5\uD558\uBA70, \uD604\uC7AC \uACF5\uC2DD\uC801\uC778 \uCD1D\uACC4\uB294
+        79\uAC1C\uC785\uB2C8\uB2E4. \uAC00\uC7A5 \uD070 4\uAC1C\uC758 \uC704\uC131\uC740
+        \uAC08\uB9AC\uC544 \uC704\uC131\uC778 \uC774\uC624, \uC720\uB85C\uD30C, \uAC00\uB2C8\uBA54\uB370,
+        \uCE7C\uB9AC\uC2A4\uD1A0\uC785\uB2C8\uB2E4. \uD0DC\uC591\uACC4\uC5D0\uC11C
+        \uAC00\uC7A5 \uD070 \uB2EC\uC778 \uAC00\uB2C8\uBA54\uB370\uB294 \uC218\uC131\uBCF4\uB2E4
+        \uC9C0\uB984\uC774 \uB354 \uD06C\uB2E4.\n\n\uAD00\uCC30\n\uBAA9\uC131\uC740
+        \uD0DC\uC591, \uB2EC, \uAE08\uC131\uC5D0 \uC774\uC5B4 \uC6B0\uB9AC \uD558\uB298\uC5D0\uC11C
+        \uB124 \uBC88\uC9F8\uB85C \uBC1D\uC740 \uBB3C\uCCB4\uC785\uB2C8\uB2E4. \uBAA9\uC131\uC758
+        \uADA4\uB3C4\uAC00 \uC9C0\uAD6C \uBC14\uAE65\uC5D0 \uC788\uAE30 \uB54C\uBB38\uC5D0
+        \uC9C0\uAD6C \uAE30\uBC18 \uB9DD\uC6D0\uACBD\uC744 \uD1B5\uD574 \uBCFC \uB54C
+        \uD589\uC131\uC740 \uD56D\uC0C1 \uAC70\uC758 \uC644\uC804\uD788 \uBC1D\uAC8C
+        \uBCF4\uC785\uB2C8\uB2E4."
+      - "Jupiter est la plus grande plan\xE8te du syst\xE8me solaire, avec une masse
+        2,5 fois sup\xE9rieure \xE0 celle de toutes les autres plan\xE8tes r\xE9unies,
+        mais seulement un milli\xE8me de celle du Soleil.\n\nCOMME UNE \xC9TOILE\nJupiter
+        est la plan\xE8te qui ressemble le plus au Soleil en termes de composition.
+        Bien que Jupiter devrait encore \xEAtre environ 75 fois plus massif pour
+        fusionner l\u2019hydrog\xE8ne et devenir une \xE9toile. il lui suffirait
+        d\u2019\xEAtre 13 fois plus massive pour br\xFBler du deut\xE9rium et devenir
+        une naine brune.\n\nATMOSPH\xC8RE\nJupiter tourne sur son axe plus vite que
+        toutes les autres plan\xE8tes. En raison de cette rotation, l'atmosph\xE8re
+        de Jupiter est soumise \xE0 des vents violents, qui provoquent la formation
+        de bandes de couleurs distinctes dans l'atmosph\xE8re, comme des vortex tourbillonnants
+        et de gigantesques temp\xEAtes anticycloniques.\n\nLUNE\nJupiter gouverne
+        le plus grand nombre de lunes de toutes les plan\xE8tes, le total officiel
+        actuel \xE9tant de 79. Les quatre plus grandes sont les lunes galli\xE9ennes
+        : Io, Europe, Ganym\xE8de et Callisto. Ganym\xE8de, la plus grande lune du
+        syst\xE8me solaire, a un diam\xE8tre sup\xE9rieur \xE0 celui de la plan\xE8te
+        Mercure.\n\nOBSERVATION\nJupiter est le quatri\xE8me objet le plus brillant
+        de notre ciel apr\xE8s le Soleil, la Lune et V\xE9nus. \xC9tant donn\xE9
+        que l'orbite de Jupiter est en dehors de celle de la Terre, la plan\xE8te
+        appara\xEEt toujours presque enti\xE8rement \xE9clair\xE9e lorsqu'elle est
+        observ\xE9e \xE0 travers des t\xE9lescopes terrestres."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 779 M Km
+      - 779 M Km
+      - "779\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
+      - 779Mkm
+      - 779 Mkm
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 142984 Km
+      - 142984 Km
+      - 142984 Km
+      - 142984Km
+      - 142984Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.9 x 10^27 Kg
+      - 1,9 x 10^27 Kg
+      - "1.9\xD710^27kg"
+      - 1.9 x 10^27kg
+      - 1,9 x 10 ^ 27 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Jupiter
+      - "Sao M\u1ED9c"
+      - "\u6728\u661F"
+      - "\uBAA9\uC131"
+      - Jupiter
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 9H 55M
+      - 9H 55P
+      - "9\u6642\u959355\u5206"
+      - "9\uC2DC\uAC04 55\uBD84"
+      - 9H 55Min
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 11.9 Years
+      - "11,9 N\u0103m"
+      - "11.9\u5E74"
+      - "11.9\uB144"
+      - 11,9 Ans
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 25 m/s^2
+      - 25 m/s^2
+      - 25m/s^2
+      - "25m/\uCD08^2"
+      - "25\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Jupiter_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - -120*C
+      - -120*C
+      - -120*C
+      - -120*C
+      - -120*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Mars is the fourth planet from the Sun and the second smallest planet in
+        the Solar System. The reddish appearance of Mars''s surface is caused by
+        iron oxide(rust).
+
+
+        EARTH-LIKE
+
+        While the Mars is abour half
+        as big as the Earth, there ara still many similarities: Mars has a rocky
+        surface and polar ice caps, the day on Mars are only 40 minutes longer, the
+        axial tilt give it similar seasons to ours(although each last about twice
+        as long).
+
+
+        SURFACE
+
+        Mars has a dramatic landscape, with
+        towering valcanoes and a great vanyon system. Of all the planets in the Solar
+        System. It has the highest mountain, Olympus Mons, and the largest canyon,
+        Valley Marineris.
+
+
+        WATER
+
+        There is strong evidence that
+        the Martian atmospherer was once far denser than it is now, and that water
+        once ran freely on its surface. There is also mounting evidence that much
+        of this water remains locked away underground.
+
+
+        MOON
+
+        Mars
+        has two small natural satellites, Phobos and Deimos, that orbit very close
+        to the planet. These moons may be  captured asterioid. It has been predicted
+        that in about 50 milions years, Phobos will either crash into Mars''s surface
+        or break up into a ring structure around the planet.
+
+
+        MISSION
+
+        Mars
+        is the focus of intense study, with two rovers(exploration rover Opportunity
+        and science laboratory Curiosity) operating on th surface, while three tinternational
+        missions orbits the planet: NASA''s Mars Odyssey and Mars Reconnaissance
+        Orbiter and ESA''s Mars Express.
+
+
+        OBSERVATION
+
+        Mars can
+        easily be seen from Earth with the naked eye, as can its reddish coloring.
+        Its apparent magnitued is surpassed by the Sun, the Moon, Venus and Jupiter
+        - but it can briefly match Jupiter''s brightness at certain points in its
+        orbit.'
+      - "Sao H\u1ECFa l\xE0 h\xE0nh tinh th\u1EE9 t\u01B0 t\xEDnh t\u1EEB M\u1EB7t
+        tr\u1EDDi v\xE0 l\xE0 h\xE0nh tinh nh\u1ECF th\u1EE9 hai trong H\u1EC7 M\u1EB7t
+        tr\u1EDDi. B\u1EC1 m\u1EB7t sao H\u1ECFa c\xF3 m\xE0u \u0111\u1ECF do oxit
+        s\u1EAFt (r\u1EC9 s\xE9t) g\xE2y ra.\n\nNH\u01AF TR\xC1I \u0110\u1EA4T\nM\u1EB7c
+        d\xF9 Sao H\u1ECFa c\xF3 k\xEDch th\u01B0\u1EDBc b\u1EB1ng m\u1ED9t n\u1EEDa
+        Tr\xE1i \u0110\u1EA5t nh\u01B0ng v\u1EABn c\xF3 nhi\u1EC1u \u0111i\u1EC3m
+        t\u01B0\u01A1ng \u0111\u1ED3ng: Sao H\u1ECFa c\xF3 b\u1EC1 m\u1EB7t \u0111\xE1
+        v\xE0 c\xE1c ch\u1ECFm b\u0103ng \u1EDF v\xF9ng c\u1EF1c, ng\xE0y tr\xEAn
+        Sao H\u1ECFa ch\u1EC9 d\xE0i h\u01A1n 40 ph\xFAt, \u0111\u1ED9 nghi\xEAng
+        tr\u1EE5c quay khi\u1EBFn n\xF3 c\xF3 c\xE1c m\xF9a t\u01B0\u01A1ng t\u1EF1
+        nh\u01B0 c\xE1c m\xF9a c\u1EE7a ch\xFAng ta (m\u1EB7c d\xF9 m\u1ED7i m\xF9a
+        \u0111\u1EC1u gi\u1ED1ng nhau). k\xE9o d\xE0i kho\u1EA3ng g\u1EA5p \u0111\xF4i).\n\nB\u1EC0
+        M\u1EB6T\nSao H\u1ECFa c\xF3 phong c\u1EA3nh \u1EA5n t\u01B0\u1EE3ng, v\u1EDBi
+        nh\u1EEFng thung l\u0169ng cao ch\xF3t v\xF3t v\xE0 h\u1EC7 th\u1ED1ng vanyon
+        tuy\u1EC7t v\u1EDDi. Trong s\u1ED1 t\u1EA5t c\u1EA3 c\xE1c h\xE0nh tinh trong
+        H\u1EC7 M\u1EB7t Tr\u1EDDi. N\xF3 c\xF3 ng\u1ECDn n\xFAi cao nh\u1EA5t, Olympus
+        Mons, v\xE0 h\u1EBBm n\xFAi l\u1EDBn nh\u1EA5t, Valley Marineris.\n\nN\u01AF\u1EDAC\nC\xF3
+        b\u1EB1ng ch\u1EE9ng m\u1EA1nh m\u1EBD cho th\u1EA5y b\u1EA7u kh\xED quy\u1EC3n
+        c\u1EE7a sao H\u1ECFa \u0111\xE3 t\u1EEBng d\xE0y \u0111\u1EB7c h\u01A1n
+        nhi\u1EC1u so v\u1EDBi hi\u1EC7n t\u1EA1i v\xE0 n\u01B0\u1EDBc t\u1EEBng
+        ch\u1EA3y t\u1EF1 do tr\xEAn b\u1EC1 m\u1EB7t c\u1EE7a n\xF3. Ngo\xE0i ra
+        c\xF2n c\xF3 b\u1EB1ng ch\u1EE9ng cho th\u1EA5y ph\u1EA7n l\u1EDBn l\u01B0\u1EE3ng
+        n\u01B0\u1EDBc n\xE0y v\u1EABn b\u1ECB gi\u1EEF l\u1EA1i d\u01B0\u1EDBi l\xF2ng
+        \u0111\u1EA5t.\n\nM\u1EB6T TR\u0102NG\nSao H\u1ECFa c\xF3 hai v\u1EC7 tinh
+        t\u1EF1 nhi\xEAn nh\u1ECF l\xE0 Phobos v\xE0 Deimos, c\xF3 qu\u1EF9 \u0111\u1EA1o
+        r\u1EA5t g\u1EA7n v\u1EDBi h\xE0nh tinh n\xE0y. Nh\u1EEFng m\u1EB7t tr\u0103ng
+        n\xE0y c\xF3 th\u1EC3 b\u1ECB b\u1EAFt gi\u1EEF b\u1EDFi ti\u1EC3u h\xE0nh
+        tinh. Ng\u01B0\u1EDDi ta d\u1EF1 \u0111o\xE1n r\u1EB1ng trong kho\u1EA3ng
+        50 tri\u1EC7u n\u0103m n\u1EEFa, Phobos s\u1EBD \u0111\xE2m v\xE0o b\u1EC1
+        m\u1EB7t Sao H\u1ECFa ho\u1EB7c v\u1EE1 ra th\xE0nh m\u1ED9t c\u1EA5u tr\xFAc
+        v\xF2ng quanh h\xE0nh tinh.\n\nNHI\u1EC6M V\u1EE4\nSao H\u1ECFa l\xE0 tr\u1ECDng
+        t\xE2m c\u1EE7a nghi\xEAn c\u1EE9u chuy\xEAn s\xE2u, v\u1EDBi hai m\xE1y
+        th\xE1m hi\u1EC3m (m\xE1y th\xE1m hi\u1EC3m C\u01A1 h\u1ED9i v\xE0 ph\xF2ng
+        th\xED nghi\u1EC7m khoa h\u1ECDc Curiosity) ho\u1EA1t \u0111\u1ED9ng tr\xEAn
+        b\u1EC1 m\u1EB7t, trong khi ba s\u1EE9 m\u1EC7nh xuy\xEAn qu\u1ED1c gia quay
+        quanh h\xE0nh tinh: Mars Odyssey v\xE0 Mars Reconnaissance Orbiter c\u1EE7a
+        NASA v\xE0 Mars Express c\u1EE7a ESA.\n\nQUAN S\xC1T\nSao H\u1ECFa c\xF3
+        th\u1EC3 d\u1EC5 d\xE0ng \u0111\u01B0\u1EE3c nh\xECn th\u1EA5y t\u1EEB Tr\xE1i
+        \u0111\u1EA5t b\u1EB1ng m\u1EAFt th\u01B0\u1EDDng, c\u0169ng nh\u01B0 m\xE0u
+        \u0111\u1ECF c\u1EE7a n\xF3. \u0110\u1ED9 ph\xF3ng \u0111\u1EA1i bi\u1EC3u
+        ki\u1EBFn \u200B\u200Bc\u1EE7a n\xF3 b\u1ECB M\u1EB7t tr\u1EDDi, M\u1EB7t
+        tr\u0103ng, Sao Kim v\xE0 Sao M\u1ED9c v\u01B0\u1EE3t qua - nh\u01B0ng n\xF3
+        c\xF3 th\u1EC3 nhanh ch\xF3ng s\xE1nh ngang v\u1EDBi \u0111\u1ED9 s\xE1ng
+        c\u1EE7a Sao M\u1ED9c t\u1EA1i m\u1ED9t s\u1ED1 \u0111i\u1EC3m nh\u1EA5t
+        \u0111\u1ECBnh tr\xEAn qu\u1EF9 \u0111\u1EA1o c\u1EE7a n\xF3."
+      - "\u706B\u661F\u306F\u592A\u967D\u304B\u3089 4 \u756A\u76EE\u306E\u60D1\u661F\u3067\u3042\u308A\u3001\u592A\u967D\u7CFB\u3067
+        2 \u756A\u76EE\u306B\u5C0F\u3055\u3044\u60D1\u661F\u3067\u3059\u3002\u706B\u661F\u306E\u8868\u9762\u304C\u8D64\u304F\u898B\u3048\u308B\u306E\u306F\u9178\u5316\u9244\uFF08\u3055\u3073\uFF09\u306B\u3088\u308B\u3082\u306E\u3067\u3059\u3002\n\n\u5730\u7403\u306E\u3088\u3046\u306A\n\u706B\u661F\u306F\u5730\u7403\u306E\u534A\u5206\u306E\u5927\u304D\u3055\u3067\u3059\u304C\u3001\u305D\u308C\u3067\u3082\u591A\u304F\u306E\u985E\u4F3C\u70B9\u304C\u3042\u308A\u307E\u3059\u3002\u706B\u661F\u306E\u8868\u9762\u306F\u5CA9\u77F3\u3067\u6975\u5730\u306E\u6C37\u5E8A\u304C\u3042\u308A\u3001\u706B\u661F\u306E\u65E5\u306F\u308F\u305A\u304B
+        40 \u5206\u3057\u304B\u9577\u304F\u306A\u304F\u3001\u5730\u8EF8\u306E\u50BE\u304D\u306B\u3088\u308A\u5730\u7403\u3068\u5B63\u7BC0\u304C\u4F3C\u3066\u3044\u307E\u3059\uFF08\u305F\u3060\u3057\u305D\u308C\u305E\u308C\u7D042\u500D\u9577\u6301\u3061\u3057\u307E\u3059\uFF09\u3002\n\n\u8868\u9762\n\u706B\u661F\u306B\u306F\u3001\u305D\u3073\u3048\u7ACB\u3064\u706B\u5C71\u3084\u5927\u304D\u306A\u5CE1\u8C37\u30B7\u30B9\u30C6\u30E0\u306A\u3069\u3001\u30C9\u30E9\u30DE\u30C1\u30C3\u30AF\u306A\u98A8\u666F\u304C\u3042\u308A\u307E\u3059\u3002\u592A\u967D\u7CFB\u306E\u3059\u3079\u3066\u306E\u60D1\u661F\u306E\u3046\u3061\u3002\u6700\u3082\u9AD8\u3044\u5C71\u3067\u3042\u308B\u30AA\u30EA\u30F3\u30DD\u30B9\u5C71\u3068\u3001\u6700\u5927\u306E\u5CE1\u8C37\u3067\u3042\u308B\u30DE\u30EA\u30CD\u30EA\u30B9\u6E13\u8C37\u304C\u3042\u308A\u307E\u3059\u3002\n\n\u6C34\n\u706B\u661F\u306E\u5927\u6C17\u570F\u306F\u304B\u3064\u3066\u306F\u73FE\u5728\u3088\u308A\u3082\u306F\u308B\u304B\u306B\u5BC6\u5EA6\u304C\u9AD8\u304F\u3001\u304B\u3064\u3066\u306F\u305D\u306E\u8868\u9762\u3092\u6C34\u304C\u81EA\u7531\u306B\u6D41\u308C\u3066\u3044\u305F\u3068\u3044\u3046\u5F37\u529B\u306A\u8A3C\u62E0\u304C\u3042\u308B\u3002\u3053\u306E\u6C34\u306E\u591A\u304F\u304C\u5730\u4E0B\u306B\u9589\u3058\u8FBC\u3081\u3089\u308C\u305F\u307E\u307E\u3067\u3042\u308B\u3068\u3044\u3046\u8A3C\u62E0\u3082\u5897\u3048\u3066\u3044\u307E\u3059\u3002\n\n\u6708\n\u706B\u661F\u306B\u306F\u3001\u706B\u661F\u306E\u3059\u3050\u8FD1\u304F\u3092\u5468\u56DE\u3059\u308B\u30D5\u30A9\u30DC\u30B9\u3068\u30C0\u30A4\u30E2\u30B9\u3068\u3044\u3046
+        2 \u3064\u306E\u5C0F\u3055\u306A\u5929\u7136\u885B\u661F\u304C\u3042\u308A\u307E\u3059\u3002\u3053\u308C\u3089\u306E\u885B\u661F\u306F\u5C0F\u60D1\u661F\u3067\u6355\u3089\u3048\u3089\u308C\u308B\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\u3002\u7D045,000\u4E07\u5E74\u4EE5\u5185\u306B\u3001\u30D5\u30A9\u30DC\u30B9\u306F\u706B\u661F\u306E\u8868\u9762\u306B\u885D\u7A81\u3059\u308B\u304B\u3001\u706B\u661F\u306E\u5468\u308A\u306E\u30EA\u30F3\u30B0\u69CB\u9020\u306B\u5206\u88C2\u3059\u308B\u3068\u4E88\u6E2C\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\n\u30DF\u30C3\u30B7\u30E7\u30F3\n\u706B\u661F\u306F\u71B1\u5FC3\u306A\u7814\u7A76\u306E\u7126\u70B9\u3067\u3042\u308A\u30012
+        \u53F0\u306E\u63A2\u67FB\u8ECA (\u63A2\u67FB\u8ECA\u30AA\u30DD\u30C1\u30E5\u30CB\u30C6\u30A3\u3068\u79D1\u5B66\u5B9F\u9A13\u5BA4\u30AD\u30E5\u30EA\u30AA\u30B7\u30C6\u30A3)
+        \u304C\u5730\u8868\u3067\u6D3B\u52D5\u3057\u3001NASA \u306E\u30DE\u30FC\u30BA
+        \u30AA\u30C7\u30C3\u30BB\u30A4\u3068\u30DE\u30FC\u30BA \u5075\u5BDF\u30AA\u30FC\u30D3\u30BF\u30FC\u3001ESA
+        \u306E\u30DE\u30FC\u30BA \u30A8\u30AF\u30B9\u30D7\u30EC\u30B9\u3068\u3044\u3046
+        3 \u3064\u306E\u56FD\u969B\u30DF\u30C3\u30B7\u30E7\u30F3\u304C\u706B\u661F\u3092\u5468\u56DE\u3057\u3066\u3044\u307E\u3059\u3002\n\n\u89B3\u5BDF\n\u706B\u661F\u306F\u5730\u7403\u304B\u3089\u8089\u773C\u3067\u7C21\u5358\u306B\u898B\u308B\u3053\u3068\u304C\u3067\u304D\u3001\u305D\u306E\u8D64\u307F\u304C\u304B\u3063\u305F\u8272\u3082\u540C\u69D8\u3067\u3059\u3002\u305D\u306E\u898B\u304B\u3051\u306E\u660E\u308B\u3055\u306F\u592A\u967D\u3001\u6708\u3001\u91D1\u661F\u3001\u6728\u661F\u3092\u4E0A\u56DE\u3063\u3066\u3044\u307E\u3059\u304C\u3001\u8ECC\u9053\u4E0A\u306E\u7279\u5B9A\u306E\u70B9\u3067\u306F\u6728\u661F\u306E\u660E\u308B\u3055\u306B\u4E00\u6642\u7684\u306B\u5339\u6575\u3059\u308B\u3053\u3068\u304C\u3042\u308A\u307E\u3059\u3002"
+      - "\uD654\uC131\uC740 \uD0DC\uC591\uC5D0\uC11C \uB124 \uBC88\uC9F8 \uD589\uC131\uC774\uC790
+        \uD0DC\uC591\uACC4\uC5D0\uC11C \uB450 \uBC88\uC9F8\uB85C \uC791\uC740 \uD589\uC131\uC774\uB2E4.
+        \uD654\uC131 \uD45C\uBA74\uC774 \uBD89\uAC8C \uBCF4\uC774\uB294 \uAC83\uC740
+        \uC0B0\uD654\uCCA0(\uB179) \uB54C\uBB38\uC774\uB2E4.\n\n\uC9C0\uAD6C\uC640
+        \uAC19\uC740\n\uD654\uC131\uC740 \uC9C0\uAD6C\uBCF4\uB2E4 \uC808\uBC18 \uC815\uB3C4
+        \uD06C\uC9C0\uB9CC \uC5EC\uC804\uD788 \uB9CE\uC740 \uC720\uC0AC\uC810\uC744
+        \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uD654\uC131\uC740 \uC554\uC11D
+        \uD45C\uBA74\uACFC \uADF9\uC9C0\uBC29\uC758 \uB9CC\uB144\uC124\uB85C \uC774\uB8E8\uC5B4\uC838
+        \uC788\uACE0, \uD654\uC131\uC758 \uD558\uB8E8\uB294 \uB2E8\uC9C0 40\uBD84
+        \uB354 \uAE38\uBA70, \uCD95 \uAE30\uC6B8\uAE30\uB85C \uC778\uD574 \uC6B0\uB9AC\uC640
+        \uBE44\uC2B7\uD55C \uACC4\uC808\uC744 \uAC16\uAC8C \uB429\uB2C8\uB2E4. \uC57D
+        2\uBC30 \uC815\uB3C4 \uC624\uB798 \uC9C0\uC18D\uB429\uB2C8\uB2E4.)\n\n\uD45C\uBA74\n\uD654\uC131\uC740
+        \uC6B0\uB69D \uC19F\uC740 \uD654\uC0B0\uACFC \uAC70\uB300\uD55C \uBC18\uC698\uACC4
+        \uB4F1 \uB4DC\uB77C\uB9C8\uD2F1\uD55C \uD48D\uACBD\uC744 \uC790\uB791\uD569\uB2C8\uB2E4.
+        \uD0DC\uC591\uACC4\uC758 \uBAA8\uB4E0 \uD589\uC131 \uC911. \uAC00\uC7A5 \uB192\uC740
+        \uC0B0\uC778 \uC62C\uB9BC\uD478\uC2A4 \uBAAC\uC2A4(Olympus Mons)\uC640 \uAC00\uC7A5
+        \uD070 \uD611\uACE1\uC778 \uB9C8\uB9AC\uB124\uB9AC\uC2A4 \uACC4\uACE1(Valley
+        Marineris)\uC774 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uBB3C\n\uD654\uC131\uC758
+        \uB300\uAE30\uB294 \uD55C\uB54C \uC9C0\uAE08\uBCF4\uB2E4 \uD6E8\uC52C \uB354
+        \uBC00\uB3C4\uAC00 \uB192\uC558\uACE0, \uD55C\uB54C \uD654\uC131 \uD45C\uBA74\uC5D0\uB294
+        \uBB3C\uC774 \uC790\uC720\uB86D\uAC8C \uD758\uB800\uB2E4\uB294 \uAC15\uB825\uD55C
+        \uC99D\uAC70\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uB610\uD55C \uC774 \uBB3C\uC758
+        \uB300\uBD80\uBD84\uC774 \uC9C0\uD558\uC5D0 \uAC07\uD600 \uC788\uB2E4\uB294
+        \uC99D\uAC70\uB3C4 \uB298\uC5B4\uB098\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uB2EC\n\uD654\uC131\uC5D0\uB294
+        \uD654\uC131\uACFC \uB9E4\uC6B0 \uAC00\uAE4C\uC6B4 \uADA4\uB3C4\uB97C \uB3C4\uB294
+        \uB450 \uAC1C\uC758 \uC791\uC740 \uC790\uC5F0 \uC704\uC131\uC778 \uD3EC\uBCF4\uC2A4\uC640
+        \uB370\uC774\uBAA8\uC2A4\uAC00 \uC788\uC2B5\uB2C8\uB2E4. \uC774 \uC704\uC131\uB4E4\uC740
+        \uC18C\uD589\uC131\uC73C\uB85C \uD3EC\uCC29\uB420 \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC57D 5\uCC9C\uB9CC\uB144 \uD6C4\uC5D0 \uD3EC\uBCF4\uC2A4\uB294 \uD654\uC131
+        \uD45C\uBA74\uC5D0 \uCDA9\uB3CC\uD558\uAC70\uB098 \uD654\uC131 \uC8FC\uC704\uC758
+        \uACE0\uB9AC \uAD6C\uC870\uB85C \uBD80\uC11C\uC9C8 \uAC83\uC73C\uB85C \uC608\uCE21\uB418\uC5C8\uC2B5\uB2C8\uB2E4.\n\n\uC0AC\uBA85\n\uD654\uC131\uC740
+        \uB450 \uB300\uC758 \uD0D0\uC0AC\uC120(\uD0D0\uC0AC \uB85C\uBC84 Opportunity
+        \uBC0F \uACFC\uD559 \uC5F0\uAD6C\uC18C Curiosity)\uC774 \uD45C\uBA74\uC5D0\uC11C
+        \uC791\uB3D9\uD558\uB294 \uC9D1\uC911 \uC5F0\uAD6C\uC758 \uCD08\uC810\uC774\uBA70,
+        \uC138 \uAC1C\uC758 \uAD6D\uC81C \uC784\uBB34(NASA\uC758 Mars Odyssey \uBC0F
+        Mars Reconnaissance Orbiter \uBC0F ESA\uC758 Mars Express)\uAC00 \uC9C0\uAD6C
+        \uADA4\uB3C4\uB97C \uB3CC\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uAD00\uCC30\n\uD654\uC131\uC740
+        \uBD89\uC740\uC0C9\uC744 \uB760\uB294 \uAC83\uCC98\uB7FC \uC721\uC548\uC73C\uB85C\uB3C4
+        \uC9C0\uAD6C\uC5D0\uC11C \uC27D\uAC8C \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uAC89\uBCF4\uAE30 \uD06C\uAE30\uB294 \uD0DC\uC591, \uB2EC, \uAE08\uC131,
+        \uBAA9\uC131\uC744 \uB2A5\uAC00\uD558\uC9C0\uB9CC \uADA4\uB3C4\uC758 \uD2B9\uC815
+        \uC9C0\uC810\uC5D0\uC11C\uB294 \uBAA9\uC131\uC758 \uBC1D\uAE30\uC640 \uC7A0\uC2DC
+        \uC77C\uCE58\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      - "Mars est la quatri\xE8me plan\xE8te apr\xE8s le Soleil et la deuxi\xE8me
+        plus petite plan\xE8te du syst\xE8me solaire. L'aspect rouge\xE2tre de la
+        surface de Mars est caus\xE9 par l'oxyde de fer (rouille).\n\nCOMME LA TERRE\nBien
+        que Mars soit environ deux fois moins grande que la Terre, il existe encore
+        de nombreuses similitudes\_: Mars a une surface rocheuse et des calottes
+        glaciaires polaires, les jours sur Mars ne sont que 40 minutes plus longs,
+        l'inclinaison axiale lui donne des saisons similaires aux n\xF4tres (m\xEAme
+        si chacune durent environ deux fois plus longtemps).\n\nSURFACE\nMars a un
+        paysage spectaculaire, avec des valcans imposants et un grand syst\xE8me
+        de vanyons. De toutes les plan\xE8tes du syst\xE8me solaire. Elle poss\xE8de
+        la plus haute montagne, Olympus Mons, et le plus grand canyon, Valley Marineris.\n\nEAU\nIl
+        existe des preuves solides que l\u2019atmosph\xE8re martienne \xE9tait autrefois
+        beaucoup plus dense qu\u2019elle ne l\u2019est aujourd\u2019hui et que l\u2019eau
+        coulait librement \xE0 sa surface. Il existe \xE9galement de plus en plus
+        de preuves qu\u2019une grande partie de cette eau reste enferm\xE9e sous
+        terre.\n\nLUNE\nMars poss\xE8de deux petits satellites naturels, Phobos et
+        Deimos, qui gravitent tr\xE8s pr\xE8s de la plan\xE8te. Ces lunes pourraient
+        \xEAtre des ast\xE9ro\xEFdes captur\xE9s. Il a \xE9t\xE9 pr\xE9dit que dans
+        environ 50 millions d'ann\xE9es, Phobos s'\xE9craserait sur la surface de
+        Mars ou se briserait en une structure annulaire autour de la plan\xE8te.\n\nMISSION\nMars
+        fait l'objet d'\xE9tudes intenses, avec deux rovers (le rover d'exploration
+        Opportunity et le laboratoire scientifique Curiosity) op\xE9rant \xE0 la
+        surface, tandis que trois missions internationales tournent autour de la
+        plan\xE8te : Mars Odyssey et Mars Reconnaissance Orbiter de la NASA et Mars
+        Express de l'ESA.\n\nOBSERVATION\nMars est facilement visible depuis la Terre
+        \xE0 l'\u0153il nu, tout comme sa coloration rouge\xE2tre. Sa grandeur apparente
+        est d\xE9pass\xE9e par celle du Soleil, de la Lune, de V\xE9nus et de Jupiter,
+        mais elle peut bri\xE8vement \xE9galer la luminosit\xE9 de Jupiter \xE0 certains
+        points de son orbite."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 230 M Km
+      - 230 M Km
+      - "230\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
+      - 230Mkm
+      - 230 Mkm
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 6792 Km
+      - 6792 Km
+      - 6792Km
+      - 6792Km
+      - 6792 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 6.4 x 10^23 Kg
+      - 6,4 x 10^23 Kg
+      - "6.4\xD710^23kg"
+      - 6.4 x 10^23kg
+      - 6,4 x 10 ^ 23 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Mars
+      - "Sao Ho\u1EA3"
+      - "\u706B\u661F"
+      - "\uD654\uC131"
+      - Mars
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.03 Day
+      - "1,03 Ng\xE0y"
+      - "1.03\u65E5"
+      - "1.03\uC77C"
+      - 1,03 Jour
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.88 Year
+      - "1,88 N\u0103m"
+      - "1.88\u5E74"
+      - "1.88\uB144"
+      - 1,88 An
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 3.7 m/s^2
+      - 3,7 m/s^2
+      - 3.7m/s^2
+      - "3.7m/\uCD08^2"
+      - "3,7\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mars_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - -63*C
+      - -63*C
+      - -63*C
+      - -63*C
+      - -63*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Mercury is the innermost and smallest planet of the Solar System. Because
+        it has almost no atmosphere to retain heatm Mercury''s surface experiences
+        the greatest temperature variation of all the planets.
+
+
+        OBSERVATION
+
+        Mercury
+        appears as a morning or evening star from Earth, but due to it''s proximity
+        to Sun, it is very hard to see. Still, Mercury can be observed at leat twice
+        a year: spring at dusk and in autumn before dawn.'
+      - "Sao Th\u1EE7y l\xE0 h\xE0nh tinh trong c\xF9ng v\xE0 nh\u1ECF nh\u1EA5t
+        c\u1EE7a H\u1EC7 M\u1EB7t Tr\u1EDDi. B\u1EDFi v\xEC n\xF3 h\u1EA7u nh\u01B0
+        kh\xF4ng c\xF3 b\u1EA7u kh\xED quy\u1EC3n \u0111\u1EC3 gi\u1EEF nhi\u1EC7t
+        n\xEAn b\u1EC1 m\u1EB7t Sao Th\u1EE7y tr\u1EA3i qua s\u1EF1 bi\u1EBFn \u0111\u1ED5i
+        nhi\u1EC7t \u0111\u1ED9 l\u1EDBn nh\u1EA5t so v\u1EDBi t\u1EA5t c\u1EA3 c\xE1c
+        h\xE0nh tinh.\n\nQUAN S\xC1T\nSao Th\u1EE7y xu\u1EA5t hi\u1EC7n d\u01B0\u1EDBi
+        d\u1EA1ng ng\xF4i sao bu\u1ED5i s\xE1ng ho\u1EB7c bu\u1ED5i t\u1ED1i khi
+        nh\xECn t\u1EEB Tr\xE1i \u0111\u1EA5t, nh\u01B0ng do n\xF3 \u1EDF g\u1EA7n
+        M\u1EB7t tr\u1EDDi n\xEAn r\u1EA5t kh\xF3 nh\xECn th\u1EA5y. Tuy nhi\xEAn,
+        sao Th\u1EE7y c\xF3 th\u1EC3 \u0111\u01B0\u1EE3c quan s\xE1t \xEDt nh\u1EA5t
+        hai l\u1EA7n m\u1ED9t n\u0103m: m\xF9a xu\xE2n v\xE0o l\xFAc ho\xE0ng h\xF4n
+        v\xE0 v\xE0o m\xF9a thu tr\u01B0\u1EDBc b\xECnh minh."
+      - "\u6C34\u661F\u306F\u592A\u967D\u7CFB\u306E\u6700\u3082\u5185\u5074\u306B\u3042\u308B\u6700\u5C0F\u306E\u60D1\u661F\u3067\u3059\u3002\u6C34\u661F\u306B\u306F\u71B1\u3092\u4FDD\u6301\u3059\u308B\u5927\u6C17\u304C\u307B\u3068\u3093\u3069\u306A\u3044\u305F\u3081\u3001\u6C34\u661F\u306E\u8868\u9762\u306F\u3059\u3079\u3066\u306E\u60D1\u661F\u306E\u4E2D\u3067\u6700\u3082\u5927\u304D\u306A\u6E29\u5EA6\u5909\u5316\u306B\u898B\u821E\u308F\u308C\u307E\u3059\u3002\n\n\u89B3\u5BDF\n\u6C34\u661F\u306F\u5730\u7403\u304B\u3089\u306F\u660E\u3051\u306E\u660E\u661F\u307E\u305F\u306F\u5BB5\u306E\u660E\u661F\u3068\u3057\u3066\u898B\u3048\u307E\u3059\u304C\u3001\u592A\u967D\u306B\u8FD1\u3044\u305F\u3081\u3001\u898B\u308B\u306E\u306F\u975E\u5E38\u306B\u56F0\u96E3\u3067\u3059\u3002\u305D\u308C\u3067\u3082\u3001\u6C34\u661F\u306F\u5C11\u306A\u304F\u3068\u3082\u5E74\u306B2\u56DE\u3001\u6625\u306E\u5915\u66AE\u308C\u6642\u3068\u79CB\u306E\u591C\u660E\u3051\u524D\u306B\u89B3\u5BDF\u3067\u304D\u307E\u3059\u3002"
+      - "\uC218\uC131\uC740 \uD0DC\uC591\uACC4\uC758 \uAC00\uC7A5 \uC548\uCABD\uC774\uC790
+        \uAC00\uC7A5 \uC791\uC740 \uD589\uC131\uC774\uB2E4. \uC5F4\uC744 \uC720\uC9C0\uD560
+        \uB300\uAE30\uAC00 \uAC70\uC758 \uC5C6\uAE30 \uB54C\uBB38\uC5D0 \uC218\uC131\uC758
+        \uD45C\uBA74\uC740 \uBAA8\uB4E0 \uD589\uC131 \uC911\uC5D0\uC11C \uAC00\uC7A5
+        \uD070 \uC628\uB3C4 \uBCC0\uD654\uB97C \uACBD\uD5D8\uD569\uB2C8\uB2E4.\n\n\uAD00\uCC30\n\uC218\uC131\uC740
+        \uC9C0\uAD6C\uC5D0\uC11C \uC544\uCE68\uC774\uB098 \uC800\uB141 \uBCC4\uCC98\uB7FC
+        \uBCF4\uC774\uC9C0\uB9CC \uD0DC\uC591\uACFC \uAC00\uAE4C\uC6CC\uC11C \uBCF4\uAE30\uAC00
+        \uB9E4\uC6B0 \uC5B4\uB835\uC2B5\uB2C8\uB2E4. \uADF8\uB7FC\uC5D0\uB3C4 \uBD88\uAD6C\uD558\uACE0
+        \uC218\uC131\uC740 \uC801\uC5B4\uB3C4 \uC77C\uB144\uC5D0 \uB450 \uBC88, \uC989
+        \uBD04 \uD669\uD63C \uB54C\uC640 \uAC00\uC744 \uC0C8\uBCBD \uC0C8\uBCBD\uC5D0
+        \uAD00\uCC30\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+      - "Mercure est la plan\xE8te la plus int\xE9rieure et la plus petite du syst\xE8me
+        solaire. Parce qu'elle n'a presque pas d'atmosph\xE8re pour retenir la chaleur,
+        la surface de Mercure conna\xEEt la plus grande variation de temp\xE9rature
+        de toutes les plan\xE8tes.\n\nOBSERVATION\nMercure appara\xEEt comme une
+        \xE9toile du matin ou du soir depuis la Terre, mais en raison de sa proximit\xE9
+        avec le Soleil, elle est tr\xE8s difficile \xE0 voir. Pourtant, Mercure peut
+        \xEAtre observ\xE9e au moins deux fois par an : au printemps au cr\xE9puscule
+        et en automne avant l'aube."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 60 M Km
+      - 60 M Km
+      - "60\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
+      - 60Mkm
+      - 60 Mkm
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 4879 Km
+      - 4879 Km
+      - 4879Km
+      - 4879Km
+      - 4879 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 3.3 x 10^23 Kg
+      - 3,3 x 10^23 Kg
+      - "3.3\xD710^23kg"
+      - 3.3x10^23kg
+      - 3,3 x 10 ^ 23 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Mecury
+      - "Th\u1EE7y Ng\xE2n"
+      - "\u6C34\u9280"
+      - "\uC218\uC740"
+      - Mercure
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 59 Days
+      - "59 Ng\xE0y"
+      - "59\u65E5"
+      - "59\uC77C"
+      - 59 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 88 Days
+      - "88 Ng\xE0y"
+      - "88\u65E5"
+      - "88\uC77C"
+      - 88 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 3.7 m/s^2
+      - 3,7 m/s^2
+      - 3.7m/s^2
+      - "3.7m/\uCD08^2"
+      - "3,7\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mecury_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - 167*C
+      - 167*C
+      - 167*C
+      - 167*C
+      - 167*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Neptune_description
+      TermType: 0
+      Description: 
+      Languages:
+      - txt_Neptune_description
+      - txt_Neptune_description
+      - "txt_Neptune_\u8AAC\u660E"
+      - txt_Neptune_description
+      - txt_Neptune_description
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_distance_from_sun
@@ -187,10 +979,43 @@ MonoBehaviour:
       Description: 
       Languages:
       - 30.1 AU
-      - 
-      - 
-      - 
-      - 
+      - "30,1 Th\xE1ng Sau"
+      - 30.1Au
+      - 30.1AU
+      - 30,1 Ua
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Neptune_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 49528 Km
+      - 49528 Km
+      - 49528Km
+      - 49528Km
+      - 49528 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Neptune_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.02 x 10^26 Kg
+      - 1,02 x 10^26 Kg
+      - "1.02\xD710^26kg"
+      - 1.02 x 10^26kg
+      - 1,02 x 10 ^ 26 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Neptune_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Neptune
+      - "Sao H\u1EA3i V\u01B0\u01A1ng"
+      - "\u30CD\u30D7\u30C1\u30E5\u30FC\u30F3"
+      - "\uD574\uC655\uC131"
+      - Neptune
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_rotation_period
@@ -198,10 +1023,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 16H 06M
-      - 
-      - 
-      - 
-      - 
+      - 16H 06M
+      - "16\u664206\u5206"
+      - "16\uC2DC 6\uBD84"
+      - 16H06
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_solar_orbit_period
@@ -209,10 +1034,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 165 Years
-      - 
-      - 
-      - 
-      - 
+      - "165 N\u0103m"
+      - "165\u5E74"
+      - "165\uB144"
+      - 165 Ans
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_surface_gravity
@@ -220,10 +1045,10 @@ MonoBehaviour:
       Description: 
       Languages:
       - 11.2 m/s^2
-      - 
-      - 
-      - 
-      - 
+      - 11,2 m/s^2
+      - 11.2m/s^2
+      - "11.2m/\uCD08^2"
+      - "11,2\_m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_surface_temperature
@@ -231,21 +1056,892 @@ MonoBehaviour:
       Description: 
       Languages:
       - -200*C
-      - 
-      - 
-      - 
-      - 
+      - -200*C
+      - -200*C
+      - -200*C
+      - -200*C
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Neptune_description
+    - Term: txt_Pluto_description
       TermType: 0
       Description: 
       Languages:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - 'Pluto is the largest object in the Kuiper belt. It is also the largest and
+        second most massive known dwarf planet in the Solar System.
+
+
+        AXIAL
+        TILT
+
+        Like Uranus, Pluto is lying on its "side", with an axial titl
+        of 120 degree, leading to extreme seasonal variations. At its solstices,
+        one-fourth of the planet is in continous daylight, and one-fourth in continuous
+        darkness.
+
+
+        MOONS
+
+        Pluto has five known moons: Charon, Nix,
+        Hydra, kerberos, and Styx Pluto and Charon are sometimes described as a binary
+        system because the barycenter of their orbit does not lie within either body.
+
+
+        DISCOVERY
+
+        Discovered
+        in 1930 by astronomer Clyde Tombaugh, Pluto was originally classified as
+        the 9th planet from the Sun. However, the discovery of similar-size object
+        within the Kupier Beil, promped the International Astronomical Union to re-calssify
+        Pluto in 2006 a dwaf planet.'
+      - "Sao Di\xEAm V\u01B0\u01A1ng l\xE0 v\u1EADt th\u1EC3 l\u1EDBn nh\u1EA5t trong
+        v\xE0nh \u0111ai Kuiper. N\xF3 c\u0169ng l\xE0 h\xE0nh tinh l\xF9n l\u1EDBn
+        nh\u1EA5t v\xE0 n\u1EB7ng th\u1EE9 hai \u0111\u01B0\u1EE3c bi\u1EBFt \u0111\u1EBFn
+        trong H\u1EC7 M\u1EB7t tr\u1EDDi.\n\nTR\u1EE4C NGHI\xCANG\nGi\u1ED1ng nh\u01B0
+        Sao Thi\xEAn V\u01B0\u01A1ng, Sao Di\xEAm V\u01B0\u01A1ng n\u1EB1m nghi\xEAng
+        v\u1EDBi tr\u1EE5c quay nghi\xEAng 120 \u0111\u1ED9, d\u1EABn \u0111\u1EBFn
+        nh\u1EEFng bi\u1EBFn \u0111\u1ED5i c\u1EF1c k\u1EF3 theo m\xF9a. V\xE0o th\u1EDDi
+        \u0111i\u1EC3m \u0111i\u1EC3m ch\xED, m\u1ED9t ph\u1EA7n t\u01B0 h\xE0nh
+        tinh \u1EDF trong \xE1nh s\xE1ng ban ng\xE0y li\xEAn t\u1EE5c v\xE0 m\u1ED9t
+        ph\u1EA7n t\u01B0 trong b\xF3ng t\u1ED1i li\xEAn t\u1EE5c.\n\nM\u1EB6T TR\u0102NG\nSao
+        Di\xEAm V\u01B0\u01A1ng c\xF3 n\u0103m v\u1EC7 tinh \u0111\xE3 bi\u1EBFt:
+        Charon, Nix, Hydra, kerberos, v\xE0 Styx. Sao Di\xEAm V\u01B0\u01A1ng v\xE0
+        Charon \u0111\xF4i khi \u0111\u01B0\u1EE3c m\xF4 t\u1EA3 l\xE0 m\u1ED9t h\u1EC7
+        nh\u1ECB ph\xE2n v\xEC t\xE2m bary c\u1EE7a qu\u1EF9 \u0111\u1EA1o c\u1EE7a
+        ch\xFAng kh\xF4ng n\u1EB1m trong c\u1EA3 hai v\u1EADt th\u1EC3.\n\nKH\xC1M
+        PH\xC1\n\u0110\u01B0\u1EE3c ph\xE1t hi\u1EC7n v\xE0o n\u0103m 1930 b\u1EDFi
+        nh\xE0 thi\xEAn v\u0103n h\u1ECDc Clyde Tombaugh, Sao Di\xEAm V\u01B0\u01A1ng
+        ban \u0111\u1EA7u \u0111\u01B0\u1EE3c ph\xE2n lo\u1EA1i l\xE0 h\xE0nh tinh
+        th\u1EE9 9 t\xEDnh t\u1EEB M\u1EB7t tr\u1EDDi. Tuy nhi\xEAn, vi\u1EC7c ph\xE1t
+        hi\u1EC7n ra v\u1EADt th\u1EC3 c\xF3 k\xEDch th\u01B0\u1EDBc t\u01B0\u01A1ng
+        t\u1EF1 b\xEAn trong Kupier Beil \u0111\xE3 th\xFAc \u0111\u1EA9y Li\xEAn
+        minh Thi\xEAn v\u0103n Qu\u1ED1c t\u1EBF \u0111\xE1nh gi\xE1 l\u1EA1i Sao
+        Di\xEAm V\u01B0\u01A1ng v\xE0o n\u0103m 2006 l\xE0 m\u1ED9t h\xE0nh tinh
+        l\xF9n."
+      - "\u51A5\u738B\u661F\u306F\u30AB\u30A4\u30D1\u30FC\u30D9\u30EB\u30C8\u3067\u6700\u5927\u306E\u5929\u4F53\u3067\u3059\u3002\u307E\u305F\u3001\u592A\u967D\u7CFB\u3067\u65E2\u77E5\u306E\u6E96\u60D1\u661F\u3068\u3057\u3066\u306F\u6700\u5927\u304B\u3064
+        2 \u756A\u76EE\u306B\u91CD\u3044\u60D1\u661F\u3067\u3082\u3042\u308A\u307E\u3059\u3002\n\n\u8EF8\u65B9\u5411\u306E\u50BE\u304D\n\u5929\u738B\u661F\u3068\u540C\u69D8\u306B\u3001\u51A5\u738B\u661F\u306F\u8EF8\u50BE\u659C\u304C
+        120 \u5EA6\u3067\u300C\u6A2A\u5411\u304D\u300D\u306B\u6A2A\u305F\u308F\u3063\u3066\u304A\u308A\u3001\u6975\u7AEF\u306A\u5B63\u7BC0\u5909\u52D5\u306B\u3064\u306A\u304C\u308A\u307E\u3059\u3002\u590F\u81F3\u306B\u306F\u3001\u5730\u7403\u306E
+        4 \u5206\u306E 1 \u304C\u7D99\u7D9A\u7684\u306A\u663C\u5149\u306E\u4E2D\u306B\u3042\u308A\u30014
+        \u5206\u306E 1 \u304C\u7D99\u7D9A\u7684\u306A\u6697\u95C7\u306B\u306A\u308A\u307E\u3059\u3002\n\n\u30E0\u30FC\u30F3\u30BA\n\u51A5\u738B\u661F\u306B\u306F\u3001\u30AB\u30ED\u30F3\u3001\u30CB\u30AF\u30B9\u3001\u30D2\u30C9\u30E9\u3001\u30B1\u30EB\u30D9\u30ED\u30B9\u3001\u30B9\u30C6\u30A3\u30AF\u30B9\u3068\u3044\u3046
+        5 \u3064\u306E\u65E2\u77E5\u306E\u885B\u661F\u304C\u3042\u308A\u307E\u3059\u3002
+        \u51A5\u738B\u661F\u3068\u30AB\u30ED\u30F3\u306F\u3001\u305D\u306E\u8ECC\u9053\u306E\u91CD\u5FC3\u304C\u3069\u3061\u3089\u306E\u5929\u4F53\u306B\u3082\u5B58\u5728\u3057\u306A\u3044\u305F\u3081\u3001\u9023\u661F\u7CFB\u3068\u3057\u3066\u8AAC\u660E\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308A\u307E\u3059\u3002\n\n\u767A\u898B\n1930
+        \u5E74\u306B\u5929\u6587\u5B66\u8005\u30AF\u30E9\u30A4\u30C9 \u30C8\u30F3\u30DC\u30FC\u306B\u3088\u3063\u3066\u767A\u898B\u3055\u308C\u305F\u51A5\u738B\u661F\u306F\u3001\u5F53\u521D\u306F\u592A\u967D\u304B\u3089
+        9 \u756A\u76EE\u306E\u60D1\u661F\u3068\u3057\u3066\u5206\u985E\u3055\u308C\u3066\u3044\u307E\u3057\u305F\u3002\u3057\u304B\u3057\u3001\u30AF\u30D4\u30A2\u30FB\u30D9\u30A4\u30EB\u5185\u3067\u540C\u69D8\u306E\u5927\u304D\u3055\u306E\u5929\u4F53\u304C\u767A\u898B\u3055\u308C\u305F\u3053\u3068\u306B\u3088\u308A\u3001\u56FD\u969B\u5929\u6587\u5B66\u9023\u5408\u306F2006\u5E74\u306B\u51A5\u738B\u661F\u3092\u6E96\u60D1\u661F\u306B\u518D\u5206\u985E\u3059\u308B\u3053\u3068\u306B\u306A\u3063\u305F\u3002"
+      - "\uBA85\uC655\uC131\uC740 \uCE74\uC774\uD37C \uBCA8\uD2B8\uC5D0\uC11C \uAC00\uC7A5
+        \uD070 \uBB3C\uCCB4\uC785\uB2C8\uB2E4. \uB610\uD55C \uD0DC\uC591\uACC4\uC5D0\uC11C
+        \uAC00\uC7A5 \uD06C\uACE0 \uB450 \uBC88\uC9F8\uB85C \uC9C8\uB7C9\uC774 \uD070
+        \uAC83\uC73C\uB85C \uC54C\uB824\uC9C4 \uC65C\uD589\uC131\uC774\uAE30\uB3C4
+        \uD569\uB2C8\uB2E4.\n\n\uCD95 \uAE30\uC6B8\uAE30\n\uCC9C\uC655\uC131\uACFC
+        \uB9C8\uCC2C\uAC00\uC9C0\uB85C \uBA85\uC655\uC131\uC740 \uCD95\uACBD\uC704\uAC00
+        120\uB3C4\uC778 \"\uCE21\uBA74\"\uC5D0 \uB204\uC6CC \uC788\uC5B4 \uADF9\uC2EC\uD55C
+        \uACC4\uC808 \uBCC0\uD654\uAC00 \uBC1C\uC0DD\uD569\uB2C8\uB2E4. \uB3D9\uC9C0
+        \uB54C\uC5D0\uB294 \uD589\uC131\uC758 4\uBD84\uC758 1\uC774 \uACC4\uC18D\uD574\uC11C
+        \uD587\uBE5B\uC744 \uBC1B\uACE0, 4\uBD84\uC758 1\uC740 \uACC4\uC18D\uD574\uC11C
+        \uC5B4\uB460 \uC18D\uC5D0 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uB2EC\n\uBA85\uC655\uC131\uC5D0\uB294
+        5\uAC1C\uC758 \uC54C\uB824\uC9C4 \uB2EC\uC774 \uC788\uC2B5\uB2C8\uB2E4: Charon,
+        Nix, Hydra, kerberos, Styx \uBA85\uC655\uC131\uACFC Charon\uC740 \uADA4\uB3C4\uC758
+        \uBB34\uAC8C\uC911\uC2EC\uC774 \uC5B4\uB290 \uCC9C\uCCB4\uC5D0\uB3C4 \uC788\uC9C0
+        \uC54A\uAE30 \uB54C\uBB38\uC5D0 \uB54C\uB54C\uB85C \uC774\uC9C4\uACC4\uB85C
+        \uC124\uBA85\uB429\uB2C8\uB2E4.\n\n\uBC1C\uACAC\n1930\uB144 \uCC9C\uBB38\uD559\uC790
+        \uD074\uB77C\uC774\uB4DC \uD1B0\uBCF4(Clyde Tombaugh)\uAC00 \uBC1C\uACAC\uD55C
+        \uBA85\uC655\uC131\uC740 \uC6D0\uB798 \uD0DC\uC591\uC73C\uB85C\uBD80\uD130
+        9\uBC88\uC9F8 \uD589\uC131\uC73C\uB85C \uBD84\uB958\uB418\uC5C8\uC2B5\uB2C8\uB2E4.
+        \uADF8\uB7EC\uB098 Kupier Beil \uB0B4\uC5D0\uC11C \uBE44\uC2B7\uD55C \uD06C\uAE30\uC758
+        \uBB3C\uCCB4\uAC00 \uBC1C\uACAC\uB418\uBA74\uC11C \uAD6D\uC81C\uCC9C\uBB38\uC5F0\uB9F9\uC740
+        2006\uB144\uC5D0 \uBA85\uC655\uC131\uC744 \uC65C\uD589\uC131\uC73C\uB85C
+        \uC7AC\uACC4\uC0B0\uD558\uAC8C \uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+      - "Pluton est le plus gros objet de la ceinture de Kuiper. C'est \xE9galement
+        la plus grande et la deuxi\xE8me plan\xE8te naine connue la plus massive
+        du syst\xE8me solaire.\n\nINCLINAISON AXIALE\nComme Uranus, Pluton est couch\xE9
+        sur son \xAB c\xF4t\xE9 \xBB, avec une inclinaison axiale de 120 degr\xE9s,
+        ce qui entra\xEEne des variations saisonni\xE8res extr\xEAmes. \xC0 ses solstices,
+        un quart de la plan\xE8te est continuellement expos\xE9 \xE0 la lumi\xE8re
+        du jour et un quart dans l\u2019obscurit\xE9 continue.\n\nLUNES\nPluton a
+        cinq lunes connues : Charon, Nix, Hydra, Kerberos et Styx. Pluton et Charon
+        sont parfois d\xE9crits comme un syst\xE8me binaire car le barycentre de
+        leur orbite ne se trouve dans aucun des deux corps.\n\nD\xC9COUVERTE\nD\xE9couverte
+        en 1930 par l'astronome Clyde Tombaugh, Pluton \xE9tait \xE0 l'origine class\xE9e
+        comme la 9\xE8me plan\xE8te en partant du Soleil. Cependant, la d\xE9couverte
+        d'un objet de taille similaire au sein de Kupier Beil a incit\xE9 l'Union
+        astronomique internationale \xE0 requalifier Pluton en 2006 comme plan\xE8te
+        naine."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 40.9 AU
+      - "40,9 Gi\u1EDD"
+      - 40.9Au
+      - 40.9AU
+      - 40,9 Ua
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 2374 Km
+      - 2374 Km
+      - 2374Km
+      - 2374Km
+      - 2374 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.31 x 10^22 Kg
+      - 1,31 x 10^22 Kg
+      - "1.31\xD710^22kg"
+      - 1.31x10^22kg
+      - 1,31 x 10 ^ 22 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Pluto
+      - "Sao Di\xEAm V\u01B0\u01A1ng"
+      - "\u51A5\u738B\u661F"
+      - "\uBA85\uC655\uC131"
+      - Pluton
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 6.9 Days
+      - "6,9 Ng\xE0y"
+      - "6.9\u65E5"
+      - "6.9\uC77C"
+      - 6,9 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 248 Years
+      - "248 N\u0103m"
+      - "248\u5E74"
+      - "248\uB144"
+      - 248 Ans
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 0.66 m/s^2
+      - 0,66 m/s^2
+      - 0.66m/s^2
+      - 0.66m/s^2
+      - 0,66 m/s^2
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Pluto_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - -228*C
+      - -228*C
+      - -228*C
+      - -228*C
+      - -228*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Saturn is the sixth planet from the Sun and the second largest planet in
+        the Solar System. Until the invention of modern telescope, Saturn was regarded
+        as outermost of the know planets.
+
+
+        MASS
+
+        Although the second
+        largest, Saturn is the least dese of all the planets in the Solar System,
+        with only one-eighth the density of Earth(but nine times its diameter). It
+        is also the only planet is less dese than water.
+
+
+        RING
+
+        While
+        the other gas giants also have ring systems, Saturn''s is larger and more
+        visible than any  other in the Solar System. The rings are composed of water
+        ice crystals and a smaller amount of rock, ragingg in size fromm specks of
+        dust to a few praticles as large as mountains.
+
+
+        OBSERVATION
+
+        Saturn
+        appears to the naked eye in the night sky as a bright, yellowish point of
+        light. Magnifying at least 30 x xresilves Saturn''s rings.'
+      - "Sao Th\u1ED5 l\xE0 h\xE0nh tinh th\u1EE9 s\xE1u t\xEDnh t\u1EEB M\u1EB7t
+        tr\u1EDDi v\xE0 l\xE0 h\xE0nh tinh l\u1EDBn th\u1EE9 hai trong H\u1EC7 M\u1EB7t
+        tr\u1EDDi. Cho \u0111\u1EBFn khi ph\xE1t minh ra k\xEDnh thi\xEAn v\u0103n
+        hi\u1EC7n \u0111\u1EA1i, Sao Th\u1ED5 \u0111\u01B0\u1EE3c coi l\xE0 h\xE0nh
+        tinh ngo\xE0i c\xF9ng \u0111\u01B0\u1EE3c bi\u1EBFt \u0111\u1EBFn.\n\nKH\u1ED0I\nM\u1EB7c
+        d\xF9 l\u1EDBn th\u1EE9 hai, Sao Th\u1ED5 l\xE0 h\xE0nh tinh nh\u1ECF nh\u1EA5t
+        trong H\u1EC7 M\u1EB7t tr\u1EDDi, v\u1EDBi m\u1EADt \u0111\u1ED9 ch\u1EC9
+        b\u1EB1ng 1/8 Tr\xE1i \u0111\u1EA5t (nh\u01B0ng c\xF3 \u0111\u01B0\u1EDDng
+        k\xEDnh g\u1EA5p 9 l\u1EA7n). \u0110\xE2y c\u0169ng l\xE0 h\xE0nh tinh duy
+        nh\u1EA5t c\xF3 \xEDt des h\u01A1n n\u01B0\u1EDBc.\n\nNH\u1EAAN\nTrong khi
+        c\xE1c h\xE0nh tinh kh\xED kh\u1ED5ng l\u1ED3 kh\xE1c c\u0169ng c\xF3 h\u1EC7
+        th\u1ED1ng v\xE0nh \u0111ai, th\xEC v\xE0nh \u0111ai c\u1EE7a Sao Th\u1ED5
+        l\u1EDBn h\u01A1n v\xE0 d\u1EC5 nh\xECn th\u1EA5y h\u01A1n b\u1EA5t k\u1EF3
+        v\xE0nh \u0111ai n\xE0o kh\xE1c trong H\u1EC7 M\u1EB7t tr\u1EDDi. C\xE1c
+        v\xF2ng bao g\u1ED3m c\xE1c tinh th\u1EC3 b\u0103ng n\u01B0\u1EDBc v\xE0
+        m\u1ED9t l\u01B0\u1EE3ng \u0111\xE1 nh\u1ECF h\u01A1n, c\xF3 k\xEDch th\u01B0\u1EDBc
+        l\u1EDBn t\u1EEB nh\u1EEFng h\u1EA1t b\u1EE5i \u0111\u1EBFn m\u1ED9t s\u1ED1
+        h\u1EA1t nh\u1ECF l\u1EDBn nh\u01B0 nh\u1EEFng ng\u1ECDn n\xFAi.\n\nQUAN
+        S\xC1T\nSao Th\u1ED5 xu\u1EA5t hi\u1EC7n b\u1EB1ng m\u1EAFt th\u01B0\u1EDDng
+        tr\xEAn b\u1EA7u tr\u1EDDi \u0111\xEAm d\u01B0\u1EDBi d\u1EA1ng m\u1ED9t
+        \u0111i\u1EC3m s\xE1ng m\xE0u v\xE0ng. Ph\xF3ng \u0111\u1EA1i \xEDt nh\u1EA5t
+        30 x x \u0111\u1EC3 l\xE0m s\xE1ng l\u1EA1i c\xE1c v\xE0nh \u0111ai c\u1EE7a
+        Sao Th\u1ED5."
+      - "\u571F\u661F\u306F\u592A\u967D\u304B\u30896\u756A\u76EE\u306E\u60D1\u661F\u3067\u3042\u308A\u3001\u592A\u967D\u7CFB\u30672\u756A\u76EE\u306B\u5927\u304D\u3044\u60D1\u661F\u3067\u3059\u3002\u73FE\u4EE3\u306E\u671B\u9060\u93E1\u304C\u767A\u660E\u3055\u308C\u308B\u307E\u3067\u3001\u571F\u661F\u306F\u65E2\u77E5\u306E\u60D1\u661F\u306E\u6700\u3082\u5916\u5074\u306B\u3042\u308B\u3068\u307F\u306A\u3055\u308C\u3066\u3044\u307E\u3057\u305F\u3002\n\n\u8CEA\u91CF\n\u571F\u661F\u306F
+        2 \u756A\u76EE\u306B\u5927\u304D\u3044\u3067\u3059\u304C\u3001\u592A\u967D\u7CFB\u306E\u3059\u3079\u3066\u306E\u60D1\u661F\u306E\u4E2D\u3067\u6700\u3082\u5BC6\u5EA6\u304C\u4F4E\u304F\u3001\u5BC6\u5EA6\u306F\u5730\u7403\u306E
+        8 \u5206\u306E 1 (\u305F\u3060\u3057\u76F4\u5F84\u306F 9 \u500D) \u3067\u3059\u3002\u307E\u305F\u3001\u6C34\u3088\u308A\u3082\u6E29\u5EA6\u304C\u4F4E\u3044\u552F\u4E00\u306E\u60D1\u661F\u3067\u3082\u3042\u308A\u307E\u3059\u3002\n\n\u6307\u8F2A\n\u4ED6\u306E\u5DE8\u5927\u30AC\u30B9\u60D1\u661F\u306B\u3082\u74B0\u7CFB\u304C\u3042\u308A\u307E\u3059\u304C\u3001\u571F\u661F\u306E\u3082\u306E\u306F\u592A\u967D\u7CFB\u306E\u4ED6\u306E\u60D1\u661F\u3088\u308A\u3082\u5927\u304D\u304F\u3001\u3088\u308A\u3088\u304F\u898B\u3048\u307E\u3059\u3002\u30EA\u30F3\u30B0\u306F\u6C34\u306E\u6C37\u306E\u7D50\u6676\u3068\u5C11\u91CF\u306E\u5CA9\u77F3\u3067\u69CB\u6210\u3055\u308C\u3066\u304A\u308A\u3001\u305D\u306E\u5927\u304D\u3055\u306F\u5875\u306E\u6591\u70B9\u304B\u3089\u5C71\u307B\u3069\u306E\u5927\u304D\u3055\u306E\u5C0F\u3055\u306A\u5C0F\u7247\u307E\u3067\u3055\u307E\u3056\u307E\u3067\u3059\u3002\n\n\u89B3\u5BDF\n\u571F\u661F\u306F\u591C\u7A7A\u3067\u8089\u773C\u3067\u306F\u660E\u308B\u304F\u9EC4\u8272\u304C\u304B\u3063\u305F\u5149\u306E\u70B9\u3068\u3057\u3066\u898B\u3048\u307E\u3059\u3002\u5C11\u306A\u304F\u3068\u3082
+        30 \u500D\u306B\u62E1\u5927\u3059\u308B\u3068\u3001\u571F\u661F\u306E\u8F2A\u304C\u898B\u3048\u307E\u3059\u3002"
+      - "\uD1A0\uC131\uC740 \uD0DC\uC591\uC5D0\uC11C \uC5EC\uC12F \uBC88\uC9F8 \uD589\uC131\uC774\uC790
+        \uD0DC\uC591\uACC4\uC5D0\uC11C \uB450 \uBC88\uC9F8\uB85C \uD070 \uD589\uC131\uC785\uB2C8\uB2E4.
+        \uD604\uB300 \uB9DD\uC6D0\uACBD\uC774 \uBC1C\uBA85\uB418\uAE30 \uC804\uAE4C\uC9C0
+        \uD1A0\uC131\uC740 \uC54C\uB824\uC9C4 \uD589\uC131 \uC911 \uAC00\uC7A5 \uBC14\uAE65\uCABD\uC5D0
+        \uC788\uB294 \uAC83\uC73C\uB85C \uAC04\uC8FC\uB418\uC5C8\uC2B5\uB2C8\uB2E4.\n\n\uB300\uB7C9\uC758\n\uD1A0\uC131\uC740
+        \uB450 \uBC88\uC9F8\uB85C \uD06C\uC9C0\uB9CC \uBC00\uB3C4\uB294 \uC9C0\uAD6C\uC758
+        1/8\uC5D0 \uBD88\uACFC\uD558\uACE0 \uC9C1\uACBD\uC740 9\uBC30\uB85C \uD0DC\uC591\uACC4\uC758
+        \uBAA8\uB4E0 \uD589\uC131 \uC911\uC5D0\uC11C \uAC00\uC7A5 \uC791\uC2B5\uB2C8\uB2E4.
+        \uB610\uD55C \uBB3C\uBCF4\uB2E4 \uB35C \uC704\uD5D8\uD55C \uC720\uC77C\uD55C
+        \uD589\uC131\uC774\uAE30\uB3C4 \uD569\uB2C8\uB2E4.\n\n\uBC18\uC9C0\n\uB2E4\uB978
+        \uAC00\uC2A4 \uAC70\uC778\uB4E4\uB3C4 \uACE0\uB9AC \uC2DC\uC2A4\uD15C\uC744
+        \uAC00\uC9C0\uACE0 \uC788\uB294 \uBC18\uBA74, \uD1A0\uC131\uC758 \uACE0\uB9AC
+        \uC2DC\uC2A4\uD15C\uC740 \uD0DC\uC591\uACC4\uC758 \uB2E4\uB978 \uC5B4\uB5A4
+        \uAC83\uBCF4\uB2E4 \uB354 \uD06C\uACE0 \uB354 \uC798 \uBCF4\uC785\uB2C8\uB2E4.
+        \uACE0\uB9AC\uB294 \uBB3C\uC758 \uC5BC\uC74C \uACB0\uC815\uACFC \uB354 \uC801\uC740
+        \uC591\uC758 \uC554\uC11D\uC73C\uB85C \uAD6C\uC131\uB418\uC5B4 \uC788\uC73C\uBA70,
+        \uD06C\uAE30\uB294 \uBA3C\uC9C0 \uC5BC\uB8E9\uBD80\uD130 \uC0B0\uB9CC\uD07C
+        \uD070 \uBA87 \uAC1C\uC758 \uC785\uC790\uAE4C\uC9C0 \uB2E4\uC591\uD569\uB2C8\uB2E4.\n\n\uAD00\uCC30\n\uD1A0\uC131\uC740
+        \uBC24\uD558\uB298\uC5D0\uC11C \uC721\uC548\uC73C\uB85C \uBCFC \uB54C \uBC1D\uACE0
+        \uB178\uB780 \uBE5B\uC758 \uC810\uC73C\uB85C \uB098\uD0C0\uB0A9\uB2C8\uB2E4.
+        \uD1A0\uC131\uC758 \uACE0\uB9AC\uB97C \uCD5C\uC18C 30\uBC30 \uD655\uB300\uD569\uB2C8\uB2E4."
+      - "Saturne est la sixi\xE8me plan\xE8te apr\xE8s le Soleil et la deuxi\xE8me
+        plus grande plan\xE8te du syst\xE8me solaire. Jusqu'\xE0 l'invention du t\xE9lescope
+        moderne, Saturne \xE9tait consid\xE9r\xE9e comme la plan\xE8te la plus \xE9loign\xE9e
+        des plan\xE8tes connues.\n\nMASSE\nBien que la deuxi\xE8me plus grande plan\xE8te,
+        Saturne soit la moins dense de toutes les plan\xE8tes du syst\xE8me solaire,
+        avec seulement un huiti\xE8me de la densit\xE9 de la Terre (mais neuf fois
+        son diam\xE8tre). C'est aussi la seule plan\xE8te qui contient moins de sel
+        que d'eau.\n\nANNEAU\nAlors que les autres g\xE9antes gazeuses poss\xE8dent
+        \xE9galement des syst\xE8mes d'anneaux, celui de Saturne est plus grand et
+        plus visible que tout autre g\xE9ant du syst\xE8me solaire. Les anneaux sont
+        compos\xE9s de cristaux de glace d'eau et d'une plus petite quantit\xE9 de
+        roche, allant de quelques grains de poussi\xE8re \xE0 quelques praticles
+        aussi grands que des montagnes.\n\nOBSERVATION\nSaturne appara\xEEt \xE0
+        l\u2019\u0153il nu dans le ciel nocturne sous la forme d\u2019un point lumineux
+        jaun\xE2tre. Grossissement d'au moins 30 x xresilves des anneaux de Saturne."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 9.58 AU
+      - 9,58 Au
+      - 9.58Au
+      - "9\uC2DC 58\uBD84"
+      - 9,58 Ua
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 120 536 Km
+      - 120 536 Km
+      - 120 536 Km
+      - 120536Km
+      - 120 536 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 5.7 x 10^26 Kg
+      - 5,7 x 10^26 Kg
+      - "5.7\xD710^26kg"
+      - 5.7 x 10^26kg
+      - 5,7 x 10 ^ 26 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Saturn
+      - "Sao Th\u1ED5"
+      - "\u571F\u661F"
+      - "\uD1A0\uC131"
+      - Saturne
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 10H 39M
+      - "10H 39 Ph\xFAt"
+      - "10\u6642\u959339\u5206"
+      - "10\uC2DC 39\uBD84"
+      - 10H 39Min
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 29 Years
+      - "29 N\u0103m"
+      - "29\u5E74"
+      - "29\uC138"
+      - 29 Ans
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 10.4 m/s^2
+      - 10,4 m/s^2
+      - 10.4m/s^2
+      - 10.4m/s^2
+      - "10,4\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Saturn_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - -139*C
+      - -139*C
+      - -139*C
+      - -139*C
+      - -139*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_description
+      TermType: 0
+      Description: 
+      Languages:
+      - "The Sun, also referred to as \"Sol\", is the star at the center of the Solar
+        System. Sun's mass accounts for some 99.86% of the total mass of the Solar
+        System.\n\nCOMPOSITION\nRoughly three-quarters of the Sun's mass is hydrogen,
+        with the rest mostly helium. Only 1.69% of the Sun (which is still 5 628
+        times the mass of the Earth) is made up of heavier elements like carbon,
+        iron, neon and oxygen.\n\nDISTANCE\nThe mean distance of the Sun from the
+        Earth is approximately 149.6 million kilometres (1 AU). On average, it takes
+        light from the Sun about 8 minutes and 19 seconds to reach the Earth.\n\nGALAXY\nOnce
+        thought to be a relatively insignificant star, the Sun is now considered
+        to be brighter than about 85% of the stars in the Milky Way galaxy. It is
+        located about two thirds of the way out from the centre of the Milky Way.\r"
+      - "M\u1EB7t tr\u1EDDi, c\xF2n \u0111\u01B0\u1EE3c g\u1ECDi l\xE0 \"Sol\", l\xE0
+        ng\xF4i sao \u1EDF trung t\xE2m H\u1EC7 M\u1EB7t tr\u1EDDi. Kh\u1ED1i l\u01B0\u1EE3ng
+        c\u1EE7a M\u1EB7t tr\u1EDDi chi\u1EBFm kho\u1EA3ng 99,86% t\u1ED5ng kh\u1ED1i
+        l\u01B0\u1EE3ng c\u1EE7a H\u1EC7 M\u1EB7t tr\u1EDDi.\n\nTH\xC0NH PH\u1EA6N\nKho\u1EA3ng
+        3/4 kh\u1ED1i l\u01B0\u1EE3ng c\u1EE7a M\u1EB7t tr\u1EDDi l\xE0 hydro, ph\u1EA7n
+        c\xF2n l\u1EA1i ch\u1EE7 y\u1EBFu l\xE0 heli. Ch\u1EC9 1,69% M\u1EB7t tr\u1EDDi
+        (v\u1EABn g\u1EA5p 5.628 l\u1EA7n kh\u1ED1i l\u01B0\u1EE3ng Tr\xE1i \u0111\u1EA5t)
+        \u0111\u01B0\u1EE3c t\u1EA1o th\xE0nh t\u1EEB c\xE1c nguy\xEAn t\u1ED1 n\u1EB7ng
+        h\u01A1n nh\u01B0 carbon, s\u1EAFt, neon v\xE0 oxy.\n\nKHO\u1EA2NG C\xC1CH\nKho\u1EA3ng
+        c\xE1ch trung b\xECnh c\u1EE7a M\u1EB7t tr\u1EDDi \u0111\u1EBFn Tr\xE1i \u0111\u1EA5t
+        l\xE0 kho\u1EA3ng 149,6 tri\u1EC7u km (1 AU). Trung b\xECnh, \xE1nh s\xE1ng
+        t\u1EEB M\u1EB7t tr\u1EDDi m\u1EA5t kho\u1EA3ng 8 ph\xFAt 19 gi\xE2y \u0111\u1EC3
+        t\u1EDBi Tr\xE1i \u0111\u1EA5t.\n\nNG\xC2N H\xC0\nT\u1EEBng \u0111\u01B0\u1EE3c
+        cho l\xE0 m\u1ED9t ng\xF4i sao t\u01B0\u01A1ng \u0111\u1ED1i t\u1EA7m th\u01B0\u1EDDng,
+        M\u1EB7t tr\u1EDDi hi\u1EC7n \u0111\u01B0\u1EE3c coi l\xE0 s\xE1ng h\u01A1n
+        kho\u1EA3ng 85% s\u1ED1 sao trong thi\xEAn h\xE0 Milky Way. N\xF3 n\u1EB1m
+        c\xE1ch trung t\xE2m D\u1EA3i Ng\xE2n h\xE0 kho\u1EA3ng 2/3 qu\xE3ng \u0111\u01B0\u1EDDng.\r"
+      - "\u592A\u967D\u306F\u300C\u30BD\u30EB\u300D\u3068\u3082\u547C\u3070\u308C\u3001\u592A\u967D\u7CFB\u306E\u4E2D\u5FC3\u306B\u3042\u308B\u661F\u3067\u3059\u3002\u592A\u967D\u306E\u8CEA\u91CF\u306F\u3001\u592A\u967D\u7CFB\u306E\u7DCF\u8CEA\u91CF\u306E\u7D04
+        99.86% \u3092\u5360\u3081\u307E\u3059\u3002\n\n\u69CB\u6210\n\u592A\u967D\u306E\u8CEA\u91CF\u306E\u304A\u3088\u305D
+        4 \u5206\u306E 3 \u306F\u6C34\u7D20\u3067\u3001\u6B8B\u308A\u306F\u307B\u3068\u3093\u3069\u304C\u30D8\u30EA\u30A6\u30E0\u3067\u3059\u3002\u592A\u967D\uFF08\u305D\u308C\u3067\u3082\u5730\u7403\u306E\u8CEA\u91CF\u306E
+        5,628 \u500D\uFF09\u306E\u308F\u305A\u304B 1.69% \u304C\u3001\u70AD\u7D20\u3001\u9244\u3001\u30CD\u30AA\u30F3\u3001\u9178\u7D20\u306A\u3069\u306E\u3088\u308A\u91CD\u3044\u5143\u7D20\u3067\u69CB\u6210\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\n\u8DDD\u96E2\n\u5730\u7403\u304B\u3089\u592A\u967D\u307E\u3067\u306E\u5E73\u5747\u8DDD\u96E2\u306F\u7D04
+        1 \u5104 4,960 \u4E07\u30AD\u30ED\u30E1\u30FC\u30C8\u30EB (1 AU) \u3067\u3059\u3002\u592A\u967D\u304B\u3089\u306E\u5149\u304C\u5730\u7403\u306B\u5C4A\u304F\u307E\u3067\u306B\u306F\u3001\u5E73\u5747\u3057\u3066\u7D04
+        8 \u5206 19 \u79D2\u304B\u304B\u308A\u307E\u3059\u3002\n\n\u9280\u6CB3\n\u304B\u3064\u3066\u306F\u592A\u967D\u306F\u6BD4\u8F03\u7684\u91CD\u8981\u3067\u306F\u306A\u3044\u3068\u8003\u3048\u3089\u308C\u3066\u3044\u307E\u3057\u305F\u304C\u3001\u73FE\u5728\u3067\u306F\u5929\u306E\u5DDD\u9280\u6CB3\u306E\u661F\u306E\u7D04
+        85% \u3088\u308A\u3082\u660E\u308B\u3044\u3068\u8003\u3048\u3089\u308C\u3066\u3044\u307E\u3059\u3002\u5929\u306E\u5DDD\u306E\u4E2D\u5FC3\u304B\u3089\u7D043\u5206\u306E2\u306E\u3068\u3053\u308D\u306B\u4F4D\u7F6E\u3057\u3066\u3044\u307E\u3059\u3002\r"
+      - "\uD0DC\uC591(Sol)\uC774\uB77C\uACE0\uB3C4 \uBD88\uB9AC\uB294 \uD0DC\uC591\uC740
+        \uD0DC\uC591\uACC4\uC758 \uC911\uC2EC\uC5D0 \uC788\uB294 \uBCC4\uC774\uB2E4.
+        \uD0DC\uC591\uC758 \uC9C8\uB7C9\uC740 \uD0DC\uC591\uACC4 \uC804\uCCB4 \uC9C8\uB7C9\uC758
+        \uC57D 99.86%\uB97C \uCC28\uC9C0\uD55C\uB2E4.\n\n\uAD6C\uC131\n\uD0DC\uC591
+        \uC9C8\uB7C9\uC758 \uC57D 3/4\uC740 \uC218\uC18C\uC774\uACE0 \uB098\uBA38\uC9C0\uB294
+        \uB300\uBD80\uBD84 \uD5EC\uB968\uC785\uB2C8\uB2E4. \uD0DC\uC591\uC758 1.69%(\uC5EC\uC804\uD788
+        \uC9C0\uAD6C \uC9C8\uB7C9\uC758 5,628\uBC30)\uB9CC\uC774 \uD0C4\uC18C, \uCCA0,
+        \uB124\uC628, \uC0B0\uC18C\uC640 \uAC19\uC740 \uB354 \uBB34\uAC70\uC6B4 \uC6D0\uC18C\uB85C
+        \uAD6C\uC131\uB418\uC5B4 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uAC70\uB9AC\n\uC9C0\uAD6C\uC5D0\uC11C
+        \uD0DC\uC591\uAE4C\uC9C0\uC758 \uD3C9\uADE0 \uAC70\uB9AC\uB294 \uC57D 1\uC5B5
+        4960\uB9CC \uD0AC\uB85C\uBBF8\uD130(1AU)\uC785\uB2C8\uB2E4. \uD3C9\uADE0\uC801\uC73C\uB85C
+        \uD0DC\uC591\uC73C\uB85C\uBD80\uD130 \uBE5B\uC774 \uC9C0\uAD6C\uC5D0 \uB3C4\uB2EC\uD558\uB294
+        \uB370\uB294 \uC57D 8\uBD84 19\uCD08\uAC00 \uAC78\uB9BD\uB2C8\uB2E4.\n\n\uC740\uD558\n\uD55C\uB54C
+        \uC0C1\uB300\uC801\uC73C\uB85C \uD558\uCC2E\uC740 \uBCC4\uB85C \uC5EC\uACA8\uC84C\uB358
+        \uD0DC\uC591\uC740 \uC774\uC81C \uC740\uD558\uC218\uC5D0 \uC788\uB294 \uBCC4\uB4E4\uC758
+        \uC57D 85%\uBCF4\uB2E4 \uB354 \uBC1D\uC740 \uAC83\uC73C\uB85C \uAC04\uC8FC\uB429\uB2C8\uB2E4.
+        \uC740\uD558\uC218 \uC911\uC2EC\uC5D0\uC11C \uB098\uAC00\uB294 \uAE38\uC758
+        \uC57D 2/3 \uC9C0\uC810\uC5D0 \uC704\uCE58\uD574 \uC788\uC2B5\uB2C8\uB2E4.\r"
+      - "Le Soleil, \xE9galement appel\xE9 \xAB Sol \xBB, est l'\xE9toile situ\xE9e
+        au centre du syst\xE8me solaire. La masse du Soleil repr\xE9sente environ
+        99,86 % de la masse totale du syst\xE8me solaire.\n\nCOMPOSITION\nEnviron
+        les trois quarts de la masse du Soleil sont constitu\xE9s d'hydrog\xE8ne,
+        le reste \xE9tant principalement constitu\xE9 d'h\xE9lium. Seulement 1,69
+        % du Soleil (soit tout de m\xEAme 5\_628 fois la masse de la Terre) est constitu\xE9
+        d\u2019\xE9l\xE9ments plus lourds comme le carbone, le fer, le n\xE9on et
+        l\u2019oxyg\xE8ne.\n\nDISTANCE\nLa distance moyenne du Soleil \xE0 la Terre
+        est d'environ 149,6 millions de kilom\xE8tres (1 UA). En moyenne, il faut
+        environ 8 minutes et 19 secondes \xE0 la lumi\xE8re du Soleil pour atteindre
+        la Terre.\n\nGALAXIE\nAutrefois consid\xE9r\xE9 comme une \xE9toile relativement
+        insignifiante, le Soleil est d\xE9sormais consid\xE9r\xE9 comme plus brillant
+        qu'environ 85 % des \xE9toiles de la Voie lact\xE9e. Il est situ\xE9 \xE0
+        environ les deux tiers du centre de la Voie Lact\xE9e.\r"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.39 M Km
+      - "1,39 Tri\u1EC7u Km"
+      - "1.39\u30E1\u30FC\u30C8\u30EB\u30FB\u30AD\u30ED"
+      - 1.39Mkm
+      - "1,39 Millions De Kilom\xE8tres"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 1.99 x 10^30 Kg
+      - 1,99 x 10^30 Kg
+      - "1.99\xD710^30kg"
+      - 1.99 x 10^30kg
+      - 1,99 x 10 ^ 30 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Sun
+      - "M\u1EB7t Tr\u1EDDi"
+      - "\u592A\u967D"
+      - "\uD574"
+      - Soleil
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 25 Days
+      - "25 Ng\xE0y"
+      - "25\u65E5"
+      - "25\uC77C"
+      - 25 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 274 m/s^2
+      - 274 m/s^2
+      - 274m/s^2
+      - "274m/\uCD08^2"
+      - "274\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Sun_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - 5778 K
+      - 5778K
+      - 5778K
+      - "5778\uCF00\uC774"
+      - 5778 Ko
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Uranus is the third largest of the Solar System''s gas giants. Its is the
+        coldest planet tin the Solar System.
+
+
+        DISCOVERY
+
+        Uranus
+        was the first to be discovered by the use of the modern telescope, with its
+        discovery credited to the English astronomer William Herschel in 1781.
+
+
+        AXIAL
+        TILT
+
+        Uranus has an axial tilt of 97.77 degree, meaning is effectively
+        rolls around the Sun "on its side" compared to the other planets in the Solar
+        System.
+
+
+        OBSERVATION
+
+        While in Opposition(from the Sun,
+        relative to the Earth), Uranus becomes visible to the naked-eye. It would
+        appear as a faint star under dark sky condition.'
+      - "Sao Thi\xEAn V\u01B0\u01A1ng l\xE0 h\xE0nh tinh kh\xED kh\u1ED5ng l\u1ED3
+        l\u1EDBn th\u1EE9 ba trong H\u1EC7 M\u1EB7t tr\u1EDDi. \u0110\xE2y l\xE0
+        h\xE0nh tinh l\u1EA1nh nh\u1EA5t trong H\u1EC7 M\u1EB7t Tr\u1EDDi.\n\nKH\xC1M
+        PH\xC1\nSao Thi\xEAn V\u01B0\u01A1ng l\xE0 h\xE0nh tinh \u0111\u1EA7u ti\xEAn
+        \u0111\u01B0\u1EE3c ph\xE1t hi\u1EC7n b\u1EB1ng k\xEDnh thi\xEAn v\u0103n
+        hi\u1EC7n \u0111\u1EA1i, vi\u1EC7c ph\xE1t hi\u1EC7n ra n\xF3 \u0111\u01B0\u1EE3c
+        c\xF4ng nh\u1EADn l\xE0 c\u1EE7a nh\xE0 thi\xEAn v\u0103n h\u1ECDc ng\u01B0\u1EDDi
+        Anh William Herschel v\xE0o n\u0103m 1781.\n\nTR\u1EE4C NGHI\xCANG\nSao Thi\xEAn
+        V\u01B0\u01A1ng c\xF3 \u0111\u1ED9 nghi\xEAng tr\u1EE5c 97,77 \u0111\u1ED9,
+        ngh\u0129a l\xE0 n\xF3 quay quanh M\u1EB7t tr\u1EDDi m\u1ED9t c\xE1ch \"nghi\xEAng\"
+        m\u1ED9t c\xE1ch hi\u1EC7u qu\u1EA3 so v\u1EDBi c\xE1c h\xE0nh tinh kh\xE1c
+        trong H\u1EC7 M\u1EB7t tr\u1EDDi.\n\nQUAN S\xC1T\nKhi \u1EDF v\u1ECB tr\xED
+        \u0111\u1ED1i l\u1EADp (t\u1EEB M\u1EB7t tr\u1EDDi, so v\u1EDBi Tr\xE1i \u0111\u1EA5t),
+        Sao Thi\xEAn V\u01B0\u01A1ng c\xF3 th\u1EC3 nh\xECn th\u1EA5y \u0111\u01B0\u1EE3c
+        b\u1EB1ng m\u1EAFt th\u01B0\u1EDDng. N\xF3 s\u1EBD xu\u1EA5t hi\u1EC7n nh\u01B0
+        m\u1ED9t ng\xF4i sao m\u1EDD nh\u1EA1t trong \u0111i\u1EC1u ki\u1EC7n b\u1EA7u
+        tr\u1EDDi t\u1ED1i."
+      - "\u5929\u738B\u661F\u306F\u3001\u592A\u967D\u7CFB\u306E\u5DE8\u5927\u30AC\u30B9\u60D1\u661F\u306E\u4E2D\u3067
+        3 \u756A\u76EE\u306B\u5927\u304D\u3044\u3067\u3059\u3002\u592A\u967D\u7CFB\u3067\u6700\u3082\u5BD2\u3044\u60D1\u661F\u3067\u3059\u3002\n\n\u767A\u898B\n\u5929\u738B\u661F\u306F\u73FE\u4EE3\u306E\u671B\u9060\u93E1\u3092\u4F7F\u7528\u3057\u3066\u521D\u3081\u3066\u767A\u898B\u3055\u308C\u30011781
+        \u5E74\u306B\u30A4\u30AE\u30EA\u30B9\u306E\u5929\u6587\u5B66\u8005\u30A6\u30A3\u30EA\u30A2\u30E0
+        \u30CF\u30FC\u30B7\u30A7\u30EB\u306B\u3088\u3063\u3066\u767A\u898B\u3055\u308C\u305F\u3068\u3055\u308C\u3066\u3044\u307E\u3059\u3002\n\n\u8EF8\u65B9\u5411\u306E\u50BE\u304D\n\u5929\u738B\u661F\u306E\u8EF8\u50BE\u304D\u306F
+        97.77 \u5EA6\u3067\u3059\u3002\u3053\u308C\u306F\u3001\u592A\u967D\u7CFB\u306E\u4ED6\u306E\u60D1\u661F\u3068\u6BD4\u8F03\u3057\u3066\u3001\u4E8B\u5B9F\u4E0A\u592A\u967D\u306E\u5468\u308A\u3092\u300C\u6A2A\u5411\u304D\u300D\u306B\u56DE\u8EE2\u3057\u3066\u3044\u308B\u3053\u3068\u3092\u610F\u5473\u3057\u307E\u3059\u3002\n\n\u89B3\u5BDF\n\uFF08\u5730\u7403\u306B\u5BFE\u3057\u3066\u592A\u967D\u304B\u3089\u898B\u3066\uFF09\u30AA\u30DD\u30B8\u30B7\u30E7\u30F3\u306B\u3042\u308B\u9593\u3001\u5929\u738B\u661F\u306F\u8089\u773C\u3067\u898B\u3048\u308B\u3088\u3046\u306B\u306A\u308A\u307E\u3059\u3002\u6697\u3044\u7A7A\u306E\u4E0B\u3067\u306F\u6DE1\u3044\u661F\u3068\u3057\u3066\u898B\u3048\u307E\u3059\u3002"
+      - "\uCC9C\uC655\uC131\uC740 \uD0DC\uC591\uACC4\uC758 \uAC70\uB300 \uAC00\uC2A4
+        \uD589\uC131 \uC911 \uC138 \uBC88\uC9F8\uB85C \uD070 \uD589\uC131\uC785\uB2C8\uB2E4.
+        \uD0DC\uC591\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uCD94\uC6B4 \uD589\uC131\uC774\uB2E4.\n\n\uBC1C\uACAC\n\uCC9C\uC655\uC131\uC740
+        \uD604\uB300 \uB9DD\uC6D0\uACBD\uC744 \uC0AC\uC6A9\uD558\uC5EC \uCD5C\uCD08\uB85C
+        \uBC1C\uACAC\uB418\uC5C8\uC73C\uBA70, 1781\uB144 \uC601\uAD6D\uC758 \uCC9C\uBB38\uD559\uC790
+        \uC70C\uB9AC\uC5C4 \uD5C8\uC15C\uC774 \uBC1C\uACAC\uD55C \uAC83\uC73C\uB85C
+        \uC54C\uB824\uC838 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uCD95 \uAE30\uC6B8\uAE30\n\uCC9C\uC655\uC131\uC740
+        97.77\uB3C4\uC758 \uCD95 \uAE30\uC6B8\uAE30\uB97C \uAC16\uACE0 \uC788\uB294\uB370,
+        \uC774\uB294 \uD0DC\uC591\uACC4\uC758 \uB2E4\uB978 \uD589\uC131\uB4E4\uC5D0
+        \uBE44\uD574 \uD0DC\uC591 \uC8FC\uC704\uB97C \uD6A8\uACFC\uC801\uC73C\uB85C
+        \"\uC606\uC73C\uB85C\" \uAD74\uB9B0\uB2E4\uB294 \uC758\uBBF8\uC785\uB2C8\uB2E4.\n\n\uAD00\uCC30\n\uBC18\uB300(\uD0DC\uC591\uC73C\uB85C\uBD80\uD130,
+        \uC9C0\uAD6C\uB97C \uAE30\uC900\uC73C\uB85C)\uC5D0 \uC788\uB294 \uB3D9\uC548
+        \uCC9C\uC655\uC131\uC740 \uC721\uC548\uC73C\uB85C \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4.
+        \uC5B4\uB450\uC6B4 \uD558\uB298 \uC544\uB798\uC11C \uD76C\uBBF8\uD55C \uBCC4\uCC98\uB7FC
+        \uBCF4\uC77C \uAC83\uC785\uB2C8\uB2E4."
+      - "Uranus est la troisi\xE8me plus grande g\xE9ante gazeuse du syst\xE8me solaire.
+        C'est la plan\xE8te la plus froide du syst\xE8me solaire.\n\nD\xC9COUVERTE\nUranus
+        a \xE9t\xE9 le premier \xE0 \xEAtre d\xE9couvert gr\xE2ce \xE0 l'utilisation
+        du t\xE9lescope moderne, sa d\xE9couverte \xE9tant attribu\xE9e \xE0 l'astronome
+        anglais William Herschel en 1781.\n\nINCLINAISON AXIALE\nUranus a une inclinaison
+        axiale de 97,77 degr\xE9s, ce qui signifie qu'elle tourne autour du Soleil
+        \xAB sur le c\xF4t\xE9 \xBB par rapport aux autres plan\xE8tes du syst\xE8me
+        solaire.\n\nOBSERVATION\nEn opposition (du Soleil par rapport \xE0 la Terre),
+        Uranus devient visible \xE0 l'\u0153il nu. Elle appara\xEEtrait comme une
+        \xE9toile faible dans des conditions de ciel sombre."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 19.2 AU
+      - "19,2 Th\xE1ng Sau"
+      - 19.2Au
+      - 19.2AU
+      - 19,2 Ua
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 51118 Km
+      - 51118 Km
+      - 51118Km
+      - 51118Km
+      - 51118Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 8.7 x 10^25 Kg
+      - 8,7 x 10^25 Kg
+      - "8.7\xD710^25kg"
+      - 8.7 x 10^25kg
+      - 8,7 x 10 ^ 25 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Uranus
+      - "Sao Thi\xEAn V\u01B0\u01A1ng"
+      - "\u5929\u738B\u661F"
+      - "\uCC9C\uC655\uC131"
+      - Uranus
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 17H 41M
+      - 17H 41M
+      - "17\u6642\u959341\u5206"
+      - "17\uC2DC 41\uBD84"
+      - 17H 41Min
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 84 Years
+      - "84 N\u0103m"
+      - "84\u5E74"
+      - "84\uC138"
+      - 84 Ans
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 8.7 m/s^2
+      - 8,7 m/s^2
+      - 8.7m/s^2
+      - 8.7m/s^2
+      - "8,7\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Uranus_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - -210*C
+      - -210*C
+      - -210*C
+      - -210*C
+      - -210*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_description
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Although Venus has very similar size and interior structure as Earth, its
+        vulcanic surface and extrmely hot and dese atmosphere makes is one of the
+        most inhospitable places in the Solar System.
+
+
+        ATMOSPHERE
+
+        Thick
+        couds of sulfuric acid and dust reflest most of the Sun''s light back to
+        space, while carbon dioxide traps the Sun''s heat inside the atmosphere,
+        causing a runaway greenhousr effect. The atmospheric pressure on the surface
+        of Venus is 92 times greater than Earth.
+
+
+        OBSERVATION
+
+        Venus
+        is one of the brightest objects in our night sky - second only to the Moon.
+        It appears as either an evening or a morning star.'
+      - "M\u1EB7c d\xF9 Sao Kim c\xF3 k\xEDch th\u01B0\u1EDBc v\xE0 c\u1EA5u tr\xFAc
+        b\xEAn trong r\u1EA5t gi\u1ED1ng Tr\xE1i \u0111\u1EA5t, nh\u01B0ng b\u1EC1
+        m\u1EB7t l\u01B0u h\xF3a v\xE0 b\u1EA7u kh\xED quy\u1EC3n c\u1EF1c k\u1EF3
+        n\xF3ng v\xE0 dese c\u1EE7a n\xF3 khi\u1EBFn n\xF3 tr\u1EDF th\xE0nh m\u1ED9t
+        trong nh\u1EEFng n\u01A1i kh\u1EAFc nghi\u1EC7t nh\u1EA5t trong H\u1EC7 M\u1EB7t
+        tr\u1EDDi.\n\nB\u1EA6U KH\xD4NG KH\xCD\nNh\u1EEFng \u0111\xE1m b\u1EE5i v\xE0
+        axit sulfuric d\xE0y \u0111\u1EB7c ph\u1EA3n chi\u1EBFu ph\u1EA7n l\u1EDBn
+        \xE1nh s\xE1ng c\u1EE7a M\u1EB7t tr\u1EDDi tr\u1EDF l\u1EA1i kh\xF4ng gian,
+        trong khi carbon dioxide gi\u1EEF nhi\u1EC7t c\u1EE7a M\u1EB7t tr\u1EDDi
+        b\xEAn trong kh\xED quy\u1EC3n, g\xE2y ra hi\u1EC7u \u1EE9ng nh\xE0 k\xEDnh
+        lan r\u1ED9ng. \xC1p su\u1EA5t kh\xED quy\u1EC3n tr\xEAn b\u1EC1 m\u1EB7t
+        Sao Kim l\u1EDBn h\u01A1n Tr\xE1i \u0111\u1EA5t 92 l\u1EA7n.\n\nQUAN S\xC1T\nSao
+        Kim l\xE0 m\u1ED9t trong nh\u1EEFng v\u1EADt th\u1EC3 s\xE1ng nh\u1EA5t tr\xEAn
+        b\u1EA7u tr\u1EDDi \u0111\xEAm c\u1EE7a ch\xFAng ta - ch\u1EC9 \u0111\u1EE9ng
+        sau M\u1EB7t tr\u0103ng. N\xF3 xu\u1EA5t hi\u1EC7n d\u01B0\u1EDBi d\u1EA1ng
+        sao bu\u1ED5i t\u1ED1i ho\u1EB7c sao mai."
+      - "\u91D1\u661F\u306F\u5730\u7403\u3068\u975E\u5E38\u306B\u3088\u304F\u4F3C\u305F\u5927\u304D\u3055\u3068\u5185\u90E8\u69CB\u9020\u3092\u6301\u3063\u3066\u3044\u307E\u3059\u304C\u3001\u305D\u306E\u8868\u9762\u306F\u786B\u9EC4\u8CEA\u3067\u3042\u308A\u3001\u975E\u5E38\u306B\u9AD8\u6E29\u3067\u8352\u3005\u3057\u3044\u5927\u6C17\u306B\u3088\u3063\u3066\u3001\u592A\u967D\u7CFB\u306E\u4E2D\u3067\u6700\u3082\u4F4F\u307F\u306B\u304F\u3044\u5834\u6240\u306E
+        1 \u3064\u3068\u306A\u3063\u3066\u3044\u307E\u3059\u3002\n\n\u96F0\u56F2\u6C17\n\u786B\u9178\u3068\u5875\u306E\u539A\u3044\u7159\u304C\u592A\u967D\u306E\u5149\u306E\u307B\u3068\u3093\u3069\u3092\u53CD\u5C04\u3057\u3066\u5B87\u5B99\u306B\u623B\u3059\u4E00\u65B9\u3001\u4E8C\u9178\u5316\u70AD\u7D20\u306F\u592A\u967D\u306E\u71B1\u3092\u5927\u6C17\u4E2D\u306B\u9589\u3058\u8FBC\u3081\u3001\u66B4\u8D70\u7684\u306A\u6E29\u5BA4\u52B9\u679C\u3092\u5F15\u304D\u8D77\u3053\u3057\u307E\u3059\u3002\u91D1\u661F\u306E\u8868\u9762\u306E\u5927\u6C17\u5727\u306F\u5730\u7403\u306E92\u500D\u3067\u3059\u3002\n\n\u89B3\u5BDF\n\u91D1\u661F\u306F\u79C1\u305F\u3061\u306E\u591C\u7A7A\u3067\u6708\u306B\u6B21\u3044\u3067\u6700\u3082\u660E\u308B\u3044\u5929\u4F53\u306E
+        1 \u3064\u3067\u3059\u3002\u5BB5\u306E\u660E\u661F\u304B\u660E\u3051\u306E\u660E\u661F\u3068\u3057\u3066\u73FE\u308C\u307E\u3059\u3002"
+      - "\uAE08\uC131\uC740 \uC9C0\uAD6C\uC640 \uD06C\uAE30\uC640 \uB0B4\uBD80 \uAD6C\uC870\uAC00
+        \uB9E4\uC6B0 \uC720\uC0AC\uD558\uC9C0\uB9CC \uD654\uC0B0 \uD45C\uBA74\uACFC
+        \uADF9\uB3C4\uB85C \uB728\uAC81\uACE0 \uAC70\uCE5C \uB300\uAE30\uB85C \uC778\uD574
+        \uD0DC\uC591\uACC4\uC5D0\uC11C \uAC00\uC7A5 \uC0B4\uAE30 \uD798\uB4E0 \uACF3
+        \uC911 \uD558\uB098\uC785\uB2C8\uB2E4.\n\n\uB300\uAE30\n\uB450\uAEBC\uC6B4
+        \uD669\uC0B0\uACFC \uBA3C\uC9C0\uC758 \uB369\uC5B4\uB9AC\uB294 \uD0DC\uC591\uBE5B\uC758
+        \uB300\uBD80\uBD84\uC744 \uC6B0\uC8FC\uB85C \uBC18\uC0AC\uC2DC\uD0A4\uB294
+        \uBC18\uBA74, \uC774\uC0B0\uD654\uD0C4\uC18C\uB294 \uD0DC\uC591\uC5F4\uC744
+        \uB300\uAE30 \uB0B4\uBD80\uC5D0 \uAC00\uB450\uC5B4 \uD3ED\uC8FC\uD558\uB294
+        \uADF8\uB9B0\uD558\uC6B0\uC800 \uD6A8\uACFC\uB97C \uC77C\uC73C\uD0B5\uB2C8\uB2E4.
+        \uAE08\uC131 \uD45C\uBA74\uC758 \uB300\uAE30\uC555\uC740 \uC9C0\uAD6C\uBCF4\uB2E4
+        92\uBC30\uB098 \uB192\uC2B5\uB2C8\uB2E4.\n\n\uAD00\uCC30\n\uAE08\uC131\uC740
+        \uB2EC \uB2E4\uC74C\uC73C\uB85C \uBC24\uD558\uB298\uC5D0\uC11C \uAC00\uC7A5
+        \uBC1D\uC740 \uBB3C\uCCB4 \uC911 \uD558\uB098\uC785\uB2C8\uB2E4. \uADF8\uAC83\uC740
+        \uC800\uB141 \uBCC4\uC774\uB098 \uC0C8\uBCBD \uBCC4\uB85C \uB098\uD0C0\uB0A9\uB2C8\uB2E4."
+      - "Bien que V\xE9nus ait une taille et une structure int\xE9rieure tr\xE8s
+        similaires \xE0 celles de la Terre, sa surface volcanique et son atmosph\xE8re
+        extr\xEAmement chaude et d\xE9serte en font l'un des endroits les plus inhospitaliers
+        du syst\xE8me solaire.\n\nATMOSPH\xC8RE\nD'\xE9pais nuages \u200B\u200Bd'acide
+        sulfurique et de poussi\xE8re renvoient la majeure partie de la lumi\xE8re
+        du Soleil vers l'espace, tandis que le dioxyde de carbone emprisonne la chaleur
+        du Soleil dans l'atmosph\xE8re, provoquant un effet de serre incontr\xF4lable.
+        La pression atmosph\xE9rique \xE0 la surface de V\xE9nus est 92 fois sup\xE9rieure
+        \xE0 celle de la Terre.\n\nOBSERVATION\nV\xE9nus est l'un des objets les
+        plus brillants de notre ciel nocturne, juste derri\xE8re la Lune. Elle appara\xEEt
+        soit comme une \xE9toile du soir, soit comme une \xE9toile du matin."
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_distance_from_sun
+      TermType: 0
+      Description: 
+      Languages:
+      - 108 M Km
+      - "108 Tri\u1EC7u Km"
+      - "108\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
+      - 108Mkm
+      - 108 Mkm
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_equatorial_diameter
+      TermType: 0
+      Description: 
+      Languages:
+      - 12104 Km
+      - 12104 Km
+      - 12104Km
+      - 12104Km
+      - 12104 Km
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_mass
+      TermType: 0
+      Description: 
+      Languages:
+      - 4.9 x 10^24 Kg
+      - 4,9 x 10^24 Kg
+      - "4.9\xD710^24kg"
+      - 4.9 x 10^24kg
+      - 4,9 x 10 ^ 24 kg
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Venus
+      - Sao Kim
+      - "\u91D1\u661F"
+      - "\uAE08\uC131"
+      - "V\xE9nus"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_rotation_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 243 Days
+      - "243 Ng\xE0y"
+      - "243\u65E5"
+      - "243\uC77C"
+      - 243 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_solar_orbit_period
+      TermType: 0
+      Description: 
+      Languages:
+      - 225 Days
+      - "225 Ng\xE0y"
+      - "225\u65E5"
+      - "225\uC77C"
+      - 225 Jours
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_surface_gravity
+      TermType: 0
+      Description: 
+      Languages:
+      - 8.9 m/s^2
+      - 8,9 m/s^2
+      - 8.9m/s^2
+      - "8.9m/\uCD08^2"
+      - "8,9\_m/s^2"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Venus_surface_temperature
+      TermType: 0
+      Description: 
+      Languages:
+      - 462*C
+      - 462*C
+      - 462*C
+      - 462*C
+      - 462*C
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Tile_Description
+      TermType: 0
+      Description: 
+      Languages:
+      - DESCRIPTION
+      - "S\u1EF1 Mi\xEAu T\u1EA3"
+      - "\u8AAC\u660E"
+      - "\uC124\uBA85"
+      - Description
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Tile_Encyclopedia
+      TermType: 0
+      Description: 
+      Languages:
+      - ENCYCLOPEDIA
+      - "B\xE1ch Khoa To\xE0n Th\u01B0"
+      - "\u767E\u79D1\u4E8B\u5178"
+      - "\uBC31\uACFC \uC0AC\uC804"
+      - "Encyclop\xE9die"
       Flags: 0000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 0
@@ -272,7 +1968,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbwHjkls7Kjtl8wKwOGfbtXmPo5lCCPHGWlh3M9TXo03ykQ3gkrgMusMp-dQ7VaKs8NnhQ/exec
     Google_SpreadsheetKey: 1PUuq_LxMPPcuapPSklLezbk5kZzkJvw666a18jwYNLo
     Google_SpreadsheetName: I2Loc Solar_System Localization
-    Google_LastUpdatedVersion: 1701592850830
+    Google_LastUpdatedVersion: 1703785158467
     Google_Password: double_P
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

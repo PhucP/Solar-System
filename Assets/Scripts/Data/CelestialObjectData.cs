@@ -17,7 +17,8 @@ namespace Data
         public bool isRotateAroundItsSelf;
         public Vector3 axis;
 
-        [Header("Information To Show")] public InformationToShow showName;
+        [Header("Information To Show")] 
+        public InformationToShow showName;
         public InformationToShow showMass;
         public InformationToShow showEquatorialDiameter;
         public InformationToShow showMeanDisFromSun;

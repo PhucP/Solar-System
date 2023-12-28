@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 541756498}
   - component: {fileID: 541756497}
   m_Layer: 5
-  m_Name: Text
+  m_Name: model_planet_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
