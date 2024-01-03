@@ -27,19 +27,6 @@ public class PlanetName : MonoBehaviour
       Observer.rotatePlanet += OnRotatePlanet;
    }
 
-   private void OnEnable()
-   {
-      _term = $"txt_{gameObject.name}_x";
-#if UNITY_EDITOR
-      if (!LocalizationManager.Sources[0].ContainsTerm(_term))
-      {
-         LocalizationManager.Sources[0].AddTerm(_term, eTermType.Text);
-         var termData = LocalizationManager.Sources[0].GetTermData(_term);
-         termData.SetTranslation(0, gameObject.name);
-      }
-#endif
-   }
-
    private void FixedUpdate()
    {
       if (_isRotating)

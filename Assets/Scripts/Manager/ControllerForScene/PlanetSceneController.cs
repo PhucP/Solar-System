@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using I2.Loc;
 using Manager;
 using UnityEngine.UI;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class PlanetSceneController : BaseController
    [SerializeField] private StringVariable nameStringVariable;
    [SerializeField] private float offset;
    [SerializeField] private List<GameObject> listPlanet;
-   [SerializeField] private Text nameOfPlanet;
+   [SerializeField] private Localize localizeName;
    [SerializeField] private Toggle rotateToggle;
    public GameObject observer;
 
@@ -53,7 +54,8 @@ public class PlanetSceneController : BaseController
       base.Start();
 
       _mainCamera.transform.DOMoveZ(listPlanet[_currentPlanetIndex].GetComponent<PlanetName>().defaultCameraPosition, 0.5f);
-      nameOfPlanet.text = (listPlanet[_currentPlanetIndex].GetComponent<PlanetName>().celestialType.ToString());
+      SetNameForPlanet(listPlanet[_currentPlanetIndex].GetComponent<PlanetName>());
+      
    }
 
    private void MoveToNewPlanet(bool isRight)
@@ -84,7 +86,7 @@ public class PlanetSceneController : BaseController
             
             Destroy(_currentPlanet);
             _currentPlanet = newPlanet;
-            nameOfPlanet.text = (newPlanetName.celestialType.ToString());
+           SetNameForPlanet(newPlanetName);
          });
    }
 
@@ -109,5 +111,19 @@ public class PlanetSceneController : BaseController
       }
 
       return listPlanet[0];
+   }
+
+   private void SetNameForPlanet(PlanetName planet)
+   {
+      var nameOfPlanet = planet.celestialType.ToString();
+      var term = "txt_" + nameOfPlanet + "_name";
+      if (!LocalizationManager.Sources[0].ContainsTerm(term))
+      {
+         LocalizationManager.Sources[0].AddTerm(term, eTermType.Text);
+         var termData = LocalizationManager.Sources[0].GetTermData(term);
+         termData.SetTranslation(0, nameOfPlanet);
+      }
+      
+      localizeName.SetTerm(term);
    }
 }

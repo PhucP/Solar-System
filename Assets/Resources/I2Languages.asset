@@ -28,127 +28,6 @@ MonoBehaviour:
       - "Syst\xE8me Solaire"
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_btn_back
-      TermType: 0
-      Description: 
-      Languages:
-      - Back
-      - "Quay L\u1EA1i"
-      - "\u623B\u308B"
-      - "\uB4A4\uCABD\uC5D0"
-      - Dos
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_change_map
-      TermType: 0
-      Description: 
-      Languages:
-      - Change Map
-      - "\u0110\u1ED5i B\u1EA3n \u0110\u1ED3"
-      - "\u30DE\u30C3\u30D7\u3092\u5909\u66F4\u3059\u308B"
-      - "\uC9C0\uB3C4 \uBCC0\uACBD"
-      - Changer De Carte
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_option
-      TermType: 0
-      Description: 
-      Languages:
-      - Option
-      - "T\xF9y Ch\u1EC9nh"
-      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
-      - "\uC635\uC158"
-      - Option
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_orbit_simulator
-      TermType: 0
-      Description: 
-      Languages:
-      - Orbit Simulation
-      - "M\xF4 Ph\u1ECFng Qu\u1EF9 \u0110\u1EA1o"
-      - "\u8ECC\u9053\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3"
-      - "\uADA4\uB3C4 \uC2DC\uBBAC\uB808\uC774\uC158"
-      - Simulation D'orbite
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_planet
-      TermType: 0
-      Description: 
-      Languages:
-      - Planets
-      - "H\xE0nh Tinh"
-      - "\u60D1\u661F"
-      - "\uD589\uC131"
-      - "Plan\xE8tes"
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_reset
-      TermType: 0
-      Description: 
-      Languages:
-      - Reset
-      - "C\xE0i L\u1EA1i"
-      - "\u30EA\u30BB\u30C3\u30C8"
-      - "\uCD08\uAE30\uD654"
-      - "R\xE9initialiser"
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_sky_map
-      TermType: 0
-      Description: 
-      Languages:
-      - Star Map
-      - "B\u1EA3n \u0110\u1ED3 Sao"
-      - "\u661F\u56F3"
-      - "\uBCC4 \uC9C0\uB3C4"
-      - "Carte Des \xC9toiles"
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_solar_system
-      TermType: 0
-      Description: 
-      Languages:
-      - Solar System
-      - "H\u1EC7 M\u1EB7t Tr\u1EDDi"
-      - "\u592A\u967D\u7CFB"
-      - "\uD0DC\uC591\uACC4"
-      - "Syst\xE8me Solaire"
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_btn_start
-      TermType: 0
-      Description: 
-      Languages:
-      - Start
-      - "B\u1EAFt \u0110\u1EA7u"
-      - "\u59CB\u3081\u308B"
-      - "\uC2DC\uC791"
-      - Commencer
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_field_of_view
-      TermType: 0
-      Description: 
-      Languages:
-      - Field Of View
-      - "Tr\u01B0\u1EDDng Nh\xECn"
-      - "\u8996\u91CE"
-      - "\uC2DC\uC57C"
-      - Champ De Vision
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: txt_lable_rotate
-      TermType: 0
-      Description: 
-      Languages:
-      - Rotate
-      - Quay
-      - "\u56DE\u8EE2\u3055\u305B\u308B"
-      - "\uD68C\uC804\uD558\uB2E4"
-      - Tourner
-      Flags: 0000000000
-      Languages_Touch: []
     - Term: txt_Earth_description
       TermType: 0
       Description: 
@@ -247,33 +126,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 150 M Km
-      - 150 M Km
-      - "150\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
-      - 150Mkm
-      - 150 Mkm
+      - 'Distance from Sun: 150 M Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 150 M Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 150M Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 150M Km"
+      - 'Distance du Soleil : 150 M Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 12756 Km
-      - 12756 Km
-      - 12756Km
-      - 12756Km
-      - 12756 Km
+      - 'Euqatorial diameter: 12756 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 12756 Km"
+      - "\u8D64\u9053\u306E\u76F4\u5F84: 12756 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD : 12756 Km"
+      - "Diam\xE8tre euqatorial : 12756 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_mass
       TermType: 0
       Description: 
       Languages:
-      - 6 x 10^24 Kg
-      - 6 x 10^24 Kg
-      - "6\xD710^24kg"
-      - 6 x 10^24kg
-      - 6 x 10 ^ 24 kg
+      - 'Mass: 6 x 10^24 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 6 x 10^24 Kg"
+      - "\u8CEA\u91CF: 6 x 10^24 Kg"
+      - "\uC9C8\uB7C9: 6 x 10^24 Kg"
+      - "Masse\_: 6 x 10^24\_Kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_name
@@ -291,44 +170,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 23H 56M
-      - 23H 56M
-      - "23\u6642\u959356\u5206"
-      - "23\uC2DC 56\uBD84"
-      - 23H 56Min
+      - 'Rotaion period: 23H 56M'
+      - "Chu k\u1EF3 quay: 23H 56M"
+      - "\u56DE\u8EE2\u671F\u9593: 23\u6642\u959356\u5206"
+      - "\uC21C\uD658 \uAE30\uAC04: 23\uC2DC\uAC04 56\uBD84"
+      - "P\xE9riode de rotation : 23H 56M"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 1 Year
-      - "1 N\u0103m"
-      - "1\u5E74"
-      - "\uC77C\uB144"
-      - 1 An
+      - 'Solar orbit period: 1 Year'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 1 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A1\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 1\uB144"
+      - "P\xE9riode d'orbite solaire\_: 1 an"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 9.8 M/s^2
-      - 9,8 M/s^2
-      - 9.8m/s^2
-      - 9.8m/s^2
-      - 9,8 M/s^2
+      - 'Surface gravity: 9.8 M/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 9,8 M/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A9.8M/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 9.8M/s^2"
+      - "Gravit\xE9 de surface\_: 9,8\_M/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Earth_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - 15*C
-      - 15*C
-      - 15*C
-      - 15*C
-      - 15*C
+      - 'Surface temperature: 15*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: 15*C"
+      - "\u8868\u9762\u6E29\u5EA6: 15*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: 15*C"
+      - "Temp\xE9rature de Surface: 15*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_description
@@ -467,33 +346,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 779 M Km
-      - 779 M Km
-      - "779\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
-      - 779Mkm
-      - 779 Mkm
+      - 'Distance from Sun: 779 M Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EDBi m\u1EB7t tr\u1EDDi: 779 M Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 779 M Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 779 M Km"
+      - 'Distance du Soleil: 779 M Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 142984 Km
-      - 142984 Km
-      - 142984 Km
-      - 142984Km
-      - 142984Km
+      - 'Equatorial diameter: 142984 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 142984 Km"
+      - "\u8D64\u9053\u76F4\u5F84: 142984 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD : 142984 Km"
+      - "Diam\xE8tre \xE9quatorial : 142984 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_mass
       TermType: 0
       Description: 
       Languages:
-      - 1.9 x 10^27 Kg
-      - 1,9 x 10^27 Kg
-      - "1.9\xD710^27kg"
-      - 1.9 x 10^27kg
-      - 1,9 x 10 ^ 27 kg
+      - 'Mass: 1.9 x 10^27 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 1,9 x 10^27 Kg"
+      - "\u8CEA\u91CF: 1.9 x 10^27 Kg"
+      - "\uC9C8\uB7C9: 1.9 x 10^27Kg"
+      - "Masse\_: 1,9\_x\_10^27\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_name
@@ -511,44 +390,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 9H 55M
-      - 9H 55P
-      - "9\u6642\u959355\u5206"
-      - "9\uC2DC\uAC04 55\uBD84"
-      - 9H 55Min
+      - 'Rotation period: 9H 55M'
+      - "Chu k\u1EF3 quay: 9H 55M"
+      - "\u56DE\u8EE2\u5468\u671F: 9\u6642\u959355\u5206"
+      - "\uC21C\uD658 \uAE30\uAC04: 9\uC2DC\uAC04 55\uBD84"
+      - "P\xE9riode de rotation : 9H 55M"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 11.9 Years
-      - "11,9 N\u0103m"
-      - "11.9\u5E74"
-      - "11.9\uB144"
-      - 11,9 Ans
+      - 'Solar orbit period: 11.9 Years'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 11,9 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A11.9\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 11.9\uB144"
+      - "P\xE9riode d'orbite solaire\_: 11,9\_ans"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 25 m/s^2
-      - 25 m/s^2
-      - 25m/s^2
-      - "25m/\uCD08^2"
-      - "25\_m/s^2"
+      - 'Surface gravity: 25 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 25 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A25m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 25m/s^2"
+      - "Gravit\xE9 de surface\_: 25 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Jupiter_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -120*C
-      - -120*C
-      - -120*C
-      - -120*C
-      - -120*C
+      - 'Surface temperature: -120*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: -120*C"
+      - "\u8868\u9762\u6E29\u5EA6: -120*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: -120*C"
+      - "Temp\xE9rature de surface\_: -120*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_description
@@ -742,33 +621,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 230 M Km
-      - 230 M Km
-      - "230\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
-      - 230Mkm
-      - 230 Mkm
+      - 'Distance from Sun: 230 M Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 230 M Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 230M Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 230M Km"
+      - 'Distance du Soleil : 230 M Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 6792 Km
-      - 6792 Km
-      - 6792Km
-      - 6792Km
-      - 6792 Km
+      - 'Equatorial diameter: 6792 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 6792 Km"
+      - "\u8D64\u9053\u76F4\u5F84: 6792 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 6792km"
+      - "Diam\xE8tre \xE9quatorial : 6792 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_mass
       TermType: 0
       Description: 
       Languages:
-      - 6.4 x 10^23 Kg
-      - 6,4 x 10^23 Kg
-      - "6.4\xD710^23kg"
-      - 6.4 x 10^23kg
-      - 6,4 x 10 ^ 23 kg
+      - 'Mass: 6.4 x 10^23 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 6,4 x 10^23 Kg"
+      - "\u8CEA\u91CF: 6.4 x 10^23 Kg"
+      - "\uC9C8\uB7C9: 6.4 x 10^23Kg"
+      - "Masse\_: 6,4\_x\_10^23\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_name
@@ -786,44 +665,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 1.03 Day
-      - "1,03 Ng\xE0y"
-      - "1.03\u65E5"
-      - "1.03\uC77C"
-      - 1,03 Jour
+      - 'Rotation period: 1.03 Day'
+      - "Th\u1EDDi gian quay v\xF2ng: 1,03 ng\xE0y"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u5468\u671F: 1.03 \u65E5"
+      - "\uC21C\uD658 \uAE30\uAC04: 1.03\uC77C"
+      - "P\xE9riode de rotation\_: 1,03\_jour"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 1.88 Year
-      - "1,88 N\u0103m"
-      - "1.88\u5E74"
-      - "1.88\uB144"
-      - 1,88 An
+      - 'Solar orbit period: 1.88 Year'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 1,88 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A1.88\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 1.88\uB144"
+      - "P\xE9riode d'orbite solaire\_: 1,88\_ann\xE9e"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 3.7 m/s^2
-      - 3,7 m/s^2
-      - 3.7m/s^2
-      - "3.7m/\uCD08^2"
-      - "3,7\_m/s^2"
+      - 'Surface gravity: 3.7 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 3,7 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A3.7m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 3.7m/s^2"
+      - "Gravit\xE9 de surface\_: 3,7 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mars_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -63*C
-      - -63*C
-      - -63*C
-      - -63*C
-      - -63*C
+      - 'Surface temperature: -63*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: -63*C"
+      - "\u8868\u9762\u6E29\u5EA6: -63*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: -63*C"
+      - "Temp\xE9rature de surface\_: -63*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_description
@@ -879,33 +758,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 60 M Km
-      - 60 M Km
-      - "60\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
-      - 60Mkm
-      - 60 Mkm
+      - 'Distance from Sun: 60 M Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 60 M Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 60M Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 60M Km"
+      - 'Distance du Soleil : 60 M Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 4879 Km
-      - 4879 Km
-      - 4879Km
-      - 4879Km
-      - 4879 Km
+      - 'Euatorial diameter: 4879 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 4879 Km"
+      - "\u30E6\u30FC\u30C8\u30EA\u30A2\u30EB\u76F4\u5F84: 4879 Km"
+      - "\uC720\uB3C4 \uC9C1\uACBD : 4879 Km"
+      - "Diam\xE8tre euatorial : 4879 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_mass
       TermType: 0
       Description: 
       Languages:
-      - 3.3 x 10^23 Kg
-      - 3,3 x 10^23 Kg
-      - "3.3\xD710^23kg"
-      - 3.3x10^23kg
-      - 3,3 x 10 ^ 23 kg
+      - 'Mass: 3.3 x 10^23 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 3,3 x 10^23 Kg"
+      - "\u8CEA\u91CF: 3.3 x 10^23 Kg"
+      - "\uC9C8\uB7C9: 3.3 x 10^23Kg"
+      - "Masse\_: 3,3\_x\_10^23\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_name
@@ -913,7 +792,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - Mecury
-      - "Th\u1EE7y Ng\xE2n"
+      - "Sao Th\u1EE7y"
       - "\u6C34\u9280"
       - "\uC218\uC740"
       - Mercure
@@ -923,88 +802,132 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 59 Days
-      - "59 Ng\xE0y"
-      - "59\u65E5"
-      - "59\uC77C"
-      - 59 Jours
+      - 'Rotaion period: 59 Days'
+      - "Th\u1EDDi gian quay v\xF2ng: 59 ng\xE0y"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u671F\u9593: 59 \u65E5"
+      - "\uC21C\uD658 \uAE30\uAC04: 59\uC77C"
+      - "P\xE9riode de rotation\_: 59\_jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 88 Days
-      - "88 Ng\xE0y"
-      - "88\u65E5"
-      - "88\uC77C"
-      - 88 Jours
+      - 'Solar orbit period: 88 Days'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 88 ng\xE0y"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A88\u65E5"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 88\uC77C"
+      - "P\xE9riode d'orbite solaire\_: 88 jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 3.7 m/s^2
-      - 3,7 m/s^2
-      - 3.7m/s^2
-      - "3.7m/\uCD08^2"
-      - "3,7\_m/s^2"
+      - 'Surface gravity: 3.7 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 3,7 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A3.7m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 3.7m/s^2"
+      - "Gravit\xE9 de surface\_: 3,7 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Mecury_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - 167*C
-      - 167*C
-      - 167*C
-      - 167*C
-      - 167*C
+      - 'Surface gravity: 167*C'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 167*C"
+      - "\u8868\u9762\u91CD\u529B: 167*C"
+      - "\uD45C\uBA74 \uC911\uB825: 167*C"
+      - "Gravit\xE9 de surface\_: 167*C"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Moon_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Moon
+      - "M\u1EB7t Tr\u0103ng"
+      - "\u6708"
+      - "\uB2EC"
+      - Lune
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_description
       TermType: 0
       Description: 
       Languages:
-      - txt_Neptune_description
-      - txt_Neptune_description
-      - "txt_Neptune_\u8AAC\u660E"
-      - txt_Neptune_description
-      - txt_Neptune_description
+      - 'Neptube, is the eight and officially farthest planet from the Sun. It is
+        the smallest but also the most dense of gas giants. Neptune has a surface
+        gravity that i only surpassed by Jupiter.
+
+
+        DISCOVERY
+
+        Neptube
+        was the first planet to be discoveried purely on the basis of mathematical
+        prediction rather than by direct observation. Since it''s discovery in 1846 '
+      - "Sao H\u1EA3i V\u01B0\u01A1ng, l\xE0 h\xE0nh tinh th\u1EE9 t\xE1m v\xE0 ch\xEDnh
+        th\u1EE9c xa M\u1EB7t tr\u1EDDi nh\u1EA5t. N\xF3 l\xE0 h\xE0nh tinh kh\xED
+        kh\u1ED5ng l\u1ED3 nh\u1ECF nh\u1EA5t nh\u01B0ng c\u0169ng \u0111\u1EADm
+        \u0111\u1EB7c nh\u1EA5t. Sao H\u1EA3i V\u01B0\u01A1ng c\xF3 l\u1EF1c h\u1EA5p
+        d\u1EABn b\u1EC1 m\u1EB7t m\xE0 t\xF4i ch\u1EC9 v\u01B0\u1EE3t qua Sao M\u1ED9c.\n\nKH\xC1M
+        PH\xC1\nSao H\u1EA3i V\u01B0\u01A1ng l\xE0 h\xE0nh tinh \u0111\u1EA7u ti\xEAn
+        \u0111\u01B0\u1EE3c ph\xE1t hi\u1EC7n ho\xE0n to\xE0n d\u1EF1a tr\xEAn d\u1EF1
+        \u0111o\xE1n to\xE1n h\u1ECDc ch\u1EE9 kh\xF4ng ph\u1EA3i b\u1EB1ng quan
+        s\xE1t tr\u1EF1c ti\u1EBFp. K\u1EC3 t\u1EEB khi n\xF3 \u0111\u01B0\u1EE3c
+        ph\xE1t hi\u1EC7n v\xE0o n\u0103m 1846"
+      - "\u6D77\u738B\u661F\u306F\u3001\u592A\u967D\u304B\u3089 8 \u756A\u76EE\u3067\u516C\u5F0F\u306B\u306F\u6700\u3082\u9060\u3044\u60D1\u661F\u3067\u3059\u3002\u305D\u308C\u306F\u30AC\u30B9\u5DE8\u4EBA\u306E\u4E2D\u3067\u6700\u3082\u5C0F\u3055\u3044\u304C\u3001\u6700\u3082\u5BC6\u5EA6\u304C\u9AD8\u3044\u3002\u6D77\u738B\u661F\u306B\u306F\u8868\u9762\u91CD\u529B\u304C\u3042\u308A\u3001\u305D\u308C\u3092\u8D85\u3048\u308B\u306E\u306F\u6728\u661F\u3060\u3051\u3067\u3059\u3002\n\n\u767A\u898B\n\u6D77\u738B\u661F\u306F\u3001\u76F4\u63A5\u89B3\u6E2C\u3067\u306F\u306A\u304F\u7D14\u7C8B\u306B\u6570\u5B66\u7684\u4E88\u6E2C\u306B\u57FA\u3065\u3044\u3066\u767A\u898B\u3055\u308C\u305F\u6700\u521D\u306E\u60D1\u661F\u3067\u3059\u3002
+        1846\u5E74\u306B\u767A\u898B\u3055\u308C\u3066\u4EE5\u6765"
+      - "\uD574\uC655\uC131(Neptube)\uC740 \uACF5\uC2DD\uC801\uC73C\uB85C \uD0DC\uC591\uC5D0\uC11C
+        \uAC00\uC7A5 \uBA3C \uC5EC\uB35F \uBC88\uC9F8 \uD589\uC131\uC785\uB2C8\uB2E4.
+        \uC774\uAC83\uC740 \uAC00\uC2A4 \uAC70\uC778 \uC911\uC5D0\uC11C \uAC00\uC7A5
+        \uC791\uC9C0\uB9CC \uAC00\uC7A5 \uBC00\uB3C4\uAC00 \uB192\uC740 \uD589\uC131\uC785\uB2C8\uB2E4.
+        \uD574\uC655\uC131\uC740 \uBAA9\uC131\uC744 \uB2A5\uAC00\uD558\uB294 \uD45C\uBA74
+        \uC911\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\n\uBC1C\uACAC\n\uD574\uC655\uC131\uC740
+        \uC9C1\uC811\uC801\uC778 \uAD00\uCC30\uC774 \uC544\uB2CC \uC21C\uC804\uD788
+        \uC218\uD559\uC801 \uC608\uCE21\uC744 \uBC14\uD0D5\uC73C\uB85C \uBC1C\uACAC\uB41C
+        \uCD5C\uCD08\uC758 \uD589\uC131\uC774\uC5C8\uC2B5\uB2C8\uB2E4. 1846\uB144\uC5D0
+        \uBC1C\uACAC\uB41C \uC774\uB798\uB85C"
+      - "Neptube est la huiti\xE8me plan\xE8te et officiellement la plus \xE9loign\xE9e
+        du Soleil. C\u2019est la plus petite mais aussi la plus dense des g\xE9antes
+        gazeuses. Neptune a une gravit\xE9 de surface que seul Jupiter surpasse.\n\nD\xC9COUVERTE\nNeptube
+        a \xE9t\xE9 la premi\xE8re plan\xE8te \xE0 \xEAtre d\xE9couverte uniquement
+        sur la base de pr\xE9dictions math\xE9matiques plut\xF4t que par observation
+        directe. Depuis sa d\xE9couverte en 1846"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_distance_from_sun
       TermType: 0
       Description: 
       Languages:
-      - 30.1 AU
-      - "30,1 Th\xE1ng Sau"
-      - 30.1Au
-      - 30.1AU
-      - 30,1 Ua
+      - 'Distance from Sun: 30.1 AU'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 30,1 AU"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 30.1 \u5929\u6587\u5358\u4F4D"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 30.1 AU"
+      - "Distance du Soleil\_: 30,1 UA"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 49528 Km
-      - 49528 Km
-      - 49528Km
-      - 49528Km
-      - 49528 Km
+      - 'Equatorial diameter: 49528 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 49528 Km"
+      - "\u8D64\u9053\u76F4\u5F84: 49528 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD : 49528 Km"
+      - "Diam\xE8tre \xE9quatorial : 49528 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_mass
       TermType: 0
       Description: 
       Languages:
-      - 1.02 x 10^26 Kg
-      - 1,02 x 10^26 Kg
-      - "1.02\xD710^26kg"
-      - 1.02 x 10^26kg
-      - 1,02 x 10 ^ 26 kg
+      - 'Mass: 1.02 x 10^26 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 1,02 x 10^26 Kg"
+      - "\u8CEA\u91CF: 1.02 x 10^26 Kg"
+      - "\uC9C8\uB7C9: 1.02 x 10^26Kg"
+      - "Masse\_: 1,02\_x\_10^26\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_name
@@ -1022,44 +945,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 16H 06M
-      - 16H 06M
-      - "16\u664206\u5206"
-      - "16\uC2DC 6\uBD84"
-      - 16H06
+      - 'Rotation period: 16H 06M'
+      - "Chu k\u1EF3 quay: 16H 06M"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u5468\u671F: 16H 06M"
+      - "\uC21C\uD658 \uAE30\uAC04: 16H 06M"
+      - "P\xE9riode de rotation : 16H 06M"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 165 Years
-      - "165 N\u0103m"
-      - "165\u5E74"
-      - "165\uB144"
-      - 165 Ans
+      - 'Solar orbit period: 165 Years'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 165 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A165\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uAE30\uAC04: 165\uB144"
+      - "P\xE9riode d'orbite solaire\_: 165\_ans"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 11.2 m/s^2
-      - 11,2 m/s^2
-      - 11.2m/s^2
-      - "11.2m/\uCD08^2"
-      - "11,2\_m/s^2"
+      - 'Surface gravity: 11.2 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 11,2 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A11.2m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 11.2m/s^2"
+      - "Gravit\xE9 de surface\_: 11,2 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Neptune_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -200*C
-      - -200*C
-      - -200*C
-      - -200*C
-      - -200*C
+      - 'Surface temperature: -200*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: -200*C"
+      - "\u8868\u9762\u6E29\u5EA6: -200*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: -200*C"
+      - "Temp\xE9rature de surface\_: -200*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_description
@@ -1170,33 +1093,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 40.9 AU
-      - "40,9 Gi\u1EDD"
-      - 40.9Au
-      - 40.9AU
-      - 40,9 Ua
+      - 'Distance from Sun: 40.9 AU'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 40,9 AU"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 40.9 \u5929\u6587\u5358\u4F4D"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 40.9 AU"
+      - "Distance du Soleil\_: 40,9 UA"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 2374 Km
-      - 2374 Km
-      - 2374Km
-      - 2374Km
-      - 2374 Km
+      - 'Equatorial diameter: 2374 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 2374 Km"
+      - "\u8D64\u9053\u76F4\u5F84: 2374 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 2374km"
+      - "Diam\xE8tre \xE9quatorial : 2374 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_mass
       TermType: 0
       Description: 
       Languages:
-      - 1.31 x 10^22 Kg
-      - 1,31 x 10^22 Kg
-      - "1.31\xD710^22kg"
-      - 1.31x10^22kg
-      - 1,31 x 10 ^ 22 kg
+      - 'Mass: 1.31 x 10^22 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 1,31 x 10^22 Kg"
+      - "\u8CEA\u91CF: 1.31 x 10^22 Kg"
+      - "\uC9C8\uB7C9: 1.31 x 10^22Kg"
+      - "Masse\_: 1,31\_x\_10^22\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_name
@@ -1214,44 +1137,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 6.9 Days
-      - "6,9 Ng\xE0y"
-      - "6.9\u65E5"
-      - "6.9\uC77C"
-      - 6,9 Jours
+      - 'Rotation period: 6.9 Days'
+      - "Th\u1EDDi gian quay v\xF2ng: 6,9 ng\xE0y"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u671F\u9593: 6.9 \u65E5"
+      - "\uC21C\uD658 \uAE30\uAC04: 6.9\uC77C"
+      - "P\xE9riode de rotation : 6,9 jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 248 Years
-      - "248 N\u0103m"
-      - "248\u5E74"
-      - "248\uB144"
-      - 248 Ans
+      - 'Solar orbit period: 248 Years'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 248 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A248\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uAE30\uAC04: 248\uB144"
+      - "P\xE9riode d'orbite solaire\_: 248 ans"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 0.66 m/s^2
-      - 0,66 m/s^2
-      - 0.66m/s^2
-      - 0.66m/s^2
-      - 0,66 m/s^2
+      - 'Surface gravity: 0.66 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 0,66 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A0.66m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 0.66m/s^2"
+      - "Gravit\xE9 de surface\_: 0,66 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Pluto_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -228*C
-      - -228*C
-      - -228*C
-      - -228*C
-      - -228*C
+      - 'Surface gravity: -228*C'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: -228*C"
+      - "\u8868\u9762\u91CD\u529B: -228*C"
+      - "\uD45C\uBA74 \uC911\uB825: -228*C"
+      - "Gravit\xE9 superficielle\_: -228*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_description
@@ -1354,33 +1277,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 9.58 AU
-      - 9,58 Au
-      - 9.58Au
-      - "9\uC2DC 58\uBD84"
-      - 9,58 Ua
+      - 'Distance from Sun: 9.58 AU'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 9,58 AU"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 9.58 AU"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 9.58 AU"
+      - "Distance du Soleil\_: 9,58 UA"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 120 536 Km
-      - 120 536 Km
-      - 120 536 Km
-      - 120536Km
-      - 120 536 Km
+      - 'Equtorial diameter: 120 536 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 120 536 Km"
+      - "\u8D64\u9053\u76F4\u5F84: 120 536 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 120,536km"
+      - "Diam\xE8tre \xE9quatorial : 120 536 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_mass
       TermType: 0
       Description: 
       Languages:
-      - 5.7 x 10^26 Kg
-      - 5,7 x 10^26 Kg
-      - "5.7\xD710^26kg"
-      - 5.7 x 10^26kg
-      - 5,7 x 10 ^ 26 kg
+      - 'Mass: 5.7 x 10^26 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 5,7 x 10^26 Kg"
+      - "\u8CEA\u91CF: 5.7 x 10^26 Kg"
+      - "\uC9C8\uB7C9: 5.7 x 10^26Kg"
+      - "Masse\_: 5,7\_x\_10^26\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_name
@@ -1398,44 +1321,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 10H 39M
-      - "10H 39 Ph\xFAt"
-      - "10\u6642\u959339\u5206"
-      - "10\uC2DC 39\uBD84"
-      - 10H 39Min
+      - 'Rotation period: 10H 39M'
+      - "Chu k\u1EF3 quay: 10H 39M"
+      - "\u56DE\u8EE2\u5468\u671F: 10\u6642\u959339\u5206"
+      - "\uC21C\uD658 \uAE30\uAC04: 10\uC2DC\uAC04 39\uBD84"
+      - "P\xE9riode de rotation : 10H 39M"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 29 Years
-      - "29 N\u0103m"
-      - "29\u5E74"
-      - "29\uC138"
-      - 29 Ans
+      - 'Solar orbit period: 29 Years'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 29 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A29\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uAE30\uAC04: 29\uB144"
+      - "P\xE9riode d'orbite solaire\_: 29\_ans"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 10.4 m/s^2
-      - 10,4 m/s^2
-      - 10.4m/s^2
-      - 10.4m/s^2
-      - "10,4\_m/s^2"
+      - 'Surface gravity: 10.4 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 10,4 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A10.4m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 10.4m/s^2"
+      - "Gravit\xE9 de surface\_: 10,4 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Saturn_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -139*C
-      - -139*C
-      - -139*C
-      - -139*C
-      - -139*C
+      - 'Surface temperature: -139*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: -139*C"
+      - "\u8868\u9762\u6E29\u5EA6: -139*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: -139*C"
+      - "Temp\xE9rature de surface\_: -139*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_description
@@ -1515,33 +1438,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
+      - 'Distance from Sun: 0 Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 0 Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 0 Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 0 Km"
+      - 'Distance du Soleil: 0 Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 1.39 M Km
-      - "1,39 Tri\u1EC7u Km"
-      - "1.39\u30E1\u30FC\u30C8\u30EB\u30FB\u30AD\u30ED"
-      - 1.39Mkm
-      - "1,39 Millions De Kilom\xE8tres"
+      - 'Equatorial diameter: 1.39 M Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 1,39 M Km"
+      - "\u8D64\u9053\u76F4\u5F84\uFF1A1.39M Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 1.39M Km"
+      - "Diam\xE8tre \xE9quatorial : 1,39 M Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_mass
       TermType: 0
       Description: 
       Languages:
-      - 1.99 x 10^30 Kg
-      - 1,99 x 10^30 Kg
-      - "1.99\xD710^30kg"
-      - 1.99 x 10^30kg
-      - 1,99 x 10 ^ 30 kg
+      - 'Mass: 1.99 x 10^30 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 1,99 x 10^30 Kg"
+      - "\u8CEA\u91CF: 1.99 x 10^30 Kg"
+      - "\uC9C8\uB7C9: 1.99 x 10^30Kg"
+      - "Masse\_: 1,99 x 10^30\_Kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_name
@@ -1559,44 +1482,66 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 25 Days
-      - "25 Ng\xE0y"
-      - "25\u65E5"
-      - "25\uC77C"
-      - 25 Jours
+      - 'Rotation period: 25 Days'
+      - "Th\u1EDDi gian lu\xE2n chuy\u1EC3n: 25 ng\xE0y"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u671F\u9593: 25 \u65E5"
+      - "\uC21C\uD658 \uAE30\uAC04: 25\uC77C"
+      - "P\xE9riode de rotation : 25 jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
+      - 'Solar orbit period: 0'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 0"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F: 0"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 0"
+      - "P\xE9riode de l'orbite solaire\_: 0"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 274 m/s^2
-      - 274 m/s^2
-      - 274m/s^2
-      - "274m/\uCD08^2"
-      - "274\_m/s^2"
+      - 'Surface gravity: 274 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 274 m/s^2"
+      - "\u8868\u9762\u91CD\u529B: 274 m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 274m/s^2"
+      - "Gravit\xE9 de surface\_: 274 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Sun_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - 5778 K
-      - 5778K
-      - 5778K
-      - "5778\uCF00\uC774"
-      - 5778 Ko
+      - 'Surface temperature: 5778 K'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: 5778 K"
+      - "\u8868\u9762\u6E29\u5EA6\uFF1A5778K"
+      - "\uD45C\uBA74 \uC628\uB3C4: 5778K"
+      - "Temp\xE9rature de surface : 5778 K"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Tile_Description
+      TermType: 0
+      Description: 
+      Languages:
+      - DESCRIPTION
+      - "S\u1EF1 Mi\xEAu T\u1EA3"
+      - "\u8AAC\u660E"
+      - "\uC124\uBA85"
+      - Description
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Tile_Encyclopedia
+      TermType: 0
+      Description: 
+      Languages:
+      - ENCYCLOPEDIA
+      - "B\xE1ch Khoa To\xE0n Th\u01B0"
+      - "\u767E\u79D1\u4E8B\u5178"
+      - "\uBC31\uACFC \uC0AC\uC804"
+      - "Encyclop\xE9die"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_description
@@ -1680,33 +1625,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 19.2 AU
-      - "19,2 Th\xE1ng Sau"
-      - 19.2Au
-      - 19.2AU
-      - 19,2 Ua
+      - 'Distance from Sun: 19.2 AU'
+      - "Kho\u1EA3ng c\xE1ch t\u1EEB m\u1EB7t tr\u1EDDi: 19,2 AU"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 19.2 \u5929\u6587\u5358\u4F4D"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 19.2AU"
+      - "Distance du Soleil\_: 19,2 UA"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 51118 Km
-      - 51118 Km
-      - 51118Km
-      - 51118Km
-      - 51118Km
+      - 'Euqatorial diameter: 51118 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 51118 Km"
+      - "\u8D64\u9053\u306E\u76F4\u5F84: 51118 Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 51118 Km"
+      - "Diam\xE8tre euqatorial : 51118 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_mass
       TermType: 0
       Description: 
       Languages:
-      - 8.7 x 10^25 Kg
-      - 8,7 x 10^25 Kg
-      - "8.7\xD710^25kg"
-      - 8.7 x 10^25kg
-      - 8,7 x 10 ^ 25 kg
+      - 'Mass: 8.7 x 10^25 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 8,7 x 10^25 Kg"
+      - "\u8CEA\u91CF: 8.7 x 10^25 Kg"
+      - "\uC9C8\uB7C9: 8.7 x 10^25 Kg"
+      - "Masse\_: 8,7\_x\_10^25\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_name
@@ -1724,44 +1669,44 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 17H 41M
-      - 17H 41M
-      - "17\u6642\u959341\u5206"
-      - "17\uC2DC 41\uBD84"
-      - 17H 41Min
+      - 'Rotation period: 17H 41M'
+      - "Chu k\u1EF3 quay: 17H 41M"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u5468\u671F: 17\u6642\u959341\u5206"
+      - "\uC21C\uD658 \uAE30\uAC04: 17\uC2DC\uAC04 41\uBD84"
+      - "P\xE9riode de rotation : 17H 41M"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 84 Years
-      - "84 N\u0103m"
-      - "84\u5E74"
-      - "84\uC138"
-      - 84 Ans
+      - 'Solar orbit period: 84 Years'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 84 n\u0103m"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A84\u5E74"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uAE30\uAC04: 84\uB144"
+      - "P\xE9riode d'orbite solaire\_: 84\_ans"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 8.7 m/s^2
-      - 8,7 m/s^2
-      - 8.7m/s^2
-      - 8.7m/s^2
-      - "8,7\_m/s^2"
+      - 'Surface gravity: 8.7 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 8,7 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A8.7m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 8.7m/s^2"
+      - "Gravit\xE9 de surface\_: 8,7 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Uranus_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - -210*C
-      - -210*C
-      - -210*C
-      - -210*C
-      - -210*C
+      - 'Surface temperature: -210*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: -210*C"
+      - "\u8868\u9762\u6E29\u5EA6: -210*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: -210*C"
+      - "Temp\xE9rature de surface\_: -210*C"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_description
@@ -1838,33 +1783,33 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 108 M Km
-      - "108 Tri\u1EC7u Km"
-      - "108\u30E1\u30FC\u30C8\u30EB\u30AD\u30ED"
-      - 108Mkm
-      - 108 Mkm
+      - 'Distance from Sun: 108 M Km'
+      - "Kho\u1EA3ng c\xE1ch t\u1EDBi m\u1EB7t tr\u1EDDi: 108 M Km"
+      - "\u592A\u967D\u304B\u3089\u306E\u8DDD\u96E2: 108M Km"
+      - "\uD0DC\uC591\uC73C\uB85C\uBD80\uD130\uC758 \uAC70\uB9AC: 108M Km"
+      - 'Distance du Soleil : 108 M Km'
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_equatorial_diameter
       TermType: 0
       Description: 
       Languages:
-      - 12104 Km
-      - 12104 Km
-      - 12104Km
-      - 12104Km
-      - 12104 Km
+      - 'Equatorial diameter: 12104 Km'
+      - "\u0110\u01B0\u1EDDng k\xEDnh x\xEDch \u0111\u1EA1o: 12104 Km"
+      - "\u8D64\u9053\u76F4\u5F84\uFF1A12104Km"
+      - "\uC801\uB3C4 \uC9C1\uACBD: 12104km"
+      - "Diam\xE8tre \xE9quatorial : 12104 Km"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_mass
       TermType: 0
       Description: 
       Languages:
-      - 4.9 x 10^24 Kg
-      - 4,9 x 10^24 Kg
-      - "4.9\xD710^24kg"
-      - 4.9 x 10^24kg
-      - 4,9 x 10 ^ 24 kg
+      - 'Mass: 4.9 x 10^24 Kg'
+      - "Kh\u1ED1i l\u01B0\u1EE3ng: 4,9 x 10^24 Kg"
+      - "\u8CEA\u91CF: 4.9 x 10^24 Kg"
+      - "\uC9C8\uB7C9: 4.9 x 10^24Kg"
+      - "Masse\_: 4,9\_x\_10^24\_kg"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_name
@@ -1882,66 +1827,231 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 243 Days
-      - "243 Ng\xE0y"
-      - "243\u65E5"
-      - "243\uC77C"
-      - 243 Jours
+      - 'Roation period: 243 Days'
+      - "Th\u1EDDi gian lu\xE2n chuy\u1EC3n: 243 ng\xE0y"
+      - "\u30ED\u30FC\u30C6\u30FC\u30B7\u30E7\u30F3\u671F\u9593: 243 \u65E5"
+      - "\uB85C\uD14C\uC774\uC158 \uAE30\uAC04: 243\uC77C"
+      - "P\xE9riode de rotation\_: 243\_jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_solar_orbit_period
       TermType: 0
       Description: 
       Languages:
-      - 225 Days
-      - "225 Ng\xE0y"
-      - "225\u65E5"
-      - "225\uC77C"
-      - 225 Jours
+      - 'Solar orbit period: 225 Days'
+      - "Chu k\u1EF3 qu\u1EF9 \u0111\u1EA1o m\u1EB7t tr\u1EDDi: 225 ng\xE0y"
+      - "\u592A\u967D\u306E\u516C\u8EE2\u5468\u671F\uFF1A225\u65E5"
+      - "\uD0DC\uC591 \uADA4\uB3C4 \uC8FC\uAE30: 225\uC77C"
+      - "P\xE9riode d'orbite solaire\_: 225 jours"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_surface_gravity
       TermType: 0
       Description: 
       Languages:
-      - 8.9 m/s^2
-      - 8,9 m/s^2
-      - 8.9m/s^2
-      - "8.9m/\uCD08^2"
-      - "8,9\_m/s^2"
+      - 'Surface gravity: 8.9 m/s^2'
+      - "Tr\u1ECDng l\u1EF1c b\u1EC1 m\u1EB7t: 8,9 m/s^2"
+      - "\u8868\u9762\u91CD\u529B\uFF1A8.9m/s^2"
+      - "\uD45C\uBA74 \uC911\uB825: 8.9m/s^2"
+      - "Gravit\xE9 de surface\_: 8,9 m/s^2"
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Venus_surface_temperature
       TermType: 0
       Description: 
       Languages:
-      - 462*C
-      - 462*C
-      - 462*C
-      - 462*C
-      - 462*C
+      - 'Surface temperature: 462*C'
+      - "Nhi\u1EC7t \u0111\u1ED9 b\u1EC1 m\u1EB7t: 462*C"
+      - "\u8868\u9762\u6E29\u5EA6: 462*C"
+      - "\uD45C\uBA74 \uC628\uB3C4: 462*C"
+      - "Temp\xE9rature de surface\_: 462*C"
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Tile_Description
+    - Term: txt_btn_back
       TermType: 0
       Description: 
       Languages:
-      - DESCRIPTION
-      - "S\u1EF1 Mi\xEAu T\u1EA3"
-      - "\u8AAC\u660E"
-      - "\uC124\uBA85"
-      - Description
+      - Back
+      - "Quay L\u1EA1i"
+      - "\u623B\u308B"
+      - "\uB4A4\uCABD\uC5D0"
+      - Dos
       Flags: 0000000000
       Languages_Touch: []
-    - Term: txt_Tile_Encyclopedia
+    - Term: txt_btn_change_map
       TermType: 0
       Description: 
       Languages:
-      - ENCYCLOPEDIA
-      - "B\xE1ch Khoa To\xE0n Th\u01B0"
-      - "\u767E\u79D1\u4E8B\u5178"
-      - "\uBC31\uACFC \uC0AC\uC804"
-      - "Encyclop\xE9die"
+      - Change Map
+      - "\u0110\u1ED5i B\u1EA3n \u0110\u1ED3"
+      - "\u30DE\u30C3\u30D7\u3092\u5909\u66F4\u3059\u308B"
+      - "\uC9C0\uB3C4 \uBCC0\uACBD"
+      - Changer De Carte
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_option
+      TermType: 0
+      Description: 
+      Languages:
+      - Option
+      - "T\xF9y Ch\u1EC9nh"
+      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
+      - "\uC635\uC158"
+      - Option
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_orbit_simulator
+      TermType: 0
+      Description: 
+      Languages:
+      - Orbit Simulation
+      - "M\xF4 Ph\u1ECFng Qu\u1EF9 \u0110\u1EA1o"
+      - "\u8ECC\u9053\u30B7\u30DF\u30E5\u30EC\u30FC\u30B7\u30E7\u30F3"
+      - "\uADA4\uB3C4 \uC2DC\uBBAC\uB808\uC774\uC158"
+      - Simulation D'orbite
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_planet
+      TermType: 0
+      Description: 
+      Languages:
+      - Planets
+      - "H\xE0nh Tinh"
+      - "\u60D1\u661F"
+      - "\uD589\uC131"
+      - "Plan\xE8tes"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_reset
+      TermType: 0
+      Description: 
+      Languages:
+      - Reset
+      - "C\xE0i L\u1EA1i"
+      - "\u30EA\u30BB\u30C3\u30C8"
+      - "\uCD08\uAE30\uD654"
+      - "R\xE9initialiser"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_sky_map
+      TermType: 0
+      Description: 
+      Languages:
+      - Star Map
+      - "B\u1EA3n \u0110\u1ED3 Sao"
+      - "\u661F\u56F3"
+      - "\uBCC4 \uC9C0\uB3C4"
+      - "Carte Des \xC9toiles"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_solar_system
+      TermType: 0
+      Description: 
+      Languages:
+      - Solar System
+      - "H\u1EC7 M\u1EB7t Tr\u1EDDi"
+      - "\u592A\u967D\u7CFB"
+      - "\uD0DC\uC591\uACC4"
+      - "Syst\xE8me Solaire"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_start
+      TermType: 0
+      Description: 
+      Languages:
+      - Start
+      - "B\u1EAFt \u0110\u1EA7u"
+      - "\u59CB\u3081\u308B"
+      - "\uC2DC\uC791"
+      - Commencer
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_field_of_view
+      TermType: 0
+      Description: 
+      Languages:
+      - Field Of View
+      - "Tr\u01B0\u1EDDng Nh\xECn"
+      - "\u8996\u91CE"
+      - "\uC2DC\uC57C"
+      - Champ De Vision
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_lable_rotate
+      TermType: 0
+      Description: 
+      Languages:
+      - Rotate
+      - Quay
+      - "\u56DE\u8EE2\u3055\u305B\u308B"
+      - "\uD68C\uC804\uD558\uB2E4"
+      - Tourner
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: Visit
+      TermType: 0
+      Description: 
+      Languages:
+      - Visit
+      - "Gh\xE9 th\u0103m"
+      - "\u8A2A\u554F"
+      - "\uBC29\uBB38\uD558\uB2E4"
+      - Visite
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: OPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - OPTION
+      - "T\xF9y ch\u1ECDn"
+      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
+      - "\uC635\uC158"
+      - Option
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - "\xC2m Thanh"
+      - "\u97F3"
+      - "\uC18C\uB9AC"
+      - Son
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: Bloom
+      TermType: 0
+      Description: 
+      Languages:
+      - Bloom
+      - Hoa
+      - "\u54B2\u304F"
+      - "\uAF43"
+      - Floraison
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: OK
+      TermType: 0
+      Description: 
+      Languages:
+      - OK
+      - Xong
+      - "\u308F\u304B\u308A\u307E\u3057\u305F"
+      - "\uC88B\uC544\uC694"
+      - D'accord
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "Ng\xF4n Ng\u1EEF"
+      - "\u8A00\u8A9E"
+      - "\uC5B8\uC5B4"
+      - Langue
       Flags: 0000000000
       Languages_Touch: []
     CaseInsensitiveTerms: 0
