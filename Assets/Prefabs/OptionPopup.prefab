@@ -148,10 +148,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC2m Thanh"
+  m_text: "\uC18C\uB9AC"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d408ab0c5442e674fb78947851190936, type: 2}
+  m_sharedMaterial: {fileID: 996895503036144873, guid: d408ab0c5442e674fb78947851190936,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -175,7 +176,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.75
+  m_fontSize: 34.5
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -651,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundVolume: {fileID: 857008032576551402}
+  dropdownLanguage: {fileID: 1754266500632946108}
 --- !u!1 &857008031962899129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,10 +1202,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xF9y ch\u1ECDn"
+  m_text: "\uC635\uC158"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d408ab0c5442e674fb78947851190936, type: 2}
+  m_sharedMaterial: {fileID: 996895503036144873, guid: d408ab0c5442e674fb78947851190936,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1227,7 +1230,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.75
+  m_fontSize: 34.5
   m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1375,10 +1378,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hoa
+  m_text: "\uAF43"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d408ab0c5442e674fb78947851190936, type: 2}
+  m_sharedMaterial: {fileID: 996895503036144873, guid: d408ab0c5442e674fb78947851190936,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1741,10 +1745,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ng\xF4n Ng\u1EEF"
+  m_text: "\uC5B8\uC5B4"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d408ab0c5442e674fb78947851190936, type: 2}
+  m_sharedMaterial: {fileID: 996895503036144873, guid: d408ab0c5442e674fb78947851190936,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1768,7 +1773,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.75
+  m_fontSize: 34.5
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2006,7 +2011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Xong
+  m_Text: "\uC88B\uC544\uC694"
 --- !u!114 &6871576711144355789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2218,41 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8363141436042678141}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OptionPopup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668806819344133369, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4073201800890036592, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2221,12 +2261,12 @@ PrefabInstance:
     - target: {fileID: 4073201801334538996, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4073201801334538996, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4073201801982704217, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
@@ -2266,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 4690481453402324928, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5044907892664774336, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
@@ -2297,6 +2337,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
       value: French
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8363141436042678141}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OptionPopup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5044907892664774343, guid: fe8be39afefa17b47b7b22ad2292bdaa,
         type: 3}
@@ -2403,8 +2478,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7289940672368818543, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289940672368818543, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289940672368818543, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827301470625087837, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+        type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8be39afefa17b47b7b22ad2292bdaa, type: 3}
+--- !u!114 &1754266500632946108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5044907892664774342, guid: fe8be39afefa17b47b7b22ad2292bdaa,
+    type: 3}
+  m_PrefabInstance: {fileID: 6799156609361709946}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1754266500632946109 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5044907892664774343, guid: fe8be39afefa17b47b7b22ad2292bdaa,

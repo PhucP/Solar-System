@@ -19,7 +19,6 @@ public class InfoInSolarScene : MonoBehaviour
         Observer.showHideAllInformation += OnShowHideInformation;
         
         MoveWithTarget();
-        nameText.text = targetCelestial.name.ToString();
     }
 
     private void FixedUpdate()

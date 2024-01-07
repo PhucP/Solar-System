@@ -28,6 +28,72 @@ MonoBehaviour:
       - "Syst\xE8me Solaire"
       Flags: 0000000000
       Languages_Touch: []
+    - Term: Bloom
+      TermType: 0
+      Description: 
+      Languages:
+      - Bloom
+      - Hoa
+      - "\u54B2\u304F"
+      - "\uAF43"
+      - Floraison
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: OK
+      TermType: 0
+      Description: 
+      Languages:
+      - OK
+      - Xong
+      - "\u308F\u304B\u308A\u307E\u3057\u305F"
+      - "\uC88B\uC544\uC694"
+      - D'accord
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: OPTION
+      TermType: 0
+      Description: 
+      Languages:
+      - OPTION
+      - "T\xF9y ch\u1ECDn"
+      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
+      - "\uC635\uC158"
+      - Option
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - "\xC2m Thanh"
+      - "\u97F3"
+      - "\uC18C\uB9AC"
+      - Son
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: Visit
+      TermType: 0
+      Description: 
+      Languages:
+      - Visit
+      - "Gh\xE9 th\u0103m"
+      - "\u8A2A\u554F"
+      - "\uBC29\uBB38\uD558\uB2E4"
+      - Visite
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "Ng\xF4n Ng\u1EEF"
+      - "\u8A00\u8A9E"
+      - "\uC5B8\uC5B4"
+      - Langue
+      Flags: 0000000000
+      Languages_Touch: []
     - Term: txt_Earth_description
       TermType: 0
       Description: 
@@ -840,6 +906,17 @@ MonoBehaviour:
       - "\u8868\u9762\u91CD\u529B: 167*C"
       - "\uD45C\uBA74 \uC911\uB825: 167*C"
       - "Gravit\xE9 de surface\_: 167*C"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_Mercury_name
+      TermType: 0
+      Description: 
+      Languages:
+      - Mercury
+      - "Th\u1EE7y Ng\xE2n"
+      - "\u6C34\u661F"
+      - "\uC218\uC740"
+      - Mercure
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_Moon_name
@@ -1988,72 +2065,6 @@ MonoBehaviour:
       - Tourner
       Flags: 0000000000
       Languages_Touch: []
-    - Term: Visit
-      TermType: 0
-      Description: 
-      Languages:
-      - Visit
-      - "Gh\xE9 th\u0103m"
-      - "\u8A2A\u554F"
-      - "\uBC29\uBB38\uD558\uB2E4"
-      - Visite
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: OPTION
-      TermType: 0
-      Description: 
-      Languages:
-      - OPTION
-      - "T\xF9y ch\u1ECDn"
-      - "\u30AA\u30D7\u30B7\u30E7\u30F3"
-      - "\uC635\uC158"
-      - Option
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: Sound
-      TermType: 0
-      Description: 
-      Languages:
-      - Sound
-      - "\xC2m Thanh"
-      - "\u97F3"
-      - "\uC18C\uB9AC"
-      - Son
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: Bloom
-      TermType: 0
-      Description: 
-      Languages:
-      - Bloom
-      - Hoa
-      - "\u54B2\u304F"
-      - "\uAF43"
-      - Floraison
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: OK
-      TermType: 0
-      Description: 
-      Languages:
-      - OK
-      - Xong
-      - "\u308F\u304B\u308A\u307E\u3057\u305F"
-      - "\uC88B\uC544\uC694"
-      - D'accord
-      Flags: 0000000000
-      Languages_Touch: []
-    - Term: language
-      TermType: 0
-      Description: 
-      Languages:
-      - Language
-      - "Ng\xF4n Ng\u1EEF"
-      - "\u8A00\u8A9E"
-      - "\uC5B8\uC5B4"
-      - Langue
-      Flags: 0000000000
-      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: App_Name
@@ -2075,10 +2086,10 @@ MonoBehaviour:
       Flags: 0
     IgnoreDeviceLanguage: 0
     _AllowUnloadingLanguages: 0
-    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbwHjkls7Kjtl8wKwOGfbtXmPo5lCCPHGWlh3M9TXo03ykQ3gkrgMusMp-dQ7VaKs8NnhQ/exec
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw2dpOwr9uN309vV26k6mrll7Qdc5NiMG7DR6YTbLmAEqwA19riqj7gOw0eTFvJe6Rj/exec
     Google_SpreadsheetKey: 1PUuq_LxMPPcuapPSklLezbk5kZzkJvw666a18jwYNLo
     Google_SpreadsheetName: I2Loc Solar_System Localization
-    Google_LastUpdatedVersion: 1703785158467
+    Google_LastUpdatedVersion: 1704562188790
     Google_Password: double_P
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

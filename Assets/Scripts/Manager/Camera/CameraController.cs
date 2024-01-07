@@ -70,7 +70,6 @@ public class CameraController : MonoBehaviour
         cameraMode = CameraMode.ChangeRotation;
         mainCamera = GetComponentInChildren<Camera>();
         additionalLight.intensity = 0;
-        LocalizationManager.CurrentLanguage = "Vietnamese";
     }
 
     private void FixedUpdate()
