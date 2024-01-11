@@ -913,7 +913,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - Mercury
-      - "Th\u1EE7y Ng\xE2n"
+      - "Sao Th\u1EE7y"
       - "\u6C34\u661F"
       - "\uC218\uC740"
       - Mercure
@@ -2030,6 +2030,17 @@ MonoBehaviour:
       - "\u592A\u967D\u7CFB"
       - "\uD0DC\uC591\uACC4"
       - "Syst\xE8me Solaire"
+      Flags: 0000000000
+      Languages_Touch: []
+    - Term: txt_btn_speed
+      TermType: 0
+      Description: 
+      Languages:
+      - Change speed
+      - "Thay \u0111\u1ED5i t\u1ED1c \u0111\u1ED9"
+      - "\u901F\u5EA6\u3092\u5909\u66F4\u3059\u308B"
+      - "\uC18D\uB3C4 \uBCC0\uACBD"
+      - Changer de vitesse
       Flags: 0000000000
       Languages_Touch: []
     - Term: txt_btn_start

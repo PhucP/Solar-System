@@ -185,8 +185,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: change map
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d408ab0c5442e674fb78947851190936, type: 2}
-  m_sharedMaterial: {fileID: 996895503036144873, guid: d408ab0c5442e674fb78947851190936,
+  m_fontAsset: {fileID: 11400000, guid: 8200a0d7d8d51124ca4f892c991de92a, type: 2}
+  m_sharedMaterial: {fileID: 8266357491843892548, guid: 8200a0d7d8d51124ca4f892c991de92a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1115,10 +1115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mTarget: {fileID: 86875281}
-  mAlignment_RTL: 516
-  mAlignment_LTR: 513
+  mAlignment_RTL: 514
+  mAlignment_LTR: 514
   mAlignmentWasRTL: 0
-  mInitializeAlignment: 1
+  mInitializeAlignment: 0
 --- !u!1 &1781069303
 GameObject:
   m_ObjectHideFlags: 0
